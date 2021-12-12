@@ -1,0 +1,19 @@
+{
+  "name": "yandex-layout",
+  "version": "1.0.0",
+  "description": "Layout of yandex",
+  "main": "index.htnl",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bobroden/Denis_nc2021.git"
+  },
+  "author": "bobroden",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bobroden/Denis_nc2021/issues"
+  },
+  "homepage": "https://github.com/bobroden/Denis_nc2021#readme"
+}
