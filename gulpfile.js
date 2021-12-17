@@ -13,14 +13,14 @@ let path = {
   src: {
     html: sourse_folder + '/*.html',
     css: sourse_folder + '/style/index.less',
-    img: sourse_folder + '/img/**/*.{jpg, jpeg, png, gif, ico, webp}',
+    img: sourse_folder + '/img/**/*.+(png|jpg|jpeg|gif|ico|webp)',
     svg: sourse_folder + '/img/svg/*.svg',
     normalize: sourse_folder + '/normalize.css',
   },
   watch: {
     html: sourse_folder + '/**/*.html',
     css: sourse_folder + '/style/**/*.less',
-    img: sourse_folder + '/img/**/*.{jpg, jpeg, png, gif, ico, webp}',
+    img: sourse_folder + '/img/**/*.+(png|jpg|jpeg|gif|ico|webp)',
     svg: sourse_folder + '/img/svg/*.svg',
     normalize: sourse_folder + '/normalize.css',
   },
@@ -82,11 +82,12 @@ function svg() {
   return src(path.src.html)
   .pipe(inject(svgs, {transform: fileContents}))
   .pipe(dest(path.build.html))
-  .pipe(browsersync.stream())
+  //.pipe(browsersync.stream())
 }
 
 function watchFiles(params) {
   gulp.watch([path.watch.html], html);
+  gulp.watch([path.watch.html], svg);
   gulp.watch([path.watch.css], css);
   gulp.watch([path.watch.img], images);
   gulp.watch([path.watch.svg], svg);
