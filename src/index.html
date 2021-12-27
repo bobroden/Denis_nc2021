@@ -9,20 +9,17 @@
     <title>Document</title>
 </head>
 <body>
-    <div style="height: 0; width: 0;">
-        <!-- inject:svg --><!-- endinject -->
-    </div>
     <div class="desk-notif">
-        <div class="about">
-            <div class="email">
-                <span class="email__name">bobrow.bobro20...</span>
-                <img class="email__avatar" src="./img/avatar.png" alt="avatar">
+        <div class="about-user">
+            <div class="about-user__email">
+                <span>bobrow.bobro20...</span>
+                <img src="./img/avatar.png" alt="avatar">
             </div>
-            <div class="counter">
+            <div class="about-user__counter">
                 <span class="counter__name">Почта</span>
                 <span class="counter__count">13037</span>
             </div>
-            <div class="about__disk">Диск</div>
+            <div class="about-user__disk">Диск</div>
         </div>
         <div class="plus">
             <svg class="plus__icon">
@@ -30,15 +27,15 @@
             </svg>
             <span class="plus__desc">Попробовать Плюс</span>
         </div>
-        <div class="covid">
-            <div class="covid__location">Москва</div>
-            <div class="covid__counter">
+        <div class="covid-statistics">
+            <div class="covid-statistics__location">Москва</div>
+            <div class="covid-statistics__counter">
                 +3322 выявлено
                 <svg>
                     <use xlink:href="#covid"></use>
                 </svg>
             </div>
-            <div class="covid__about">
+            <div class="covid-statistics__about">
                 <svg>
                     <use xlink:href="#info"></use>
                 </svg>
@@ -61,7 +58,7 @@
     </div>
 
     <header class="header">
-        <div class="header__info">
+        <div class="header__content-wrapper">
             <div class="geolocation">
                 <svg class="geolocation__icon">
                     <use xlink:href="#geolink"></use>
@@ -72,67 +69,69 @@
                 17 декабря, пятница 02:55
             </div>
         </div>
-        <div class="icons">
-            <svg class="icons__market-cart">
-                <use xlink:href="#market-cart"></use>
-            </svg>
-            <svg class="icons__notifier">
-                <use xlink:href="#notifier"></use>
-            </svg>
+        <div class="header__content-wrapper">
+            <div class="icons">
+                <svg class="icons__market-cart">
+                    <use xlink:href="#market-cart"></use>
+                </svg>
+                <svg class="icons__notifier">
+                    <use xlink:href="#notifier"></use>
+                </svg>
+            </div>
         </div>
     </header>
 
-    <nav class="navigation">
-        <ul class="menu">
-            <li class="menu__item menu__item_first">
+    <nav class="yandex-services-navigation">
+        <ul class="yandex-services-navigation__items-list">
+            <li class="yandex-services-navigation__item _first">
                 <svg>
                     <use xlink:href="#services"></use>
                 </svg>
                 Маркет
             </li>
-            <li class="menu__item">
+            <li class="yandex-services-navigation__item">
                 <svg>
                     <use xlink:href="#video"></use>
                 </svg>
                 Видео
             </li>
-            <li class="menu__item">
+            <li class="yandex-services-navigation__item">
                 <svg>
                     <use xlink:href="#images"></use>
                 </svg>
                 Картинки
             </li>
-            <li class="menu__item">
+            <li class="yandex-services-navigation__item">
                 <svg>
                     <use xlink:href="#news"></use>
                 </svg>
                 Новости
             </li>
-            <li class="menu__item">
+            <li class="yandex-services-navigation__item">
                 <svg>
                     <use xlink:href="#maps"></use>
                 </svg>
                 Карты
             </li>
-            <li class="menu__item">
+            <li class="yandex-services-navigation__item">
                 <svg>
                     <use xlink:href="#translate"></use>
                 </svg>
                 Переводчик
             </li>
-            <li class="menu__item">
+            <li class="yandex-services-navigation__item">
                 <svg>
                     <use xlink:href="#tv"></use>
                 </svg>
                 Программа
             </li>
-            <li class="menu__item">
+            <li class="yandex-services-navigation__item">
                 <svg>
                     <use xlink:href="#autoru"></use>
                 </svg>
                 Авто.ру
             </li>
-            <li class="menu__item menu__item_last">
+            <li class="yandex-services-navigation__item _last">
                 <svg>
                     <use xlink:href="#mail"></use>
                 </svg>
@@ -151,11 +150,11 @@
     </nav>
 
     <div class="search">
-        <div class="logo">
+        <div class="search__logo">
             Яндекс
         </div>
-        <input class="search__bar" type="text" placeholder="Найдётся всё">
         <div class="input">
+            <input class="input__bar" type="text" placeholder="Найдётся всё">
             <svg class="input__keyboard">
                 <use xlink:href="#keyboard"></use>
             </svg>
@@ -171,37 +170,51 @@
     </div>
 
     <main class="main">
-        <div class="news">
-            <div class="news-titles">
-                <svg class="news-titles__icon">
-                    <use xlink:href="#news"></use>
-                </svg>
-                <a class="news-titles__item news-titles__item_first">Сейчас в СМИ</a>
-                <a class="news-titles__item">в Москве</a>
-                <a class="news-titles__item">Интересное</a>
-                <a class="news-titles__item news-titles__item_last">Коронавирус</a>
+        <div class="blog">
+            <div class="news">
+                <div class="news-titles">
+                    <svg class="news-titles__icon">
+                        <use xlink:href="#news"></use>
+                    </svg>
+                    <a class="news-titles__item news-titles__item_first">Сейчас в СМИ</a>
+                    <a class="news-titles__item">в Москве</a>
+                    <a class="news-titles__item">Интересное</a>
+                    <a class="news-titles__item news-titles__item_last">Коронавирус</a>
+                </div>
+                <div class="news__item">
+                    <img src="./img/news-1.webp" alt="logo">
+                    Госдума приняла в 1 чтении законопроект о введении QR-кодов в общественных местах
+                </div>
+                <div class="news__item">
+                    <img src="./img/news-2.webp" alt="logo">
+                    Bloomberg: новые санкции ЕС и США против России могут повлиять на оборонные компании
+                </div>
+                <div class="news__item">
+                    <img src="./img/news-3.webp" alt="logo">
+                    Сокуров извинился перед членами СПЧ за свой спор с Путиным
+                </div>
+                <div class="news__item">
+                    <img src="./img/news-1.webp" alt="logo">
+                    НАТО заявило о готовности к диалогу с Россией при условии деэскалации с Украиной
+                </div>
+                <div class="news__item">
+                    <img src="./img/news-2.webp" alt="logo">
+                    РВСН планирует выпустить около 10 континентальных ракет
+                </div>
             </div>
-            <div class="news__item">
-                <img src="./img/news-1.webp" alt="logo">
-                Госдума приняла в 1 чтении законопроект о введении QR-кодов в общественных местах
-            </div>
-            <div class="news__item">
-                <img src="./img/news-2.webp" alt="logo">
-                Bloomberg: новые санкции ЕС и США против России могут повлиять на оборонные компании
-            </div>
-            <div class="news__item">
-                <img src="./img/news-3.webp" alt="logo">
-                Сокуров извинился перед членами СПЧ за свой спор с Путиным
-            </div>
-            <div class="news__item">
-                <img src="./img/news-1.webp" alt="logo">
-                НАТО заявило о готовности к диалогу с Россией при условии деэскалации с Украиной
-            </div>
-            <div class="news__item">
-                <img src="./img/news-2.webp" alt="logo">
-                РВСН планирует выпустить около 10 континентальных ракет
+            <div class="blog__item">
+                <div class="user-info">
+                    <img src="./img/block-1.jpg" alt="user-logo">
+                    
+                </div>
             </div>
         </div>
+        <div class="info">
+
+        </div>
     </main>
+    <div style="height: 0; width: 0;">
+        <!-- inject:svg --><!-- endinject -->
+    </div>
 </body>
 </html>
