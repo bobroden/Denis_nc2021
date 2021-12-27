@@ -10,49 +10,47 @@
 </head>
 <body>
     <div class="desk-notif">
-        <div class="about-user">
-            <div class="about-user__email">
-                <span>bobrow.bobro20...</span>
-                <img src="./img/avatar.png" alt="avatar">
-            </div>
-            <div class="about-user__counter">
-                <span class="counter__name">Почта</span>
-                <span class="counter__count">13037</span>
-            </div>
-            <div class="about-user__disk">Диск</div>
-        </div>
-        <div class="plus">
-            <svg class="plus__icon">
-                <use xlink:href="#plus"></use>
-            </svg>
-            <span class="plus__desc">Попробовать Плюс</span>
-        </div>
-        <div class="covid-statistics">
-            <div class="covid-statistics__location">Москва</div>
-            <div class="covid-statistics__counter">
-                +3322 выявлено
-                <svg>
-                    <use xlink:href="#covid"></use>
-                </svg>
-            </div>
-            <div class="covid-statistics__about">
-                <svg>
-                    <use xlink:href="#info"></use>
-                </svg>
-                О вакцинации
+        <div class="desk-notif__card">
+            <div class="about-user">
+                <div class="about-user__email-block">
+                    <span class="about-user__email-name"><span class="_first-letter">b</span>obrow.bobro2015@yandex.ru</span>
+                    <img src="./img/avatar.png" class="about-user__email-avatar" alt="avatar">
+                </div>
+                <div class="about-user__counter-block">
+                    <span class="about-user__counter-name">Почта</span>
+                    <span class="about-user__counter-count">13037</span>
+                </div>
+                <div class="about-user__disk">Диск</div>
             </div>
         </div>
-        <div class="weather">
-            <div class="weather__title">
-                <img src="" alt="weather-icon">
-                В центре
+        <div class="desk-notif__card">
+            <div class="new-year">
+                <p class="new-year-desc">Новогодние <br> чудеса с Алисой</p>
             </div>
-            <div class="weather__desc">В течение 30 минут дождь закончится</div>
-            <div class="weather__map">
-                <svg>
-                    <use xlink:href="#geolink"></use>
+        </div>
+        <div class="desk-notif__card">
+            <div class="plus">
+                <svg class="plus__icon">
+                    <use xlink:href="#plus"></use>
                 </svg>
-                Уточнить на карте
+                <span class="plus__desc">Попробовать Плюс</span>
+            </div>
+        </div>
+        <div class="desk-notif__card">
+            <div class="covid-statistics">
+                <div class="covid-statistics__location">Москва</div>
+                <div class="covid-statistics__counter">
+                    +3322 выявлено
+                    <svg>
+                        <use xlink:href="#covid"></use>
+                    </svg>
+                </div>
+                <div class="covid-statistics__about">
+                    <svg>
+                        <use xlink:href="#info"></use>
+                    </svg>
+                    О вакцинации
+                </div>
             </div>
         </div>
     </div>
@@ -68,11 +66,14 @@
             <div class="date">
                 17 декабря, пятница 02:55
             </div>
+            <div class="default">
+                Сделать стартовой
+            </div>
         </div>
         <div class="header__content-wrapper">
             <div class="icons">
                 <svg class="icons__market-cart">
-                    <use xlink:href="#market-cart"></use>
+                    <use xlink:href="#market-cart" x="4" y="8"></use>
                 </svg>
                 <svg class="icons__notifier">
                     <use xlink:href="#notifier"></use>
@@ -170,16 +171,16 @@
     </div>
 
     <main class="main">
-        <div class="blog">
+        <div class="main__wrapper">
             <div class="news">
                 <div class="news-titles">
                     <svg class="news-titles__icon">
                         <use xlink:href="#news"></use>
                     </svg>
-                    <a class="news-titles__item news-titles__item_first">Сейчас в СМИ</a>
+                    <a class="news-titles__item _first">Сейчас в СМИ</a>
                     <a class="news-titles__item">в Москве</a>
                     <a class="news-titles__item">Интересное</a>
-                    <a class="news-titles__item news-titles__item_last">Коронавирус</a>
+                    <a class="news-titles__item _last">Коронавирус</a>
                 </div>
                 <div class="news__item">
                     <img src="./img/news-1.webp" alt="logo">
@@ -202,15 +203,7 @@
                     РВСН планирует выпустить около 10 континентальных ракет
                 </div>
             </div>
-            <div class="blog__item">
-                <div class="user-info">
-                    <img src="./img/block-1.jpg" alt="user-logo">
-                    
-                </div>
-            </div>
-        </div>
-        <div class="info">
-
+            
         </div>
     </main>
     <div style="height: 0; width: 0;">
