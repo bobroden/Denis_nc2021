@@ -1,0 +1,59 @@
+.yandex-services-navigation {
+    margin: 0 auto;
+    width: 941px;
+    padding-right: 17px;
+    padding-top: 0;
+
+    &__items-list {
+        list-style: none;
+        display: flex;
+        padding-left: 0;
+        margin-top: 3px;
+        padding-left: 3px;
+    }
+
+    &__item {
+        min-width: 90px;
+        text-align: center;
+        font-size: 12px;
+        margin-right: 5px;
+
+        svg {
+            width: 44px;
+            height: 44px;
+        }
+    }
+
+    ._first {
+        position: relative;
+
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 1px;
+            height: 24px;
+            right: 0;
+            top: 10px;
+            background-color: #eaeaea;
+        }
+    }
+
+    ._last {
+        svg {
+            width: 18px;
+            height: 18px;
+        }
+    }
+
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        padding: 4px;
+        overflow: hidden;
+        width: 44px;
+        height: 44px;
+        margin: 0 auto 2px;
+    }
+}

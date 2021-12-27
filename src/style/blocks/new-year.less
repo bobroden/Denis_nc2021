@@ -1,5 +1,5 @@
 .new-year {
-    //padding: 14px 16px;
+    height: 71px;
     background-image: url('../../img/new-year.png');
     background-size: cover;
     background-position: 50%;
@@ -7,5 +7,16 @@
     transition: max-height .3s .1s,padding-bottom .3s .1s;
     width: 220px;
     box-shadow: 0 0 32px rgb(0 0 0 / 8%);
-    //background-clip: content-box;
+    background-clip: content-box;
+
+    &__desc {
+        margin: 0;
+        opacity: .7;
+        padding-top: 16px;
+        padding-left: 15px;
+        font-weight: 500;
+        font-size: 93%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
 }
