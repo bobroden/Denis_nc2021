@@ -82,7 +82,7 @@ function svg() {
   return src(path.src.html)
   .pipe(inject(svgs, {transform: fileContents}))
   .pipe(dest(path.build.html))
-  //.pipe(browsersync.stream())
+  .pipe(browsersync.stream())
 }
 
 function watchFiles(params) {
