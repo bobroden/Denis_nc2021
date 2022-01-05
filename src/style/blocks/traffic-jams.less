@@ -4,9 +4,15 @@
 
     &__titles-item {
         opacity: .5;
-        transition: opacity .15s ease-out;
+        transition: opacity .15s ease-out, color .15s ease-out;
         font-size: 16px;
         padding-right: 7px;
+        cursor: pointer;
+
+        &:hover {
+            opacity: 1;
+            color: #c00;
+        }
     }
 
     ._first {
@@ -22,17 +28,30 @@
         width: 38px;
         height: 35px;
         padding-top: 18px;
+        cursor: pointer;
     }
 
     &__mark {
         font-size: 38px;
         padding-top: 13px;
         padding-left: 9px;
+        cursor: pointer;
+        transition: color .15s ease-out;
+
+        &:hover {
+            color: #c00;
+        }
     }
 
     &__desc {
         padding-top: 19px;
         padding-left: 11px;
         font-size: 14px;
+        cursor: pointer;
+        transition: color .15s ease-out;
+
+        &:hover {
+            color: #c00;
+        }
     }
 }

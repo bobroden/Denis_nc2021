@@ -4,10 +4,15 @@
     background-size: cover;
     background-position: 50%;
     border-radius: 8%;
-    transition: max-height .3s .1s,padding-bottom .3s .1s;
     width: 220px;
     box-shadow: 0 0 32px rgb(0 0 0 / 8%);
     background-clip: content-box;
+    transition: transform .15s ease-out 50ms,margin .1s .4s,opacity ease-out .1s,visibility .1s .4s;
+    cursor: pointer;
+
+    &:hover {
+        transform: translateX(-20px);
+    }
 
     &__desc {
         margin: 0;

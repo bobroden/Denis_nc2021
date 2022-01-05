@@ -5,7 +5,6 @@
     border-radius: 8px;
     box-shadow: 0 0 32px rgb(0 0 0 / 8%);
     box-sizing: border-box;
-    transition: transform .15s ease-out 50ms,margin .1s .4s,visibility .1s .4s;
     background: #fff;
     font-size: 96%;
 
@@ -24,10 +23,22 @@
         vertical-align: top;
         white-space: nowrap;
         text-overflow: ellipsis;
+        cursor: pointer;
+        transition: color .15s ease-out;
 
         ._first-letter {
             color: red;
+            transition: color .15s ease-out;
         }
+
+        &:hover {
+            color: #c00;
+
+            ._first-letter {
+                color: #c00;
+            }
+        }
+
     }
 
     &__email-avatar {
@@ -35,10 +46,17 @@
         margin-right: 5px;
         width: 34px;
         height: 34px;
+        cursor: pointer;
     }
 
     &__counter-block {
         margin-top: 7px;
+        cursor: pointer;
+        transition: color .15s ease-out;
+
+        &:hover {
+            color: #c00;
+        }
     }
 
     &__counter-count {
@@ -48,5 +66,11 @@
 
     &__disk {
         margin-top: 7px;
+        cursor: pointer;
+        transition: color .15s ease-out;
+
+        &:hover {
+            color: #c00;
+        }
     }
 }

@@ -11,6 +11,13 @@
         transition: opacity .15s ease-out;
         font-size: 16px;
         font-weight: 500;
+        transition: color .15s ease-out, opacity .15s ease-out;
+        cursor: pointer;
+
+        &:hover {
+            color: #c00;
+            opacity: 1;
+        }
     }
 
     ._first {
@@ -20,6 +27,10 @@
         margin-bottom: 8px;
         color: #000;
         opacity: 1;
+
+        &:hover {
+            color: #c00;
+        }
     }
 
     &__wrapper {
@@ -29,6 +40,7 @@
     &__icon {
         padding-top: 9px;
         margin-left: -4px;
+        cursor: pointer;
     }
 
     &__temperature {
@@ -36,11 +48,23 @@
         padding-top: 11px;
         padding-left: 6px;
         letter-spacing: -2px;
+        cursor: pointer;
+        transition: color .15s ease-out;
+
+        &:hover {
+            color: #c00;
+        }
     }
 
     &__details {
         padding-left: 17px;
         padding-top: 17px;
         font-size: 14px;
+        cursor: pointer;
+        transition: color .15s ease-out;
+
+        &:hover {
+            color: #c00;
+        }
     }
 }

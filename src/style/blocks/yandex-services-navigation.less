@@ -17,10 +17,21 @@
         text-align: center;
         font-size: 12px;
         margin-right: 5px;
+        transition: color .15s ease-out;
+        cursor: pointer;
+
+        &:hover {
+            color: #c00;
+
+            svg {
+                transform: translateY(-4px);
+            }
+        }
 
         svg {
             width: 44px;
             height: 44px;
+            transition: transform ease-out .15s;
         }
     }
 

@@ -15,6 +15,7 @@
         margin: 0 auto;
         display: block;
         margin-top: 10px;
+        cursor: pointer;
     }
 
     &__title {
@@ -22,6 +23,12 @@
         font-weight: 700;
         font-size: 14px;
         margin-top: 5px;
+        transition: color .15s ease-out;
+        cursor: pointer;
+
+        &:hover {
+            color: #c00;
+        }
     }
 
     &__desc {

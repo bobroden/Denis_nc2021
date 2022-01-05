@@ -5,8 +5,13 @@
     box-shadow: 0 0 32px rgb(0 0 0 / 8%);
     box-sizing: border-box;
     padding: 11px 12px;
-    transition: transform .15s ease-out 50ms,margin .1s .4s,visibility .1s .4s;
     background: #fff;
+    transition: transform .15s ease-out 50ms,margin .1s .4s,opacity ease-out .1s,visibility .1s .4s;
+    cursor: pointer;
+
+    &:hover {
+        transform: translateX(-20px);
+    }
 
     &__icon {
         width: 24px;
