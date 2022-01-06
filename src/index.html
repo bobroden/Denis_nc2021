@@ -7,6 +7,567 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Mail</h1>
+    <header class="header">
+        <nav class="navigation">
+            <ul class="navigation__list">
+                <li class="navigation__item _first">Mail.ru</li>
+                <li class="navigation__item">Почта</li>
+                <li class="navigation__item">Мой Мир</li>
+                <li class="navigation__item">Одноклассники</li>
+                <li class="navigation__item">ВКонтакте</li>
+                <li class="navigation__item">Игры</li>
+                <li class="navigation__item">Знакомства</li>
+                <li class="navigation__item">Новости</li>
+                <li class="navigation__item">Поиск</li>
+                <li class="navigation__item">Облако</li>
+                <li class="navigation__item">VK Работа</li>
+                <li class="navigation__item">VK Combo</li>
+                <li class="navigation__item _last">Все проекты</li>
+            </ul>
+        </nav>
+        <div class="authentication">
+            <div class="authentication__registration">Регистрация</div>
+            <div class="authentication__login">Войти</div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="main__aside">
+            <div class="authorization">
+                <div class="authorization__header"></div>
+                <div class="authorization__links-list">
+                    <div class="authorization__links-list-wrapper">
+                        <div class="authorization__link">Почта</div>
+                    </div>
+                    <div class="authorization__links-list-wrapper">
+                        <div class="authorization__link">
+                            <svg></svg>
+                        </div>
+                        <div class="authorization__link">
+                            <svg></svg>
+                        </div>
+                        <div class="authorization__link">
+                            <svg></svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="authorization__email">
+                    <input type="email" class="authorization__email-name">
+                    <select class="authorization__email-tail">
+                        <option>@mail.ru</option>
+                        <option>@inbox.ru</option>
+                        <option>@list.ru</option>
+                        <option>@bk.ru</option>
+                        <option>@internet.ru</option>
+                    </select>
+                </div>
+                <button class="authorization__password-button">
+                    Ввести пароль
+                    <svg></svg>
+                </button>
+                <div class="authorization__password">
+                    <div class="authorization__password-wrapper">
+                        <input type="checkbox" class="authorization__password-save">
+                        Запомнить
+                    </div>
+                    <div class="authorization__password-question">
+                        Забыли пароль?
+                    </div>
+                </div>
+                <hr>
+                <div class="authorization__buttons">
+                    <button class="authorization__create-email-button">Создать почту</button>
+                    <button class="authorization__login-VK-button">
+                        <svg></svg>
+                        Войти через VK ID
+                    </button>
+                </div>
+            </div>
+            <div class="weather">
+                <div class="weather__header">
+                    <div class="weather__city">Москва</div>
+                    <div class="weather__detail">Подробнее</div>
+                </div>
+                <a class="weather__about">
+                    <img src="" class="weather__icon" alt="Weather icon">
+                    <span class="weather__temp">+1°</span>
+                    <div class="weather__info">
+                        <div class="weather__desc">Пасмурно</div>
+                        <div class="weather__humidity">Влажность 76%</div>
+                    </div>
+                </a>
+                <hr>
+                <div class="weather__detail">
+                    <div class="weather__detail-item">
+                        <div class="weather__detail-item-header">
+                            Ночью
+                        </div>
+                        <div class="weather__detail-item-wrapper">
+                            <img src="" class="weather__detail-item-icon" alt="Weather icon">
+                            <span class="weather__deatil-item-temp">-5°</span>
+                        </div>
+                    </div>
+                    <div class="weather__detail-item">
+                        <div class="weather__detail-item-header">
+                            Утром
+                        </div>
+                        <div class="weather__detail-item-wrapper">
+                            <img src="" class="weather__detail-item-icon" alt="Weather icon">
+                            <span class="weather__deatil-item-temp">-8°</span>
+                        </div>
+                    </div>
+                    <div class="weather__detail-item">
+                        <div class="weather__detail-item-header">
+                            Днём
+                        </div>
+                        <div class="weather__detail-item-wrapper">
+                            <img src="" class="weather__detail-item-icon" alt="Weather icon">
+                            <span class="weather__deatil-item-temp">-7°</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="quotes">
+                <div class="quotes__item">
+                    <div class="quotes__wrapper">
+                        <img src="" class="quotes__item-icon" alt="Quotes icon">
+                        76.37
+                    </div>
+                    <div class="quotes__diff">
+                        -0.43
+                        <svg></svg>
+                    </div>
+                </div>
+                <div class="quotes__item">
+                    <div class="quotes__wrapper">
+                        <img src="" class="quotes__item-icon" alt="Quotes icon">
+                        86.26
+                    </div>
+                    <div class="quotes__diff">
+                        -0.56
+                        <svg></svg>
+                    </div>
+                </div>
+                <div class="quotes__item">
+                    <div class="quotes__wrapper">
+                        <img src="" class="quotes__item-icon" alt="Quotes icon">
+                        81.97
+                    </div>
+                    <div class="quotes__diff">
+                        +1.87
+                        <svg></svg>
+                    </div>
+                </div>
+            </div>
+            <div class="horoscope">
+                <img src="" class="horoscope__icon" alt="Horoscope icon">
+                <div class="horoscope__wrapper">
+                    <div class="horoscope__title">Гороскоп: Дева</div>
+                    <div class="horoscope__desc">Сегодня вы успеете сделать много хорошего
+                        не только для себя, но ...</div>
+                </div>
+            </div>
+            <div class="covid">
+                <div class="covid__title">Коронавирус</div>
+                <div class="covid__title-desc">Новые случаи 26 декабря</div>
+                <div class="covid__graph">
+                    <hr>
+                    <div class="covid__graph-titles">
+                        <span class="covid__graph-title _active">Москва</span>
+                        <span class="covid__graph-title">Россия</span>
+                        <span class="covid__graph-title">Мир</span>
+                    </div>
+                    <hr>
+                    <img src="" class="covid__image" alt="Covid graph">
+                    <div class="covid__desc">
+                        <div>Март</div>
+                        <div>Январь</div>
+                    </div>
+                </div>
+            </div>
+            <div class="job">
+                <div class="job__header">
+                    <img src="" class="job__icon" alt="Job icon">
+                    <div class="job__wrapper">
+                        <div class="job__title">VK Работа</div>
+                        <div class="job__title-desc">Найди работу за 24 часа</div>
+                    </div>
+                </div>
+                <hr>
+                <div class="job__list">
+                    <div class="job__item">
+                        <img src="" class="job__item-icon" alt="Job item icon">
+                        <div class="job__item-title">Удаленная работа</div>
+                        <div class="job__item-desc">До 150 000 ₽</div>
+                    </div>
+                    <div class="job__item">
+                        <img src="" class="job__item-icon" alt="Job item icon">
+                        <div class="job__item-title">Подработка</div>
+                        <div class="job__item-desc">До 70 000 ₽</div>
+                    </div>
+                    <div class="job__item">
+                        <img src="" class="job__item-icon" alt="Job item icon">
+                        <div class="job__item-title">Промышленность</div>
+                        <div class="job__item-desc">До 106 500 ₽</div>
+                    </div>
+                </div>
+            </div>
+            <div class="games">
+                <img src="" class="games__icon" alt="Games icon">
+                <div class="games__wrapper">
+                    <div class="games__title">Каталог Игр</div>
+                    <div class="games__title-desc">Вам понравится</div>
+                </div>
+                <hr>
+                <div class="games__list">
+                    <div class="games__item">
+                        <img src="" class="games__item-icon" alt="Games item icon">
+                        <div class="games__item-wrapper">
+                            <div class="games__item-title">Battle Tanks</div>
+                            <div class="games__item-desc">Экшен</div>
+                        </div>
+                        <button class="games__item-button">Играть</button>
+                    </div>
+                    <div class="games__item">
+                        <img src="" class="games__item-icon" alt="Games item icon">
+                        <div class="games__item-wrapper">
+                            <div class="games__item-title">Will To Live</div>
+                            <div class="games__item-desc">Шутер</div>
+                        </div>
+                        <button class="games__item-button">Играть</button>
+                    </div>
+                    <div class="games__item">
+                        <img src="" class="games__item-icon" alt="Games item icon">
+                        <div class="games__item-wrapper">
+                            <div class="games__item-title">World War 3</div>
+                            <div class="games__item-desc">Шутер</div>
+                        </div>
+                        <button class="games__item-button">Играть</button>
+                    </div>
+                </div>
+            </div>
+            <div class="partners">
+                <div class="partners__item">
+                    <img src="" class="partners__item-icon">
+                    <div class="partners__item-wrapper">
+                        <div class="partners__item-title">Одноклассники</div>
+                        <div class="partners__item-desc">Подарки на любой вкус</div>
+                    </div>
+                </div>
+                <div class="partners__item">
+                    <img src="" class="partners__item-icon">
+                    <div class="partners__item-wrapper">
+                        <div class="partners__item-title">ВКонтакте</div>
+                        <div class="partners__item-desc">Вы могли пропустить</div>
+                    </div>
+                </div>
+                <div class="partners__item">
+                    <img src="" class="partners__item-icon">
+                    <div class="partners__item-wrapper">
+                        <div class="partners__item-title">Облако</div>
+                        <div class="partners__item-desc">Сохраните файлы</div>
+                    </div>
+                </div>
+                <div class="partners__item">
+                    <img src="" class="partners__item-icon">
+                    <div class="partners__item-wrapper">
+                        <div class="partners__item-title">ТВ-Программа</div>
+                        <div class="partners__item-desc">Что смотреть сегодня</div>
+                    </div>
+                </div>
+                <div class="partners__item">
+                    <img src="" class="partners__item-icon">
+                    <div class="partners__item-wrapper">
+                        <div class="partners__item-title">VK Combo</div>
+                        <div class="partners__item-desc">Музыка без рекламы</div>
+                    </div>
+                </div>
+                <div class="partners__item">
+                    <img src="" class="partners__item-icon">
+                    <div class="partners__item-wrapper">
+                        <div class="partners__item-title">Юла</div>
+                        <div class="partners__item-desc">Бесплатные объявления</div>
+                    </div>
+                </div>
+                <div class="partners__item">
+                    <img src="" class="partners__item-icon">
+                    <div class="partners__item-wrapper">
+                        <div class="partners__item-title">AliExpress Россия</div>
+                        <div class="partners__item-desc">Гигантский выбор и скидки</div>
+                    </div>
+                </div>
+                <div class="partners__item">
+                    <img src="" class="partners__item-icon">
+                    <div class="partners__item-wrapper">
+                        <div class="partners__item-title">GeekBrains</div>
+                        <div class="partners__item-desc">Онлайн-университет</div>
+                    </div>
+                </div>
+                <div class="partners__item">
+                    <img src="" class="partners__item-icon">
+                    <div class="partners__item-wrapper">
+                        <div class="partners__item-title">Skillbox</div>
+                        <div class="partners__item-desc">Образовательная программа</div>
+                    </div>
+                </div>
+            </div>
+            <div class="aside-footer">
+                <a class="aside-footer__link">Политика конфиденциальности</a>
+                <a class="aside-footer__link">О компании</a>
+                <a class="aside-footer__link">
+                    <svg></svg>
+                </a>
+            </div>
+        </div>
+        <div class="main__info">
+            <div class="main-links">
+                <a class="main-links__item _first">Поиск в интернете</a>
+                <a class="main-links__item">Соцсети</a>
+                <a class="main-links__item">Картинки</a>
+                <a class="main-links__item">Видео</a>
+                <a class="main-links__item">Ответы</a>
+            </div>
+            <div class="search">
+                <div class="search__input-container">
+                    <svg class="search__icon"></svg>
+                    <input type="text" class="search__input">
+                    <a class="search__sample">Сейчас ищут: 
+                        <span class="search__sample-link">ютуб</span>
+                    </a>
+                </div>
+                <button class="search__button">Найти</button>
+            </div>
+        </div>
+        <div class="news-titles">
+            <a class="news-titles__item _active">Новости</a>
+            <a class="news-titles__item">COVID-19</a>
+            <a class="news-titles__item">Москва</a>
+            <a class="news-titles__item">Hi-Tech</a>
+            <a class="news-titles__item">Спорт</a>
+            <a class="news-titles__item">Леди</a>
+            <a class="news-titles__item">Авто</a>
+            <a class="news-titles__item">Кино</a>
+            <a class="news-titles__item">Игры</a>
+            <a class="news-titles__item">Дети</a>
+            <a class="news-titles__item">Здоровье</a>
+            <a class="news-titles__item">Дом</a>
+            <a class="news-titles__item">Питомцы</a>
+        </div>
+        <div class="main__info-wrapper">
+            <div class="news">
+                <div class="main-news">
+                    <img src="" class="main-news__icon" alt="Main news icon">
+                    <div class="main-news__wrapper">
+                        <div class="main-news__title">США: ситуация в Казахстане не влияет
+                            на переговоры с Россией</div>
+                        <div class="main-news__desc">Нет никаких изменений в запланированных
+                        трех сериях встреч, отметила пресс-секретарь Белого дома Джен Псаки</div>
+                    </div>
+                </div>
+                <a class="news__item">Протестующие в Актау перекрыли дорогу в аэропорт</a>
+                <a class="news__item">Глава ОДКБ рассказал, что будут делать миротворцы
+                    в Казахстане</a>
+                <a class="news__item">Эксперты перечислили города РФ с самым высоким
+                    качеством жизни</a>
+                <a class="news__item">Патриарх Кирилл начал рождественское богослужение</a>
+                <a class="news__item">5 традиций сочельника, которые нужно знать</a>
+                <a class="news__item">В космосе обнаружили древнюю гигантскую структуру</a>
+                <a class="news__item">Черчесов запретил игрокам «Ференцвароша» говорить
+                    два слова</a>
+                <a class="news__item">Названа общая сумма ущерба от беспорядков в Казахстане</a>
+                <a class="news__item">Суд арестовал имущество Порошенко в рамках дела о
+                    госизмене</a>
+                <a class="news__item">В России выявлены первые незавозные случаи заражения
+                    «омикроном»</a>
+                <a class="news__item">
+                    <span class="news__item-title">КИНО</span>
+                    Эмма Уотсон рассказала о чувствах к коллеге по «Гарри Поттеру»
+                </a>
+                <a class="news__item">
+                    <span class="news__item-title">HI-TECH</span>
+                    Обычные телевизоры уходят в прошлое. Их заменит Freestyle
+                </a>
+                <a class="news__item">
+                    <span class="news__item-title">Спорт</span>
+                    Украинская гиманстка откровенно рассказала о своей зависимости
+                </a>
+                <a class="news__item">
+                    <span class="news__item-title">Леди</span>
+                    Откровенное фото 40-летней Ксении Собчак в купели поразило сеть
+                </a>
+            </div>
+            <div class="advertisement">
+                <div class="main-advertisement">
+                    <img src="" class="main-advertisement__image" alt="Advertisement">
+                    <div class="main-advertisement__title">Скупка цифровой техники</div>
+                    <p class="main-advertisement__desc">Выплаты еженедельно. Теплые руки</p>
+                    <div class="main-advertisement__footer">
+                        <div class="main-advertisement__company">MVideo</div>
+                        <div class="main-advertisement__label">Реклама</div>
+                    </div>
+                </div>
+                <div class="partner-advertisement">
+                    <img src="" class="partner-advertisement__image" alt="Advertisement">
+                </div>
+            </div>
+        </div>
+        <div class="news-feed-titles">
+            <div class="news-feed-titles__name">
+                <span class="news-feed-titles__pulse">Пульс</span>
+                - ваша персональная лента
+            </div>
+            <div class="news-feed-titles__item _active">Рекомендации</div>
+            <div class="news-feed-titles__item">Популярное</div>
+        </div>
+        <div class="personal-feed">
+            <div class="personal-feed__item">
+                <img src="" class="personal-feed__item-image" alt="Personal feed item image">
+                <div class="personal-feed__item-title">2022 год нового начал</div>
+                <div class="personal-feed__item-footer">
+                    <div class="personal-feed__item-company">expert.ru</div>
+                    <div class="personal-feed__item-wrapper">
+                        <div class="personal-feed__item-like">
+                            <svg class="personal-feed__item-like-icon"></svg>
+                            <span class="personal-feed__item-like-couner">92</span>
+                        </div>
+                        <div class="personal-feed__item-comment">
+                            <svg class="personal-feed__item-comment-icon"></svg>
+                            <span class="personal-feed__item-comment-couner">8</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="personal-feed__item __marked">
+                <img src="" class="personal-feed__item-image" alt="Personal feed item image">
+                <div class="pulse-and-goodness">
+                    Пульс × Добро
+                    <img src="" class="pulse-and-goodness__icon" alt="Heart">
+                </div>
+                <div class="personal-feed__item-title">14 добрых комиксов, согревших душу</div>
+                <div class="personal-feed__item-footer">
+                    <div class="personal-feed__item-company">носик пёсика</div>
+                    <div class="personal-feed__item-wrapper">
+                        <div class="personal-feed__item-like">
+                            <svg class="personal-feed__item-like-icon"></svg>
+                            <span class="personal-feed__item-like-couner">320</span>
+                        </div>
+                        <div class="personal-feed__item-comment">
+                            <svg class="personal-feed__item-comment-icon"></svg>
+                            <span class="personal-feed__item-comment-couner">37</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="personal-feed__item">
+                <img src="" class="personal-feed__item-image" alt="Personal feed item image">
+                <div class="personal-feed__item-title">Новостройки в Москве от 8.1 млн руб!</div>
+                <p class="personal-feed__item-desc">Квартиры в шаговой доступности от метро.
+                    Подбор квартир в Москве на сайте
+                </p>
+                <div class="personal-feed__item-footer">
+                    <div class="personal-feed__item-company">Реклама</div>
+                </div>
+            </div>
+            <div class="personal-feed__item __marked">
+                <img src="" class="personal-feed__item-image" alt="Personal feed item image">
+                <div class="personal-feed__item-title">Как бороться с падением уровня
+                    тестостерона</div>
+                <div class="promo">Промо</div>
+                <div class="personal-feed__item-footer">
+                    <div class="personal-feed__item-company">эвалар</div>
+                    <div class="personal-feed__item-wrapper">
+                        <div class="personal-feed__item-like">
+                            <svg class="personal-feed__item-like-icon"></svg>
+                            <span class="personal-feed__item-like-couner">139</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="personal-feed__item">
+                <img src="" class="personal-feed__item-image" alt="Personal feed item image">
+                <div class="personal-feed__item-title">В Китае опубликовали статью о том,
+                    почему США никак не решится бросить открытый вызов России
+                </div>
+                <div class="personal-feed__item-footer">
+                    <div class="personal-feed__item-company">военная хроника</div>
+                    <div class="personal-feed__item-wrapper">
+                        <div class="personal-feed__item-like">
+                            <svg class="personal-feed__item-like-icon"></svg>
+                            <span class="personal-feed__item-like-couner">115</span>
+                        </div>
+                        <div class="personal-feed__item-comment">
+                            <svg class="personal-feed__item-comment-icon"></svg>
+                            <span class="personal-feed__item-comment-couner">78</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="personal-feed__item">
+                <img src="" class="personal-feed__item-image" alt="Personal feed item image">
+                <div class="personal-feed__item-title">У Windows 11 проблемы с популярностью.
+                    Почему никто не обновляестя
+                </div>
+                <p class="personal-feed__item-desc"></p>
+                <div class="personal-feed__item-footer">
+                    <div class="personal-feed__item-company">Дневник itшника</div>
+                    <div class="personal-feed__item-wrapper">
+                        <div class="personal-feed__item-like">
+                            <svg class="personal-feed__item-like-icon"></svg>
+                            <span class="personal-feed__item-like-couner">23</span>
+                        </div>
+                        <div class="personal-feed__item-comment">
+                            <svg class="personal-feed__item-comment-icon"></svg>
+                            <span class="personal-feed__item-comment-couner">89</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="personal-feed__item">
+                <img src="" class="personal-feed__item-image" alt="Personal feed item image">
+                <div class="personal-feed__item-title">Получите бесплатно три части Tomb
+                    Raider в Epic Games Store</div>
+                <p class="personal-feed__item-desc"></p>
+                <div class="personal-feed__item-footer">
+                    <div class="personal-feed__item-company">droidnews.ru</div>
+                    <div class="personal-feed__item-wrapper">
+                        <div class="personal-feed__item-like">
+                            <svg class="personal-feed__item-like-icon"></svg>
+                            <span class="personal-feed__item-like-couner">3</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="personal-feed__item">
+                <img src="" class="personal-feed__item-image" alt="Personal feed item image">
+                <div class="personal-feed__item-title">Топ 3 навыка, которые нужны вам в
+                    условиях жёсткой конкуренции
+                </div>
+                <p class="personal-feed__item-desc"></p>
+                <div class="personal-feed__item-footer">
+                    <div class="personal-feed__item-company">womanel.com</div>
+                    <div class="personal-feed__item-wrapper">
+                        <div class="personal-feed__item-like">
+                            <svg class="personal-feed__item-like-icon"></svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="personal-feed__item">
+                <img src="" class="personal-feed__item-image" alt="Personal feed item image">
+                <div class="personal-feed__item-title">В рязани после ремонта открылась
+                    библиотека № 12
+                </div>
+                <p class="personal-feed__item-desc"></p>
+                <div class="personal-feed__item-footer">
+                    <div class="personal-feed__item-company">национальные проекты.рф</div>
+                    <div class="personal-feed__item-wrapper">
+                        <div class="personal-feed__item-like">
+                            <svg class="personal-feed__item-like-icon"></svg>
+                            <span class="personal-feed__item-like-couner">23</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
