@@ -127,9 +127,20 @@
         text-transform: uppercase;
         font-size: 11px;
         padding-top: 7px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
 
         &:hover {
             text-decoration: underline;
+        }
+    }
+}
+
+@media (max-width: 1189px) {
+    .personal-feed {
+        &__item-like-couner, &__item-comment-counter {
+            display: none;
         }
     }
 }

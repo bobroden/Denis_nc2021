@@ -7,6 +7,8 @@
         display: flex;
         padding: 0;
         margin: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
     &__item {
@@ -39,5 +41,11 @@
             width: 14px;
             height: 14px;
         }
+    }
+}
+
+@media (max-width: 1189px) {
+    .navigation__item {
+        font-size: 10px;
     }
 }
