@@ -9,6 +9,10 @@
     border: 0;
     transition: box-shadow .5s;
 
+    &:hover {
+        box-shadow: 0 4px 20px 0 @color-separator-primary;
+    }
+
     &__header {
         display: flex;
         justify-content: space-between;
@@ -16,12 +20,14 @@
         text-decoration: none;
         color: @color-text-primary;
         padding: 12px 18px 12px 20px;
+        cursor: pointer;
     }
 
     &__icon {
         width: 36px;
         height: 36px;
         border-radius: 12px;
+        cursor: pointer;
     }
 
     &__wrapper {
@@ -64,11 +70,13 @@
         align-items: center;
         color: @color-text-primary;
         text-decoration: none;
+        cursor: pointer;
     }
 
     &__item-icon {
         width: 36px;
         height: 36px;
+        cursor: pointer;
     }
 
     &__item-wrapper {
@@ -115,5 +123,9 @@
         white-space: nowrap;
         outline: 0;
         margin: 0;
+
+        &:hover {
+            background: #e6e8ec;
+        }
     }
 }

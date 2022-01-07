@@ -9,6 +9,10 @@
     border: 0;
     transition: box-shadow .5s;
 
+    &:hover {
+        box-shadow: 0 4px 20px 0 @color-separator-primary;
+    }
+
     &__title {
         padding-top: 12px;
         font-size: 15px;
@@ -16,6 +20,11 @@
         font-weight: 400;
         .main-font;
         color: @color-text-primary;
+        cursor: pointer;
+
+        &:hover {
+            text-decoration: underline;
+        }
     }
 
     &__title-desc {
@@ -26,6 +35,7 @@
         font-weight: 400;
         .main-font;
         color: @color-link-secondary;
+        cursor: pointer;
     }
 
     &__graph-titles {
@@ -44,6 +54,12 @@
         margin-bottom: 0;
         white-space: nowrap;
         color: @color-link-secondary;
+        cursor: pointer;
+
+        &:hover {
+            border-bottom: 2px solid @custom-color-project-dark-bg-active;
+            margin-bottom: -1px;
+        }
     }
 
     ._active {
@@ -57,6 +73,7 @@
 
     &__image {
         margin-top: 3px;
+        cursor: pointer;
     }
 
     &__desc {
@@ -69,5 +86,6 @@
         margin-top: -3px;
         color: @color-text-primary;
         padding-bottom: 12px;
+        cursor: pointer;
     }
 }

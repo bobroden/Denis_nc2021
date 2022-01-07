@@ -9,18 +9,24 @@
     transition: box-shadow .5s;
     padding: 0 20px;
 
+    &:hover {
+        box-shadow: 0 4px 20px 0 @color-separator-primary;
+    }
+
     &__header {
         display: flex;
         justify-content: space-between;
         color: @color-text-primary;
         padding: 11px 0 12px 0;
         border-bottom: 1px solid @color-seperate-line;
+        cursor: pointer;
     }
 
     &__icon {
         border-radius: 12px;
         width: 36px;
         height: 36px;
+        cursor: pointer;
     }
 
     &__wrapper {
@@ -57,6 +63,7 @@
         width: 80px;
         margin-right: 10px;
         color: @color-text-primary;
+        cursor: pointer;
     }
 
     &__item-icon {

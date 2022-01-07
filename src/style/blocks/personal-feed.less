@@ -6,6 +6,7 @@
     flex-wrap: wrap;
     .news-feed-font;
     margin-left: -20px;
+    cursor: pointer;
 
     &__item {
         color: @color-text-primary;
@@ -17,6 +18,14 @@
         transition: box-shadow .5s;
         box-shadow: 0 2px 14px @custom-color-project-dark-bg-active;
         position: relative;
+
+        &:hover {
+            box-shadow: 0 4px 20px 0 @color-separator-primary;
+        }
+
+        &:hover &-close {
+            opacity: 1;
+        }
     }
 
     &__item-image-container {
@@ -66,6 +75,37 @@
         margin-left: 16px;
     }
 
+    &__item-like:hover &__item-like-icon {
+        color: #ff1100;
+    }
+
+    &__item-comment:hover &__item-comment-icon {
+        color: @color-text-primary;
+    }
+
+    &__item-close {
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        width: 16px;
+        height: 16px;
+        font-size: 0;
+        overflow: hidden;
+        transition: opacity .3s ease-in-out;
+        cursor: pointer;
+        opacity: 0;
+        background-color: @color-main-block;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        svg {
+            width: 16px;
+            height: 16px;
+        }
+    }
+
     &__item-footer {
         display: flex;
         justify-content: space-between;
@@ -87,5 +127,9 @@
         text-transform: uppercase;
         font-size: 11px;
         padding-top: 7px;
+
+        &:hover {
+            text-decoration: underline;
+        }
     }
 }

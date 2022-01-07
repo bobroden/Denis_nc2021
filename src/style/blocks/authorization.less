@@ -7,11 +7,16 @@
     border: 0;
     transition: box-shadow .5s;
 
+    &:hover {
+        box-shadow: 0 4px 20px 0 @color-separator-primary;
+    }
+
     &__header {
         background-color: @color-text-accent;
         border-top-left-radius: 8px;
         border-top-right-radius: 8px;
         height: 68px;
+        cursor: pointer;
 
         svg {
             transition: width .5s ease;
@@ -38,6 +43,11 @@
         color: @color-text-link;
         text-decoration: none;
         font-weight: 700;
+        cursor: pointer;
+
+        &:hover {
+            text-decoration: underline;
+        }
     }
 
     &__link {
@@ -45,9 +55,15 @@
         height: 12px;
         fill: @color-text-accent;
         position: relative;
+        cursor: pointer;
 
         &:not(:first-child) {
             margin-left: 20px;
+        }
+
+        svg {
+            width: 16px;
+            height: 16px;
         }
     }
 
@@ -118,6 +134,10 @@
             margin-left: 8px;
             fill: @color-main-block;
         }
+
+        &:hover {
+            background: @color-text-accent-active;
+        }
     }
 
     &__password {
@@ -143,6 +163,11 @@
         font-size: 13px;
         line-height: 20px;
         color: @color-text-primary;
+        cursor: pointer;
+
+        &:hover {
+            text-decoration: none;
+        }
     }
 
     &__buttons {
@@ -181,6 +206,10 @@
     &__create-email-button {
         background-color: @color-seperate-line;
         color: @color-text-accent;
+
+        &:hover {
+            background: #e6e8ec;
+        }
     }
 
     &__login-VK-button {
@@ -193,6 +222,10 @@
             height: 16px;
             margin-right: 8px;
             fill: @color-main-block;
+        }
+
+        &:hover {
+            background: #0073f7;
         }
     }
 }

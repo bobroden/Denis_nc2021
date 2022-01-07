@@ -8,6 +8,10 @@
     border: 0;
     transition: box-shadow .5s;
 
+    &:hover {
+        box-shadow: 0 4px 20px 0 @color-separator-primary;
+    }
+
     &__header {
         display: flex;
         align-items: center;
@@ -26,6 +30,11 @@
         font-weight: 700;
         line-height: 20px;
         .main-font;
+        cursor: pointer;
+
+        &:hover {
+            text-decoration: underline;
+        }
     }
 
     &__more {
@@ -35,6 +44,11 @@
         .main-font;
         color: @color-text-link;
         text-decoration: none;
+        cursor: pointer;
+
+        &:hover {
+            text-decoration: underline;
+        }
     }
 
     &__about {
@@ -48,6 +62,7 @@
             width: 28px;
             height: 28px;
             border: 0;
+            cursor: pointer;
         }
     }
 
@@ -58,12 +73,14 @@
         font-weight: 700;
         margin: 0 12px;
         color: @color-text-primary;
+        cursor: pointer;
     }
 
     &__info {
         line-height: 20px;
         font-weight: 400;
         .main-font;
+        cursor: pointer;
     }
 
     &__desc {
@@ -88,6 +105,10 @@
         border-top: 1px solid @color-seperate-line;
         text-decoration: none;
         color: @color-text-primary;
+    }
+
+    &__detail-item {
+        cursor: pointer;
     }
 
     &__detail-item-header {

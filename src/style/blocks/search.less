@@ -5,10 +5,14 @@
     padding: 0;
     border-radius: 8px;
     background: @color-main-block;
-    transition: box-shadow .2s;
+    transition: background .2s linear;
     border: 1px solid @color-search-theme;
     box-shadow: inset 0 0 0 10px @color-search-theme;
     height: 38px;
+
+    &:hover {
+        background: #f69902;
+    }
     
     &__button {
         position: absolute;
@@ -31,6 +35,10 @@
         cursor: pointer;
         border-top-left-radius: 0;
         border-bottom-left-radius: 0;
+
+        &:hover {
+            background: #f69902;
+        }
     }
 
     &__input-container {
@@ -43,7 +51,6 @@
         padding-right: 48px;
         padding-left: 40px;
         background: @color-main-block;
-        transition: transform .2s linear;
         border-radius: 6px;
         border-top-right-radius: 0;
         border-bottom-right-radius: 0;
@@ -53,7 +60,6 @@
         display: block;
         overflow: hidden;
         padding-right: 48px;
-        padding-left: 40px;
         width: calc(100% - 107px);
         height: 38px;
         border: 0;
@@ -82,6 +88,10 @@
         right: 101px;
         cursor: pointer;
         color: @color-desc;
+
+        &:hover span {
+            text-decoration: underline;
+        }
     }
 
     &__sample-link {
