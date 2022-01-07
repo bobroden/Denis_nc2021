@@ -1,0 +1,47 @@
+@import "../variables";
+
+.horoscope {
+    overflow: hidden;
+    height: 58px;
+    padding: 12px 20px;
+    background: @color-main-block;
+    box-shadow: 0 4px 12px @color-separator-primary;
+    border-radius: 8px;
+    margin-top: 8px;
+    display: flex;
+
+    &__icon {
+        margin: 2px;
+        display: flex;
+        flex-shrink: 0;
+        justify-content: center;
+        align-items: center;
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        background: @color-horoscope-bg;
+
+        svg {
+            width: 16px;
+            height: 16px;
+        }
+    }
+
+    &__wrapper {
+        margin-left: 12px;
+    }
+
+    &__title {
+        color: @color-main-titles;
+    }
+
+    &__desc {
+        visibility: visible;
+        font-size: 13px;
+        line-height: 20px;
+        font-weight: 400;
+        .main-font;
+        color: @color-desc;
+        height: 40px;
+    }
+}

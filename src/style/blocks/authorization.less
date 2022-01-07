@@ -1,0 +1,198 @@
+@import "../variables";
+
+.authorization {
+    background: @color-main-block;
+    box-shadow: 0 4px 12px @color-separator-primary;
+    border-radius: 8px;
+    border: 0;
+    transition: box-shadow .5s;
+
+    &__header {
+        background-color: @color-text-accent;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        height: 68px;
+
+        svg {
+            transition: width .5s ease;
+            border-top-left-radius: 2px;
+            border-bottom-right-radius: 2px;
+            width: 186px;
+            height: 32px;
+            margin-top: 6%;
+            margin-left: 19%;
+        }
+    }
+
+    &__links-list-wrapper {
+        display: flex;
+    }
+
+    &__links-list {
+        display: flex;
+        justify-content: space-between;
+        padding: 12px 19px 8px;
+    }
+
+    &__link-text {
+        color: @color-text-link;
+        text-decoration: none;
+        font-weight: 700;
+    }
+
+    &__link {
+        width: 16px;
+        height: 12px;
+        fill: @color-text-accent;
+        position: relative;
+
+        &:not(:first-child) {
+            margin-left: 20px;
+        }
+    }
+
+    &__day {
+        position: absolute;
+        left: -2px;
+        right: 0;
+        text-align: center;
+        top: 2px;
+        color: @color-main-block;
+        font-size: 8px;
+        font-family: monospace;
+        line-height: 16px;
+    }
+
+    &__email {
+        padding: 0 19px;
+        margin-bottom: 8px;
+        display: flex;
+    }
+
+    &__email-name {
+        margin: 0;
+        padding: 0 12px;
+        height: 30px;
+        width: 52%;
+        outline: 0;
+        border: 1px solid @color-separator-primary;
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+        font-size: 15px;
+        line-height: 20px; 
+    }
+
+    &__email-tail {
+        width: 38%;
+        height: 32px;
+        outline: 0;
+        border: 1px solid @color-separator-primary;
+        border-left: none;
+        border-radius: 4px;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        background: @color-main-block;
+        line-height: 32px;
+        padding-left: 3px;
+    }
+
+    &__password-button {
+        display: flex;
+        align-items: center;
+        border: 1px solid @color-button-border;
+        background: @color-text-accent;
+        box-shadow: 0 2px 0 0 @custom-color-project-dark-bg-hover;
+        color: @color-main-block;
+        padding: 0 15px;
+        height: 32px;
+        border-radius: 4px;
+        margin: 0 0 8px 19px;
+        font-size: 15px;
+        line-height: 20px;
+        outline: 0;
+        cursor: pointer;
+
+        svg {
+            width: 16px;
+            height: 16px;
+            margin-left: 8px;
+            fill: @color-main-block;
+        }
+    }
+
+    &__password {
+        padding: 0 19px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 8px;
+    }
+
+    &__password-wrapper {
+        margin-top: -1px;
+    }
+
+    &__password-label {
+        font-size: 13px;
+        line-height: 20px;
+        color: @color-text-primary;
+    }
+
+    &__password-question {
+        white-space: nowrap;
+        text-decoration: underline;
+        font-size: 13px;
+        line-height: 20px;
+        color: @color-text-primary;
+    }
+
+    &__buttons {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0 20px 16px;
+        text-align: center;
+
+        &::before {
+            content: "";
+            margin-bottom: 12px;
+            border-top: 1px solid @color-seperate-line;
+        }
+
+        button {
+            font-size: 13px;
+            line-height: 20px;
+            font-weight: 400;
+            .main-font;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: auto;
+            height: 32px;
+            padding: 6px 16px;
+            border-radius: 8px;
+            border: 0;
+            text-decoration: none;
+            cursor: pointer;
+            white-space: nowrap;
+            outline: 0;
+        }
+    }
+
+    &__create-email-button {
+        background-color: @color-seperate-line;
+        color: @color-text-accent;
+    }
+
+    &__login-VK-button {
+        margin-top: 8px;
+        background: @color-vk-partner;
+        color: @color-main-block;
+
+        svg {
+            width: 16px;
+            height: 16px;
+            margin-right: 8px;
+            fill: @color-main-block;
+        }
+    }
+}

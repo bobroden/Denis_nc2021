@@ -1,0 +1,33 @@
+@import "../variables";
+
+.main-news {
+    display: flex;
+    max-height: 48px;
+    overflow: hidden;
+    padding: 4px 0 4px 0;
+
+    &__icon {
+        height: 48px;
+        width: 64px;
+        border-radius: 4px;
+    }
+
+    &__wrapper {
+        font-size: 15px;
+        line-height: 20px;
+        font-weight: 400;
+        .main-font;
+        align-self: center;
+        margin-left: 12px;
+        white-space: nowrap;
+        max-height: 48px;
+    }
+
+    &__title {
+        color: @color-text-link;
+    }
+
+    &__desc {
+        color: @color-text-primary;
+    }
+}

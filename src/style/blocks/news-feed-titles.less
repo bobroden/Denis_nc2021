@@ -1,0 +1,37 @@
+@import "../variables";
+
+.news-feed-titles {
+    padding-top: 18px;
+    .news-feed-font;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 400;
+    display: flex;
+    border-bottom: 1px solid @color-separator-primary;
+
+    &__name {
+        margin-right: 40px;
+    }
+
+    &__pulse {
+        color: @color-text-accent;
+        text-decoration: none;
+        font-weight: 700;
+    }
+
+    &__item {
+        padding-bottom: 8px;
+        font-weight: 400;
+        margin-right: 20px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    ._active {
+        font-weight: 700;
+        border-bottom: 2px solid @color-text-accent;
+        color: @color-text-accent;
+    }
+}

@@ -1,0 +1,89 @@
+@import "../variables";
+
+.job {
+    background: @color-main-block;
+    box-shadow: 0 4px 12px @color-separator-primary;
+    border-radius: 8px;
+    margin-top: 8px;
+    border: 0;
+    transition: box-shadow .5s;
+    padding: 0 20px;
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        color: @color-text-primary;
+        padding: 11px 0 12px 0;
+        border-bottom: 1px solid @color-seperate-line;
+    }
+
+    &__icon {
+        border-radius: 12px;
+        width: 36px;
+        height: 36px;
+    }
+
+    &__wrapper {
+        overflow: hidden;
+        flex-grow: 1;
+        margin-left: 16px;
+        height: 40px;
+        line-height: 20px;
+        font-weight: 400;
+        .main-font;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    &__title {
+        text-transform: capitalize;
+        font-size: 15px;
+    }
+
+    &__title-desc {
+        font-size: 13px;
+        color: @color-link-secondary;
+    }
+
+    &__list {
+        padding: 12px 0 16px;
+        display: flex;
+        overflow: hidden;
+    }
+
+    &__item {
+        height: 140px;
+        width: 80px;
+        margin-right: 10px;
+        color: @color-text-primary;
+    }
+
+    &__item-icon {
+        width: 80px;
+        height: 80px;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    &__item-title {
+        font-size: 13px;
+        line-height: 18px;
+        .main-font;
+        font-weight: 400;
+        width: 80px;
+        max-height: 36px;
+        margin-bottom: 2px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        color: @color-text-primary;
+    }
+
+    &__item-desc {
+        font-size: 12px;
+        line-height: 16px;
+        .main-font;
+        font-weight: 400;
+        color: @color-text-secondary;
+    }
+}

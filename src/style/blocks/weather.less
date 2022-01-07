@@ -1,0 +1,120 @@
+.weather {
+    width: 100%;
+    min-height: 85px;
+    background: @color-main-block;
+    box-shadow: 0 4px 12px @color-separator-primary;
+    border-radius: 8px;
+    margin-top: 8px;
+    border: 0;
+    transition: box-shadow .5s;
+
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 12px 20px 0;
+    }
+
+    &__city {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        display: block;
+        margin-bottom: 0;
+        color: @color-text-primary;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 20px;
+        .main-font;
+    }
+
+    &__more {
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 20px;
+        .main-font;
+        color: @color-text-link;
+        text-decoration: none;
+    }
+
+    &__about {
+        padding: 0 8px 4px 20px;
+        display: flex;
+        align-items: center;
+        color: @color-text-primary;
+        text-decoration: none;
+
+        svg {
+            width: 28px;
+            height: 28px;
+            border: 0;
+        }
+    }
+
+    &__temp {
+        font-size: 24px;
+        line-height: 32px;
+        .main-font;
+        font-weight: 700;
+        margin: 0 12px;
+        color: @color-text-primary;
+    }
+
+    &__info {
+        line-height: 20px;
+        font-weight: 400;
+        .main-font;
+    }
+
+    &__desc {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        margin-right: 8px;
+        font-size: 15px;
+    }
+
+    &__humidity {
+        white-space: nowrap;
+        font-size: 13px;
+        color: @color-link-secondary;
+    }
+
+    &__detail {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 20px;
+        padding: 8px 0 7px;
+        border-top: 1px solid @color-seperate-line;
+        text-decoration: none;
+        color: @color-text-primary;
+    }
+
+    &__detail-item-header {
+        text-transform: capitalize;
+        font-size: 13px;
+        color: @color-link-secondary;
+        line-height: 20px;
+        font-weight: 400;
+        .main-font;
+    }
+
+    &__detail-item-wrapper {
+        
+        svg {
+            width: 24px;
+            height: 24px;
+        }
+    }
+
+    &__deatil-item-temp {
+        display: inline-block;
+        font-size: 15px;
+        line-height: 20px;
+        font-weight: 700;
+        .main-font;
+        vertical-align: top;
+        margin-left: 2px;
+        margin-top: 2px;
+    }
+}
