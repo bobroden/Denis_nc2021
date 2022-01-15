@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/site-icon.png">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="index.css">
+    <title>Яндекс</title>
+</head>
+<body>
+    <div class="desk-notif">
+        <div class="desk-notif__card">
+            <div class="about-user">
+                <div class="about-user__email-block">
+                    <span class="about-user__email-name"><span class="_first-letter">b</span>obrow.bobro2015@yandex.ru</span>
+                    <img src="./img/avatar.png" class="about-user__email-avatar" alt="avatar">
+                </div>
+                <div class="about-user__counter-block">
+                    <span class="about-user__counter-name">Почта</span>
+                    <span class="about-user__counter-count">13037</span>
+                </div>
+                <div class="about-user__disk">Диск</div>
+            </div>
+        </div>
+        <div class="desk-notif__card">
+            <div class="new-year">
+                <p class="new-year__desc">Новогодние <br> чудеса с Алисой</p>
+            </div>
+        </div>
+        <div class="desk-notif__card">
+            <div class="plus">
+                <svg class="plus__icon">
+                    <use xlink:href="#plus"></use>
+                </svg>
+                <span class="plus__desc">Попробовать Плюс</span>
+            </div>
+        </div>
+        <div class="desk-notif__card">
+            <div class="covid-statistics">
+                <div class="covid-statistics__location">Москва</div>
+                <div class="covid-statistics__counter">
+                    <span><span class="covid-statistics__count">+3322</span> выявлено</span>
+                    <svg>
+                        <use xlink:href="#covid"></use>
+                    </svg>
+                </div>
+                <div class="covid-statistics__about">
+                    <svg>
+                        <use xlink:href="#info"></use>
+                    </svg>
+                    О вакцинации
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="header__content-wrapper">
+            <div class="geolocation">
+                <svg class="geolocation__icon">
+                    <use xlink:href="#geolink"></use>
+                </svg>
+                <span class="geolocation__city">Москва</span>
+            </div>
+            <div class="date">
+                17 декабря, пятница <span class="date__time">02:55</span>
+            </div>
+            <div class="default">
+                Сделать стартовой
+            </div>
+        </div>
+        <div class="header__content-wrapper">
+            <div class="icons">
+                <svg class="icons__market-cart">
+                    <use xlink:href="#market-cart" x="4" y="8"></use>
+                </svg>
+                <svg class="icons__notifier">
+                    <use xlink:href="#notifier"></use>
+                </svg>
+            </div>
+        </div>
+    </header>
+
+    <nav class="yandex-services-navigation">
+        <ul class="yandex-services-navigation__items-list">
+            <li class="yandex-services-navigation__item _first">
+                <svg>
+                    <use xlink:href="#services"></use>
+                </svg>
+                <div>Маркет</div>
+            </li>
+            <li class="yandex-services-navigation__item">
+                <svg>
+                    <use xlink:href="#video"></use>
+                </svg>
+                <div>Видео</div>
+            </li>
+            <li class="yandex-services-navigation__item">
+                <svg>
+                    <use xlink:href="#images"></use>
+                </svg>
+                <div>Картинки</div>
+            </li>
+            <li class="yandex-services-navigation__item">
+                <svg>
+                    <use xlink:href="#news"></use>
+                </svg>
+                <div>Новости</div>
+            </li>
+            <li class="yandex-services-navigation__item">
+                <svg>
+                    <use xlink:href="#autoru"></use>
+                </svg>
+                <div>Карты</div>
+            </li>
+            <li class="yandex-services-navigation__item">
+                <svg>
+                    <use xlink:href="#translate"></use>
+                </svg>
+                <div>Переводчик</div>
+            </li>
+            <li class="yandex-services-navigation__item">
+                <svg>
+                    <use xlink:href="#music"></use>
+                </svg>
+                <div>Музыка</div>
+            </li>
+            <li class="yandex-services-navigation__item">
+                <svg>
+                    <use xlink:href="#tv"></use>
+                </svg>
+                <div>Программа</div>
+            </li>
+            <li class="yandex-services-navigation__item">
+                <svg>
+                    <use xlink:href="#autoru"></use>
+                </svg>
+                <div>Авто.ру</div>
+            </li>
+            <li class="yandex-services-navigation__item _last">
+                <div class="yandex-services-navigation__container">
+                    <svg viewBox="0 0 44 44">
+                        <use xlink:href="#mail"></use>
+                    </svg>
+                    <svg viewBox="0 0 44 44">
+                        <use xlink:href="#tv"></use>
+                    </svg>
+                    <svg viewBox="0 0 44 44">
+                        <use xlink:href="#services"></use>
+                    </svg>
+                    <svg viewBox="0 0 44 44">
+                        <use xlink:href="#realty"></use>
+                    </svg>
+                </div>
+                <div>ещё</div>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="search">
+        <div class="search__logo">
+            Яндекс
+        </div>
+        <div class="input">
+            <div class="input__container">
+            <input class="input__bar" type="text" placeholder="Найдётся всё">
+                <svg class="input__micro">
+                    <use xlink:href="#micro"></use>
+                </svg>
+                <svg class="input__keyboard">
+                    <use xlink:href="#keyboard"></use>
+                </svg>
+            </div>
+        </div>
+        <button class="search__button">Найти</button>
+    </div>
+
+    <div class="download-yandex-browser">
+        <img src="./img/yandex.png" class="download-yandex-browser__icon" alt="Yandex browser">
+        <span class="download-yandex-browser__desc">Скачайте Яндекс.Браузер</span>
+    </div>
+
+    <div class="advertisement">
+        <img src="./img/advertisement.jpg" class="advertisement__photo" alt="advertisement">
+    </div>
+
+    <main class="main">
+        <div class="main__blog-wrapper">
+            <div class="news">
+                <div class="news-titles">
+                    <svg class="news-titles__icon" viewBox="0 0 50 50">
+                        <use xlink:href="#news"></use>
+                    </svg>
+                    <a class="news-titles__item _first">Сейчас в СМИ</a>
+                    <a class="news-titles__item">в Москве</a>
+                    <a class="news-titles__item">Интересное</a>
+                    <a class="news-titles__item _last">Коронавирус</a>
+                </div>
+                <div class="news__item">
+                    <img src="./img/news-1.webp" alt="logo">
+                    <span>Госдума приняла в 1 чтении законопроект о введении QR-кодов в общественных местах</span>
+                </div>
+                <div class="news__item">
+                    <img src="./img/news-2.webp" alt="logo">
+                    <span>Bloomberg: новые санкции ЕС и США против России могут повлиять на оборонные компании</span>
+                </div>
+                <div class="news__item">
+                    <img src="./img/news-3.webp" alt="logo">
+                    <span>Сокуров извинился перед членами СПЧ за свой спор с Путиным</span>
+                </div>
+                <div class="news__item">
+                    <img src="./img/news-1.webp" alt="logo">
+                    <span>НАТО заявило о готовности к диалогу с Россией при условии деэскалации с Украиной</span>
+                </div>
+                <div class="news__item">
+                    <img src="./img/news-2.webp" alt="logo">
+                    <span>РВСН планирует выпустить около 10 континентальных ракет</span>
+                </div>
+            </div>
+            <div class="blog">
+                <div class="blog__header">
+                    <div class="blog__header-wrapper">
+                        <div class="blog__icon"></div>
+                        <div class="blog__author-block">
+                            <div class="blog__author-chanel">
+                                <span class="blog__author-name">Кулинарный MIX • </span>
+                                <span class="blog__subscribe">Подписаться</span>
+                            </div>
+                            <div class="blog__author-subscribers">22 тыс. подписчиков</div>
+                        </div>
+                    </div>
+                    <div class="blog__header-wrapper">
+                        <svg class="blog__menu">
+                            <use xlink:href="#control-menu"></use>
+                        </svg>
+                    </div>
+                </div>
+                <iframe class="blog__video" src="https://www.youtube.com/embed/RYQUbRtbE3A?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="blog__about">
+                    <div class="blog__desc">
+                        Ну до чего же вкусный салат с шампиньонами и маринованными огурчиками,
+                        обязательно буду готовить его на Новогодний стол
+                    </div>
+                    <div class="blog__about-video">3 дня назад • 38 516 просмотров</div>
+                    <div class="blog__footer">
+                        <div class="video-buttons">
+                            <div class="video-buttons__like">
+                                <img src="./img/like.png" class="video-buttons__like-icon" alt="like">
+                                <span class="video-buttons__like-count">315</span>
+                            </div>
+                            <div class="video-buttons__dislike">
+                                <img src="./img/dislike.png" class="video-buttons__dislike-icon" alt="dislike">
+                            </div>
+                            <div class="video-buttons__comment">
+                                <img src="./img/comment.png" class="video-buttons__comment-icon" alt="comment">
+                                <span class="video-buttons__comment-count">3</span>
+                            </div>
+                        </div>
+                        <div class="share-button">
+                            <img src="./img/share.png" class="share-button__icon" alt="share">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main__aside-wrapper">
+            <div class="main__info-block">
+                <div class="weather">
+                    <div class="weather__titles">
+                        <span class="weather__titles-item _first">Погода</span>
+                        <span class="weather__titles-item">Карта осадков</span>
+                    </div>
+                    <div class="weather__wrapper">
+                        <svg class="weather__icon" width="48" height="48" viewBox="0 0 36 36">
+                            <use xlink:href="#weather"></use>
+                        </svg>
+                        <div class="weather__temperature">−11°</div>
+                        <div class="weather__details">утром −12° <br> днём -7°</div>
+                    </div>
+                </div>
+                <div class="traffic-jams">
+                    <div class="traffic-jams__titles">
+                        <span class="traffic-jams__titles-item _first">Пробки</span>
+                        <span class="traffic-jams__titles-item">Метро</span>
+                        <span class="traffic-jams__titles-item">Расписания</span>
+                    </div>
+                    <div class="traffic-jams__wrapper">
+                        <svg class="traffic-jams__icon">
+                            <use xlink:href="#traffic"></use>
+                        </svg>
+                        <div class="traffic-jams__mark">1</div>
+                        <div class="traffic-jams__desc">До 7 ч. дороги <br> свободны</div>
+                    </div>
+                </div>
+            </div>
+            <div class="quotes">
+                <div class="quotes__title">Котировки</div>
+                <div class="quotes__wrapper">
+                    <div class="quotes__item">
+                        <div class="quotes__main-info">
+                            <div class="quotes__name">USD ЦБ</div>
+                            <div class="quotes__date">25 декабря</div>
+                        </div>
+                        <img src="./img/graf-1.png" class="quotes__graf" alt="graf">
+                        <div class="quotes__price">
+                            <div class="quotes__present-price">73,19 ₽</div>
+                        </div>
+                    </div>
+                    <div class="quotes__item">
+                        <div class="quotes__main-info">
+                            <div class="quotes__name">EUR ЦБ</div>
+                            <div class="quotes__date">25 декабря</div>
+                        </div>
+                        <img src="./img/graf-2.png" class="quotes__graf" alt="graf">
+                        <div class="quotes__price">
+                            <div class="quotes__present-price">82,93 ₽</div>
+                        </div>
+                    </div>
+                    <div class="quotes__item">
+                        <div class="quotes__main-info">
+                            <div class="quotes__name">USD MOEX</div>
+                            <div class="quotes__date">24 декабря</div>
+                        </div>
+                        <img src="./img/graf-3.png" class="quotes__graf" alt="graf">
+                        <div class="quotes__price">
+                            <div class="quotes__present-price">73,65 ₽</div>
+                            <div class="quotes__difference-price">+0,33</div>
+                        </div>
+                    </div>
+                    <div class="quotes__item">
+                        <div class="quotes__main-info">
+                            <div class="quotes__name">EUR MOEX</div>
+                            <div class="quotes__date">24 декабря</div>
+                        </div>
+                        <img src="./img/graf-4.png" class="quotes__graf" alt="graf">
+                        <div class="quotes__price">
+                            <div class="quotes__present-price">83,27 ₽</div>
+                            <div class="quotes__difference-price">+0,17</div>
+                        </div>
+                    </div>
+                    <div class="quotes__item">
+                        <div class="quotes__main-info">
+                            <div class="quotes__name">Нефть</div>
+                            <div class="quotes__date">24 декабря</div>
+                        </div>
+                        <img src="./img/graf-5.png" class="quotes__graf" alt="graf">
+                        <div class="quotes__price">
+                            <div class="quotes__present-price">75,75 $</div>
+                            <div class="quotes__difference-price">-1.55%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="aside">
+        <img src="./img/aside.png" class="aside__image" alt="aside image">
+        <div class="aside__title">Стендап <br> Дмитрия Романова</div>
+        <div class="aside__desc">Билеты на Яндекс.Афише <span class="aside__age">16+</span></div>
+    </div>
+    <div class="svg-store">
+        <!-- inject:svg --><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><clipPath id="a"><circle cx="22" cy="22" r="17"/></clipPath><clipPath id="a"><circle cx="22" cy="22" r="17"/></clipPath><linearGradient id="b" x1="39" y1="39" x2="6.84" y2="3.34" gradientUnits="userSpaceOnUse"><stop stop-color="#FC0"/><stop offset="1" stop-color="#FFE26D"/></linearGradient><linearGradient id="c" x1="15.06" y1="25.4" x2="15.06" y2="39" gradientUnits="userSpaceOnUse"><stop stop-color="#655517"/><stop offset="1" stop-color="#010101"/></linearGradient><linearGradient id="d" x1="28.33" y1="7.13" x2="27.25" y2="31.87" gradientUnits="userSpaceOnUse"><stop stop-opacity=".4"/><stop offset="1"/></linearGradient><clipPath id="a"><circle cx="22" cy="22" r="17"/></clipPath><linearGradient id="b" x1="36.52" y1="1.81" x2="20.29" y2="22.31" gradientUnits="userSpaceOnUse"><stop stop-color="#FEBE7D"/><stop offset="1" stop-color="#FC4714"/></linearGradient><clipPath id="a"><circle cx="22" cy="22" r="17"/></clipPath><linearGradient id="a" x1="22" y1="4" x2="22" y2="39" gradientUnits="userSpaceOnUse"><stop stop-color="#FF6122"/><stop offset="1" stop-color="#F22411"/></linearGradient><clipPath id="a"><circle cx="22" cy="22" r="17"/></clipPath><linearGradient id="b" x1="18.1" y1="5" x2="18.1" y2="39" gradientUnits="userSpaceOnUse"><stop stop-color="#DBDEEF"/><stop offset="1" stop-color="#FEFEFF"/></linearGradient><clipPath id="a"><circle cx="22" cy="22" r="17"/></clipPath><radialGradient id="paint0_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(15.99999 -15.99999 24.2158 24.2158 4 20)"><stop offset=".076" stop-color="#48CCE0" id="stop10"/><stop offset=".308" stop-color="#428BEB" id="stop12"/><stop offset=".648" stop-color="#505ADD" id="stop14"/></radialGradient><radialGradient id="paint1_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(-15.8049 0 0 -44.8359 20 4)"><stop offset=".029" stop-color="#FCAB14" id="stop17"/><stop offset=".192" stop-color="#FA6641" id="stop19"/><stop offset=".402" stop-color="#BE40C0" id="stop21"/><stop offset="1" stop-color="#505ADD" stop-opacity="0" id="stop23"/></radialGradient><radialGradient id="paint2_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(15.99999 -15.99999 24.2158 24.2158 4 20)"><stop offset=".076" stop-color="#48CCE0" id="stop26"/><stop offset=".308" stop-color="#428BEB" id="stop28"/><stop offset=".648" stop-color="#505ADD" id="stop30"/></radialGradient><radialGradient id="paint3_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(-15.8049 0 0 -44.8359 20 4)"><stop offset=".029" stop-color="#FCAB14" id="stop33"/><stop offset=".192" stop-color="#FA6641" id="stop35"/><stop offset=".402" stop-color="#BE40C0" id="stop37"/><stop offset="1" stop-color="#505ADD" stop-opacity="0" id="stop39"/></radialGradient><linearGradient id="b" x1="21.62" y1="31.89" x2="13.44" y2="32.43" gradientUnits="userSpaceOnUse"><stop stop-color="#EBA704"/><stop offset="1" stop-color="#EBA704" stop-opacity="0"/></linearGradient><clipPath id="a"><circle cx="22" cy="22" r="17"/></clipPath><filter id="d" x="-9.87" y="5.55" width="40.72" height="16.85" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur stdDeviation="1" result="effect1_foregroundBlur_1555_97684"/></filter><filter id="e" x="12.47" y="8.36" width="15.91" height="12.41" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur stdDeviation="1" result="effect1_foregroundBlur_1555_97684"/></filter><filter id="f" x="3.48" y="10.41" width="15.89" height="12.31" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur stdDeviation="1" result="effect1_foregroundBlur_1555_97684"/></filter><filter id="g" x="-5.59" y="12.13" width="16.04" height="12.87" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur stdDeviation="1" result="effect1_foregroundBlur_1555_97684"/></filter><filter id="h" x="12.42" y="-.32" width="12.52" height="16.11" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur stdDeviation="1" result="effect1_foregroundBlur_1555_97684"/></filter><filter id="i" x="3.04" y="1.5" width="12.72" height="16.16" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur stdDeviation="1" result="effect1_foregroundBlur_1555_97684"/></filter><filter id="j" x="-3.83" y="5.77" width="11.48" height="14.36" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/><feMorphology radius="1.59" operator="dilate" in="SourceAlpha" result="effect1_dropShadow_1555_97684"/><feOffset/><feGaussianBlur stdDeviation="1.05"/><feComposite in2="hardAlpha" operator="out"/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0.576471 0 0 0 0 0.356863 0 0 0 1 0"/><feBlend in2="BackgroundImageFix" result="effect1_dropShadow_1555_97684"/><feBlend in="SourceGraphic" in2="effect1_dropShadow_1555_97684" result="shape"/></filter><radialGradient id="b" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0 11 -11 0 32 39)"><stop offset=".6" stop-color="#F04E25"/><stop offset=".78" stop-color="#F04E25" stop-opacity=".7"/><stop offset="1" stop-color="#F04E25" stop-opacity="0"/></radialGradient><radialGradient id="k" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="rotate(90 0 31.5) scale(4.5)"><stop offset=".42" stop-color="#FBF3E9"/><stop offset=".65" stop-color="#FBF3E9" stop-opacity=".7"/><stop offset=".97" stop-color="#FBF3E9" stop-opacity="0"/></radialGradient><linearGradient id="c" x1="21.59" y1="4.47" x2="22.15" y2="35.15" gradientUnits="userSpaceOnUse"><stop stop-color="#3E3F3A"/><stop offset="1"/></linearGradient><clipPath id="a"><circle cx="22" cy="22" r="17"/></clipPath><linearGradient id="b" x1="49.36" y1="1.11" x2="13.14" y2="32.31" gradientUnits="userSpaceOnUse"><stop stop-color="#fff"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient><clipPath id="a"><circle cx="22" cy="22" r="17"/></clipPath><linearGradient id="b" x1="39" y1="5" x2="6.84" y2="40.66" gradientUnits="userSpaceOnUse"><stop stop-color="#FFE26D"/><stop offset="1" stop-color="#FC0"/></linearGradient><clipPath id="a"><circle cx="22" cy="22" r="17"/></clipPath><radialGradient cx="88.2%" cy="11.31%" fx="88.2%" fy="11.31%" r="51.28%" gradientTransform="matrix(0 -.975 1 0 .77 .97)" id="a"><stop stop-color="#9699C7" offset="0%"/><stop stop-color="#9499C9" stop-opacity="0" offset="100%"/></radialGradient><radialGradient cx="8.17%" cy="-6.53%" fx="8.17%" fy="-6.53%" r="65.22%" gradientTransform="matrix(0 -.975 1 0 .15 .01)" id="b"><stop stop-color="#9699C7" offset="0%"/><stop stop-color="#9499C9" stop-opacity="0" offset="100%"/></radialGradient><linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="c"><stop stop-color="#A4C5F4" offset="0%"/><stop stop-color="#A7C7F2" offset="100%"/></linearGradient><radialGradient cx="88.2%" cy="9.46%" fx="88.2%" fy="9.46%" r="49.38%" gradientTransform="matrix(0 -.975 1 0 .79 .95)" id="d"><stop stop-color="#486DA8" offset="0%"/><stop stop-color="#486DA8" stop-opacity="0" offset="100%"/></radialGradient><radialGradient cx="14.44%" cy="0%" fx="14.44%" fy="0%" r="51.28%" gradientTransform="matrix(0 -.975 1 0 .14 .14)" id="e"><stop stop-color="#486DA8" offset="0%"/><stop stop-color="#486DA8" stop-opacity="0" offset="100%"/></radialGradient><linearGradient x1="50%" y1="0%" x2="50%" y2="122.37%" id="f"><stop stop-color="#A4C5F4" offset="0%"/><stop stop-color="#A7C7F2" offset="100%"/></linearGradient></defs><symbol id="afisha."><g fill="none"><g clip-path="url(#a)"><path fill="#FFF500" d="M5 5h34v34H5z"/><path fill-rule="evenodd" clip-rule="evenodd" d="m39 21.89-12.53 4.8L25.11 39h-3.95l1.19-10.74-4.32 1.66L15.2 39h-4.12l2.28-7.3L5 34.9v-4.2l9.85-3.77L21.69 5h7.18l-1.91 17.3L39 17.68v4.2zm-19.48 3.25L24.43 9.4l-1.6 14.47-3.31 1.27z" fill="#000"/></g></g></symbol><symbol id="autoru"><g fill="none"><g clip-path="url(#a)"><path fill="#DE3322" d="M5 5h34v34H5z"/><path fill-rule="evenodd" clip-rule="evenodd" d="m28.12 17.74-1.96-1.61a6.05 6.05 0 0 0-3.41-1.21H15.7c-1.14 0-2.6.6-3.37 1.37l-2.2 2.13a5.26 5.26 0 0 0-1.46 3.33v1.96c0 1.37 1.21 2.53 2.69 2.53h1.16a3.26 3.26 0 0 0 6.28 0h6.38a3.26 3.26 0 0 0 6.28 0h1.4a2.54 2.54 0 0 0 2.59-2.53v-1.95A2.8 2.8 0 0 0 33 19.02l-2.72-.35a5.26 5.26 0 0 1-2.17-.93zM15.67 26.7a1.3 1.3 0 0 1-.97-.45 1.37 1.37 0 0 1-.34-.92c0-.64.57-1.26 1.31-1.26.74 0 1.32.62 1.32 1.26 0 .37-.13.68-.34.92-.24.28-.6.45-.98.45zm0-4.58c1.43 0 2.65.93 3.1 2.18h6.47a3.28 3.28 0 0 1 6.18 0h1.45c.4 0 .64-.29.64-.58v-1.95a.85.85 0 0 0-.73-.8l-2.73-.35a6.45 6.45 0 0 1-1.67-.48 6.5 6.5 0 0 1-1.5-.88l-1.96-1.61a3.6 3.6 0 0 0-1.01-.53 3.69 3.69 0 0 0-1.16-.24H15.7a3 3 0 0 0-1.08.25c-.43.18-.76.4-.92.56l-2.22 2.14c-.2.2-.42.53-.6.95-.2.42-.26.78-.26.98v1.96c0 .1.04.23.18.36.14.13.34.22.56.22h1.22a3.28 3.28 0 0 1 3.08-2.18zm12.66 4.58a1.3 1.3 0 0 1-.98-.45c-.2-.24-.33-.55-.33-.92a1.31 1.31 0 0 1 2.62 0c0 .37-.13.68-.33.92-.25.28-.6.45-.98.45z" fill="#fff"/></g></g></symbol><symbol id="close"><g fill="none"><circle cx="12" cy="12" r="11" stroke="#000" stroke-width="2"/><path fill-rule="evenodd" clip-rule="evenodd" d="M10.59 12 6.65 8.06a.5.5 0 0 1 0-.7l.7-.71c.2-.2.52-.2.71 0L12 10.59l3.94-3.94c.2-.2.51-.2.7 0l.71.7c.2.2.2.52 0 .71L13.41 12l3.94 3.94c.2.2.2.51 0 .7l-.7.71a.5.5 0 0 1-.71 0L12 13.41l-3.94 3.94a.5.5 0 0 1-.7 0l-.71-.7a.5.5 0 0 1 0-.71L10.59 12Z" fill="#000"/></g></symbol><symbol id="control-menu"><path d="M8 4.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm0 5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm0 5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" fill="%23000" fill-rule="evenodd"/></symbol><symbol id="covid"><rect x="0" y="0.1%" width="2" height="99.9%" rx="1.5" ry="1.5" fill="#d1352b"/><rect x="3" y="0.0%" width="2" height="100.0%" rx="1.5" ry="1.5" fill="#d1352b"/><rect x="6" y="1.0%" width="2" height="99.0%" rx="1.5" ry="1.5" fill="#e95b3b"/><rect x="9" y="2.2%" width="2" height="97.8%" rx="1.5" ry="1.5" fill="#e95b3b"/><rect x="12" y="5.0%" width="2" height="95.0%" rx="1.5" ry="1.5" fill="#e95b3b"/><rect x="15" y="5.9%" width="2" height="94.1%" rx="1.5" ry="1.5" fill="#e95b3b"/><rect x="18" y="7.4%" width="2" height="92.6%" rx="1.5" ry="1.5" fill="#ee924f"/><rect x="21" y="5.6%" width="2" height="94.4%" rx="1.5" ry="1.5" fill="#e95b3b"/><rect x="24" y="7.2%" width="2" height="92.8%" rx="1.5" ry="1.5" fill="#e95b3b"/><rect x="27" y="8.1%" width="2" height="91.9%" rx="1.5" ry="1.5" fill="#ee924f"/><rect x="30" y="9.1%" width="2" height="90.9%" rx="1.5" ry="1.5" fill="#ee924f"/><rect x="33" y="12.4%" width="2" height="87.6%" rx="1.5" ry="1.5" fill="#ee924f"/><rect x="36" y="12.3%" width="2" height="87.7%" rx="1.5" ry="1.5" fill="#ee924f"/><rect x="39" y="12.0%" width="2" height="88.0%" rx="1.5" ry="1.5" fill="#ee924f"/></symbol><symbol id="geolink" viewBox="0 0 16 16"><path fill="currentColor" d="M13.07 3.58l-4 9.98a.5.5 0 0 1-.95-.06L7 9 2.5 7.88a.5.5 0 0 1-.06-.95l9.98-4a.5.5 0 0 1 .65.65z"/></symbol><symbol id="images"><g fill="none"><g clip-path="url(#a)"><path fill-rule="evenodd" clip-rule="evenodd" d="m20.45 31.5-5.4-5.4L5 36.18V5h34v28.79L28.66 22.7l-8.2 8.8z" fill="url(#b)"/><path fill-rule="evenodd" clip-rule="evenodd" d="M5 35.46V39h23.66l-13.6-13.6L5 35.46z" fill="url(#c)"/><path fill-rule="evenodd" clip-rule="evenodd" d="m12.8 39 15.86-17L39 33.08v6.62H5V39h7.8z" fill="url(#d)"/><path d="M16.33 20.58a4.25 4.25 0 1 0 0-8.5 4.25 4.25 0 0 0 0 8.5z" fill="#FC4714"/></g></g></symbol><symbol id="info"><g fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M1 7a6 6 0 1 1 12 0A6 6 0 0 1 1 7zm5.6 3.5h.8c.33 0 .59-.28.56-.61l-.3-3.55A.38.38 0 0 0 7.3 6h-.58c-.2 0-.36.15-.38.34l-.3 3.55c-.02.33.24.61.57.61zM8 4c0 .58-.44 1-1 1s-1-.42-1-1c0-.57.44-1 1-1s1 .43 1 1z" fill="#21201F" opacity=".4"/></g></symbol><symbol id="keyboard"><g fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M9 9h15a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2V11a2 2 0 0 1 2-2zm-4 2a4 4 0 0 1 4-4h15a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H9a4 4 0 0 1-4-4V11zm5 4a1 1 0 1 0 0 2h1a1 1 0 1 0 0-2h-1zm3 1a1 1 0 0 1 1-1h1a1 1 0 1 1 0 2h-1a1 1 0 0 1-1-1zm5-1a1 1 0 1 0 0 2h1a1 1 0 1 0 0-2h-1zm3 1a1 1 0 0 1 1-1h1a1 1 0 1 1 0 2h-1a1 1 0 0 1-1-1zm1-5a1 1 0 1 0 0 2h1a1 1 0 1 0 0-2h-1zM9 12a1 1 0 0 1 1-1h1a1 1 0 1 1 0 2h-1a1 1 0 0 1-1-1zm5-1a1 1 0 1 0 0 2h1a1 1 0 1 0 0-2h-1zm3 1a1 1 0 0 1 1-1h1a1 1 0 1 1 0 2h-1a1 1 0 0 1-1-1zm-4 7a1 1 0 1 0 0 2h7a1 1 0 1 0 0-2h-7z" fill="#000"/></g></symbol><symbol id="mail"><g fill="none"><g clip-path="url(#a)"><path fill="#FFCA38" d="M5 5h34v34H5z"/><path d="m5 32.63 15.29-12.51a2.58 2.58 0 0 1 3.43 0L39 32.61V39H5v-6.38z" fill="#FFDC7C"/><path d="M39 12.28 23.71 25.9c-.97.87-2.45.87-3.43 0L5 12.35V5h34v7.28z" fill="url(#b)"/></g></g></symbol><symbol id="maps"><g fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M22 4a14 14 0 0 0-9.9 23.9c.66.66 1.55 1.4 2.52 2.2 2.74 2.26 6.07 5 6.33 7.85a1.05 1.05 0 1 0 2.1 0c.26-2.85 3.59-5.6 6.33-7.85.97-.8 1.86-1.54 2.52-2.2A14 14 0 0 0 22 4zm0 19a5 5 0 1 0 0-10 5 5 0 0 0 0 10z" fill="url(#a)"/></g></symbol><symbol id="market-cart"><g fill="none"><path d="M20.68 5.55H6.48l-.46-1.68a2.2 2.2 0 0 0-2.13-1.62H1.43a1.1 1.1 0 1 0 0 2.2H3.9l2.82 10.33a2.2 2.2 0 0 0 2.48 1.6l11.3-1.9a2.2 2.2 0 0 0 1.84-2.16V7.2c0-.91-.74-1.65-1.65-1.65zM5.83 22.05a2.2 2.2 0 1 0 0-4.4 2.2 2.2 0 0 0 0 4.4zm11 0a2.2 2.2 0 1 0 0-4.4 2.2 2.2 0 0 0 0 4.4z" fill="#000"/></g></symbol><symbol id="micro"><g fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M19 9v6a3 3 0 1 1-6 0V9a3 3 0 1 1 6 0zm-8 0a5 5 0 0 1 10 0v6a5 5 0 0 1-10 0V9zm-1.93 6.997a7.002 7.002 0 0 0 13.86 0c.078-.547.518-.997 1.07-.997s1.006.45.945.998A9.004 9.004 0 0 1 17 23.945V26a1 1 0 1 1-2 0v-2.055a9.004 9.004 0 0 1-7.945-7.947C6.995 15.45 7.448 15 8 15c.552 0 .992.45 1.07.997z" fill="#000"/></g></symbol><symbol id="music"><g fill="none"><g clip-path="url(#a)"><path d="M11.88 8.34a17 17 0 0 1 8.59-3.27v5.13a11.9 11.9 0 1 0 13.2 9.48l4.31-3.46v-.03a17 17 0 1 1-26.1-7.85z" fill="#FCCA00"/><path d="m34.73 10.73.02.05-2.88 4.57a11.96 11.96 0 0 0-4.09-3.75V22a5.78 5.78 0 1 1-2.55-4.8V5.3c3.75.73 7.07 2.68 9.5 5.43z" fill="#FC3F1D"/></g></g></symbol><symbol id="news"><g fill="none"><g clip-path="url(#a)"><path fill-rule="evenodd" clip-rule="evenodd" d="M31.2 39H39V5H24.94a9.58 9.58 0 0 1 4.8 3.54c1.47 2.1 1.47 4.96 1.47 10.66V39z" fill="#C2C6E0"/><path fill-rule="evenodd" clip-rule="evenodd" d="M4.3 5v34H32V19.2c0-5.7 0-8.55-1.46-10.66A9.58 9.58 0 0 0 25.74 5H4.28z" fill="url(#b)"/><path d="M4.3 26h18.58c1.17 0 2.12.95 2.12 2.13V39H4.3V26z" fill="#FC4714"/><path d="M23.3 14c.6 0 .9 0 1.12.12.2.1.36.26.46.46.1.2.12.46.12.92v-.2.4-.2c0 .46-.01.72-.12.92-.1.2-.26.36-.46.46-.23.12-.53.12-1.12.12h-19v-3h19zm-9 5c.6 0 .9 0 1.12.12.2.1.37.26.47.46.1.2.11.46.11.92v-.2.4-.2c0 .46 0 .72-.11.92-.1.2-.27.36-.47.46-.22.12-.52.12-1.12.12h-10v-3h10z" fill="#262626"/></g></g></symbol><symbol id="notifier"><path class="notifier__clapper" d="M18 30a3 3 0 0 0 3-3c0-1.657-1.5 0-3-17-1.5 17-3 15.343-3 17a3 3 0 0 0 3 3z"/><path class="notifier__bell" d="M15.687 12.5l.3-.164a1.5 1.5 0 0 0 .75-1.021l.142-.712a.75.75 0 0 1 .736-.603h.77a.75.75 0 0 1 .736.603l.142.712a1.5 1.5 0 0 0 .75 1.02l.3.165a5.586 5.586 0 0 1 3.24 4.47l.54 4.863c.1.906.563 1.733 1.282 2.292l.354.275a1.5 1.5 0 0 1 .534 1.548L26.25 26a1.32 1.32 0 0 1-1.28 1H11.03a1.32 1.32 0 0 1-1.28-1l-.013-.052a1.5 1.5 0 0 1 .534-1.548l.354-.275a3.375 3.375 0 0 0 1.282-2.292l.54-4.864a5.586 5.586 0 0 1 3.24-4.469z"/></symbol><symbol id="plus"><g fill="none"><path d="M12 20a8 8 0 007.983-8.518h-4.498l-1.036 4.942H12.12l1.059-4.942H8.567l.47-2.117h4.589L14.65 4.45A8 8 0 1012 20z" fill="url(#paint0_radial)"/><path d="M12 20a8 8 0 007.983-8.518h-4.498l-1.036 4.942H12.12l1.059-4.942H8.567l.47-2.117h4.589L14.65 4.45A8 8 0 1012 20z" fill="url(#paint1_radial)"/><path d="M16.748 5.561a8.02 8.02 0 012.808 3.804h-3.6l.793-3.804z" fill="url(#paint2_radial)"/><path d="M16.748 5.561a8.02 8.02 0 012.808 3.804h-3.6l.793-3.804z" fill="url(#paint3_radial)"/></g></symbol><symbol id="realty"><g fill="none"><g clip-path="url(#a)"><path fill-rule="evenodd" clip-rule="evenodd" d="M39 5H5v34h6.38V19.17l13.45-7.8L39 19.45V5z" fill="#6F8E9C"/><path fill-rule="evenodd" clip-rule="evenodd" d="M39 5H5v34h6.38V19.17l13.45-7.8L39 19.45V5z" fill="#66767E"/><path fill="#FBFBFB" d="M18.46 24.13h12.75v14.88H18.46z"/><path fill-rule="evenodd" clip-rule="evenodd" d="M25.5 11.28a1 1 0 0 0-1 0l-13 7.37a1 1 0 0 0-.5.87V39h8V25h12v14h8V19.52a1 1 0 0 0-.5-.87l-13-7.37z" fill="#FC0"/><path d="M19 39V25l7 3.1V39h-7z" fill="#EBA704"/><path fill-rule="evenodd" clip-rule="evenodd" d="M19 39h-7V28.5l7-3.5v14z" fill="url(#b)"/></g></g></symbol><symbol id="services"><g fill="none"><g clip-path="url(#a)"><path fill-rule="evenodd" clip-rule="evenodd" d="M5 5h34v14.87l-.7.92c-.5.67-.97 1.28-1.43 1.82a11.4 11.4 0 0 1-2.42 2.27c-.44.27-.93.49-1.45.5a1.85 1.85 0 0 1-1.31-.57c-.23-.23-.39-.5-.5-.78a5.15 5.15 0 0 1-.27-1.84c0-1.38.3-3.1.7-4.84.33-1.47.74-2.96 1.1-4.3l-5.44-1.83-8.3 13.67-1.31-.47 1.12-7.47-4.85-1.67-8.23 10.81-.7.86L5 34.04l.7-1.06 9.52-12.57-1.47 10.68 4.88 1.66 7.53-12.3 1.3.47-.14.9c-.1.65-.22 1.5-.22 2.42 0 .85.1 1.73.38 2.54.28.8.72 1.53 1.44 2.1v.01a5.49 5.49 0 0 0 3.4 1.2c.75 0 1.5-.17 2.26-.49a9.7 9.7 0 0 0 2.26-1.38 16 16 0 0 0 1.45-1.31l.71-.66v12.74H5V5z" fill="#FED42B"/><circle cx="11.91" cy="33.16" r="14.34" fill="#E1C6EE"/><circle cx="32" cy="39" r="11" fill="url(#b)"/><path d="m19.83 16.37-6.17-2.12L5 25.63v9.83l8.92-11.78-1.1 8.04 6.24 2.12L26.5 21.7c-.36 2.3-.95 7.5 4.11 9.03 3 .9 5.85-.6 8.4-3.2v-9.24c-2.5 3.8-4.93 6.54-6.2 6.18-2.12-.59-.2-7.46 1.03-11.9l.02-.07-6.91-2.33-8.22 13.51 1.1-7.3z" fill="url(#c)"/><g filter="url(#d)"><rect x="-8.33" y="16.89" width="37.87" height="4.11" rx="2.05" transform="rotate(-15 -8.33 16.9)" fill="#00935B"/></g><g filter="url(#e)"><rect x="15.61" y="9.7" width="13.2" height="3.61" rx="1.81" transform="rotate(30 15.61 9.7)" fill="#00935B"/></g><g filter="url(#f)"><rect x="6.57" y="11.78" width="13.2" height="3.43" rx="1.72" transform="rotate(30 6.57 11.78)" fill="#00935B"/></g><g filter="url(#g)"><rect x="-2.15" y="13.29" width="13.2" height="4.55" rx="2.27" transform="rotate(30 -2.15 13.3)" fill="#00935B"/></g><g filter="url(#h)"><rect width="13.42" height="3.61" rx="1.81" transform="scale(1 -1) rotate(60 20.96 7.4)" fill="#00935B"/></g><g filter="url(#i)"><rect width="13.42" height="4.02" rx="2.01" transform="scale(1 -1) rotate(60 18.1 -1.45)" fill="#00935B"/></g><g filter="url(#j)"><path fill="#00935B" d="m-.04 16.44 3.99-6.91-.1-.06-3.99 6.91z"/></g><circle cx="31.5" cy="31.5" r="4.5" fill="url(#k)"/></g></g></symbol><symbol id="traffic" viewBox="0 0 34 31"><g fill="none" fill-rule="evenodd"><path d="M28.833 17.404c.027-.37 0-1.506 0-1.882 0-8.254-6.681-14.944-14.922-14.944-4.065 0-7.716 1.66-10.44 4.264C1.024 7.18.001 10.58.001 12.962c0 3.046 1.89 4.442 3.465 4.442h25.367z" fill="#5f9034"/><path d="M33 15c0 7.965-6.458 14.422-14.422 14.422-7.965 0-14.423-6.457-14.423-14.422C4.155 7.034 10.613.578 18.577.578 26.543.578 33 7.034 33 15z" fill="#76b342"/><path d="M18.323.58l.254-.002C26.542.578 33 7.034 33 15c0 .572-.034 1.137-.099 1.692-2.3-.014-4.073-.994-4.653-3.75-1.092-5.193-4.832-9.635-9.904-11.474a15.41 15.41 0 0 0-2.451-.642h.002a15.791 15.791 0 0 0-2.51-.246h4.938z" fill="#333"/></g></symbol><symbol id="translate"><g fill="none"><g clip-path="url(#a)"><path d="M39 39h-9.63L14.63 5H39v34z" fill="#FC3F1D"/><path d="M39 39h-9.63L14.63 5H39v34z" fill="#2B2B2B"/><path fill-rule="evenodd" clip-rule="evenodd" d="M33.71 19.33a4.1 4.1 0 0 0-2.2-2.17c.18-.8.24-1.46.26-1.9h-1.8a9.8 9.8 0 0 1-.2 1.41c-1.4-.2-2.98 0-4.5.54-.17-.98-.28-1.9-.34-2.7 5.41-.3 8.6-1.58 8.75-1.65L33 11.24c-.03 0-3.06 1.2-8.13 1.5 0-1.21-.04-1.2.02-1.61l-1.8-.02c-.04.34-.03.7-.02 1.7h-.17c-1.62 0-3.12-.12-3.48-.15l-.33 1.79c.53.04 2.15.13 3.6.13h.22l.23-.01c.07 1 .2 2.16.44 3.42-2.39 1.4-4.3 4.1-3.32 6.3.4.92 1.19 1.52 2.2 1.67.18.02.36.04.54.04 1.03 0 2.21-.41 3.34-1.11a10.8 10.8 0 0 0 1.39 1.7l1.24-1.29c-.02-.01-.54-.5-1.2-1.49a12.86 12.86 0 0 0 3.26-4.91c.4.23.8.57 1.02 1.09.72 1.75-.32 3.78-1.3 4.66l1.23 1.3c1.62-1.47 2.73-4.21 1.74-6.62zM22.73 24.2a.98.98 0 0 1-.83-.62c-.44-1.01.52-2.67 2.1-3.77.4 1.4.9 2.6 1.41 3.56-.96.6-1.95.94-2.68.83zm4.51-2.4-.4.42c-.44-.9-.88-1.98-1.2-3.26a8.31 8.31 0 0 1 3.65-.58 11.12 11.12 0 0 1-2.05 3.43z" fill="#fff"/><path d="M5 5h9.63l14.74 34H5V5z" fill="#FC3F1D"/><path d="M5 5h9.63l14.74 34H5V5z" fill="url(#b)" fill-opacity=".4"/><path fill-rule="evenodd" clip-rule="evenodd" d="M15.38 17.42 9.52 30.96h2.4l1.44-3.61h5.93l1.44 3.61h2.4l-5.86-13.54h-1.9zm.94 2.79 2.19 5.31h-4.37l2.18-5.31z" fill="#fff"/></g></g></symbol><symbol id="tv"><g fill="none"><path d="M4 35h13v2h8v-2h13V13H4v22z" fill="#222"/><path fill-rule="evenodd" clip-rule="evenodd" d="M37.83 13H4v21.47L37.83 13zM27 36H15v1h12v-1z" fill="#555"/><path fill="#FC0" d="M30.71 15.43h4.86v2.43h-4.86z"/></g></symbol><symbol id="video"><g fill="none"><g clip-path="url(#a)"><path fill="url(#b)" d="M5 5h34v34H5z"/><path fill-rule="evenodd" clip-rule="evenodd" d="M16.77 14.15v16l13.83-8-13.83-8z" fill="#000"/></g></g></symbol><symbol id="weather"><g fill="none" fill-rule="evenodd"><path d="M29.07 21.55a4.29 4.29 0 1 0-.04-8.57 5.71 5.71 0 0 0-11.07-2.59 5.71 5.71 0 1 0-1.75 11.16h12.86z" fill="#73A5E6" opacity=".32"/><g transform="translate(3 10.55)"><ellipse fill="url(#a)" opacity=".2" cx="7.5" cy="12.31" rx="6" ry="6.15"/><ellipse fill="url(#b)" opacity=".2" cx="23.25" cy="14.62" rx="3.75" ry="3.85"/><path d="M7.5 18.46c-3.31 0-6-2.75-6-6.15 0-3.4 2.69-6.16 6-6.16a6 6 0 0 1 1.8.28 6.78 6.78 0 0 1 6.45-4.9 6.84 6.84 0 0 1 6.67 8 4.4 4.4 0 0 1 1.58-.3c2.49 0 4.5 2.07 4.5 4.62a4.56 4.56 0 0 1-4.5 4.61H7.5z" fill="url(#c)"/><ellipse fill="url(#d)" opacity=".34" cx="7.5" cy="12.31" rx="6" ry="6.15"/><ellipse fill="url(#e)" opacity=".2" cx="24" cy="13.85" rx="4.5" ry="4.62"/><ellipse fill="url(#f)" cx="15.75" cy="8.46" rx="6.75" ry="6.92"/></g></g></symbol></svg><!-- endinject -->
+    </div>
+</body>
+</html>

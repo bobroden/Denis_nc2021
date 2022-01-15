@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/site-icon.ico">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="index.css">
+    <title>Mail</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="navigation">
+            <ul class="navigation__list">
+                <li class="navigation__item _first">Mail.ru</li>
+                <li class="navigation__item">Почта</li>
+                <li class="navigation__item">Мой Мир</li>
+                <li class="navigation__item">Одноклассники</li>
+                <li class="navigation__item">ВКонтакте</li>
+                <li class="navigation__item">Игры</li>
+                <li class="navigation__item">Знакомства</li>
+                <li class="navigation__item">Новости</li>
+                <li class="navigation__item">Поиск</li>
+                <li class="navigation__item">Облако</li>
+                <li class="navigation__item">VK Работа</li>
+                <li class="navigation__item">VK Combo</li>
+                <li class="navigation__item _last">
+                    Все проекты
+                    <svg>
+                        <use xlink:href="#project"></use>
+                    </svg>
+                </li>
+            </ul>
+        </nav>
+        <div class="authentication">
+            <div class="authentication__registration">Регистрация</div>
+            <div class="authentication__login">Войти</div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="main__aside">
+            <div class="authorization">
+                <div class="authorization__header">
+                    <svg>
+                        <use xlink:href="#mail"></use>
+                    </svg>
+                </div>
+                <div class="authorization__links-list">
+                    <div class="authorization__links-list-wrapper">
+                        <div class="authorization__link-text">Почта</div>
+                    </div>
+                    <div class="authorization__links-list-wrapper">
+                        <div class="authorization__link">
+                            <svg>
+                                <use xlink:href="#camera"></use>
+                            </svg>
+                        </div>
+                        <div class="authorization__link">
+                            <svg>
+                                <use xlink:href="#cloud"></use>
+                            </svg>
+                        </div>
+                        <div class="authorization__link">
+                            <svg>
+                                <use xlink:href="#calendar"></use>
+                            </svg>
+                            <span class="authorization__day">7</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="authorization__email">
+                    <input type="email" class="authorization__email-name" placeholder="Имя ящика">
+                    <select class="authorization__email-tail">
+                        <option>@mail.ru</option>
+                        <option>@inbox.ru</option>
+                        <option>@list.ru</option>
+                        <option>@bk.ru</option>
+                        <option>@internet.ru</option>
+                    </select>
+                </div>
+                <button class="authorization__password-button">
+                    Ввести пароль
+                    <svg>
+                        <use xlink:href="#next"></use>
+                    </svg>
+                </button>
+                <div class="authorization__password">
+                    <div class="authorization__password-wrapper">
+                        <input type="checkbox" class="authorization__password-save" id="authorization__password-save">
+                        <label for="authorization__password-save" class="authorization__password-label">Запомнить</label>
+                    </div>
+                    <div class="authorization__password-question">
+                        Забыли пароль?
+                    </div>
+                </div>
+                <div class="authorization__buttons">
+                    <button class="authorization__create-email-button">Создать почту</button>
+                    <button class="authorization__login-VK-button">
+                        <svg>
+                            <use xlink:href="#vk"></use>
+                        </svg>
+                        Войти через VK ID
+                    </button>
+                </div>
+            </div>
+            <div class="weather">
+                <div class="weather__header">
+                    <div class="weather__city">Москва</div>
+                    <div class="weather__more">Подробнее</div>
+                </div>
+                <a class="weather__about">
+                    <svg>
+                        <use xlink:href="#cloudy"></use>
+                    </svg>
+                    <span class="weather__temp">+1°</span>
+                    <div class="weather__info" title="давление 740 мм">
+                        <div class="weather__desc">Облачно</div>
+                        <div class="weather__humidity">Влажность 75%</div>
+                    </div>
+                </a>
+                <div class="weather__detail">
+                    <div class="weather__detail-item" title="переменная облачность">
+                        <div class="weather__detail-item-header">
+                            Утром
+                        </div>
+                        <div class="weather__detail-item-wrapper">
+                            <svg>
+                                <use xlink:href="#sun-and-cloud"></use>
+                            </svg>
+                            <span class="weather__deatil-item-temp">-8°</span>
+                        </div>
+                    </div>
+                    <div class="weather__detail-item" title="переменная облачность, снег">
+                        <div class="weather__detail-item-header">
+                            Днём
+                        </div>
+                        <div class="weather__detail-item-wrapper">
+                            <svg>
+                                <use xlink:href="#sun-and-snow"></use>
+                            </svg>
+                            <span class="weather__deatil-item-temp">-7°</span>
+                        </div>
+                    </div>
+                    <div class="weather__detail-item" title="снег">
+                        <div class="weather__detail-item-header">
+                            Вечером
+                        </div>
+                        <div class="weather__detail-item-wrapper">
+                            <svg>
+                                <use xlink:href="#snow"></use>
+                            </svg>
+                            <span class="weather__deatil-item-temp">-6°</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="quotes">
+                <div class="quotes__item" title="Курс сделок по данным Московской биржи">
+                    <div class="quotes__wrapper">
+                        <svg>
+                            <use xlink:href="#dollar"></use>
+                        </svg>
+                        <div class="quotes__label">74.29</div>
+                    </div>
+                    <div class="quotes__diff">
+                        +0.64
+                        <svg>
+                            <use xlink:href="#drop-up"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="quotes__item" title="Курс сделок по данным Московской биржи">
+                    <div class="quotes__wrapper">
+                        <svg>
+                            <use xlink:href="#euro"></use>
+                        </svg>
+                        <div class="quotes__label">84.07</div>
+                    </div>
+                    <div class="quotes__diff">
+                        +0.87
+                        <svg>
+                            <use xlink:href="#drop-up"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="quotes__item" title="Курс сделок по данным Московской биржи">
+                    <div class="quotes__wrapper">
+                        <svg>
+                            <use xlink:href="#oil"></use>
+                        </svg>
+                        <div class="quotes__label">81.95</div>
+                    </div>
+                    <div class="quotes__diff">
+                        +1.85
+                        <svg>
+                            <use xlink:href="#drop-up"></use>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="horoscope" title="Добиться важных целей">
+                <div class="horoscope__icon">
+                    <svg>
+                        <use xlink:href="#horoscope"></use>
+                    </svg>
+                </div>
+                <div class="horoscope__wrapper">
+                    <div class="horoscope__title">Гороскоп: Дева</div>
+                    <div class="horoscope__desc">День приятного общения, интересных встреч
+                        и полезных ...</div>
+                </div>
+            </div>
+            <div class="covid">
+                <div class="covid__title">Коронавирус COVID-19</div>
+                <div class="covid__title-desc">Новые случаи 6 января</div>
+                <div class="covid__graph">
+                    <div class="covid__graph-titles">
+                        <span class="covid__graph-title _active">Москва</span>
+                        <span class="covid__graph-title">Россия</span>
+                        <span class="covid__graph-title">Мир</span>
+                    </div>
+                    <img src="./img/covid.jpg" class="covid__image" alt="Covid graph">
+                    <div class="covid__desc">
+                        <div>Март</div>
+                        <div>Январь</div>
+                    </div>
+                </div>
+            </div>
+            <div class="job">
+                <div class="job__header">
+                    <img src="./img/vk-job.png" class="job__icon" alt="Job icon" title="VK Работа">
+                    <div class="job__wrapper">
+                        <div class="job__title">VK Работа</div>
+                        <div class="job__title-desc">Найди работу за 24 часа</div>
+                    </div>
+                </div>
+                <div class="job__list">
+                    <div class="job__item">
+                        <img src="./img/job-1.png" class="job__item-icon" alt="Job item icon">
+                        <div class="job__item-title">Удаленная работа</div>
+                        <div class="job__item-desc">До 150 000 ₽</div>
+                    </div>
+                    <div class="job__item">
+                        <img src="./img/job-2.png" class="job__item-icon" alt="Job item icon">
+                        <div class="job__item-title">Подработка</div>
+                        <div class="job__item-desc">До 70 000 ₽</div>
+                    </div>
+                    <div class="job__item">
+                        <img src="./img/job-3.png" class="job__item-icon" alt="Job item icon">
+                        <div class="job__item-title">Промышленность</div>
+                        <div class="job__item-desc">До 106 500 ₽</div>
+                    </div>
+                    <div class="job__item">
+                        <img src="./img/job-4.png" class="job__item-icon" alt="Job item icon">
+                        <div class="job__item-title">Начало карьеры</div>
+                        <div class="job__item-desc">До 100 000 ₽</div>
+                    </div>
+                </div>
+            </div>
+            <div class="games">
+                <div class="games__header">
+                    <img src="./img/games.png" class="games__icon" alt="Games icon" title="Игры">
+                    <div class="games__wrapper">
+                        <div class="games__title">Игры</div>
+                        <div class="games__title-desc">На любой вкус</div>
+                    </div>
+                </div>
+                <div class="games__list">
+                    <div class="games__item">
+                        <img src="./img/game-1.png" class="games__item-icon" alt="Games item icon" title="ArcheAge">
+                        <div class="games__item-wrapper">
+                            <div class="games__item-title">ArcheAge</div>
+                            <div class="games__item-desc">MMORPG</div>
+                        </div>
+                        <button class="games__item-button">Играть</button>
+                    </div>
+                    <div class="games__item">
+                        <img src="./img/game-2.png" class="games__item-icon" alt="Games item icon" title="Гильдия Героев">
+                        <div class="games__item-wrapper">
+                            <div class="games__item-title">Гильдия Героев</div>
+                            <div class="games__item-desc">MMORPG</div>
+                        </div>
+                        <button class="games__item-button">Играть</button>
+                    </div>
+                    <div class="games__item">
+                        <img src="./img/game-3.png" class="games__item-icon" alt="Games item icon" title="Hustle Castle">
+                        <div class="games__item-wrapper">
+                            <div class="games__item-title">Hustle Castle</div>
+                            <div class="games__item-desc">MMORPG</div>
+                        </div>
+                        <button class="games__item-button">Играть</button>
+                    </div>
+                </div>
+            </div>
+            <div class="partners">
+                <div class="partners__item">
+                    <img src="./img/classmates.png" class="partners__item-icon" alt="Partners item icon" title="Партнёр">
+                    <div class="partners__item-wrapper">
+                        <div class="partners__item-title">Одноклассники</div>
+                        <div class="partners__item-desc">Подарки на любой вкус</div>
+                    </div>
+                </div>
+                <div class="partners__item">
+                    <img src="./img/vk.png" class="partners__item-icon" alt="Partners item icon" title="Партнёр">
+                    <div class="partners__item-wrapper">
+                        <div class="partners__item-title">ВКонтакте</div>
+                        <div class="partners__item-desc">Вы могли пропустить</div>
+                    </div>
+                </div>
+                <div class="partners__item">
+                    <img src="./img/cloud.png" class="partners__item-icon" alt="Partners item icon" title="Партнёр">
+                    <div class="partners__item-wrapper">
+                        <div class="partners__item-title">Облако</div>
+                        <div class="partners__item-desc">Сохраните файлы</div>
+                    </div>
+                </div>
+                <div class="partners__item">
+                    <img src="./img/tv.png" class="partners__item-icon" alt="Partners item icon" title="Партнёр">
+                    <div class="partners__item-wrapper">
+                        <div class="partners__item-title">ТВ-Программа</div>
+                        <div class="partners__item-desc">Что смотреть сегодня</div>
+                    </div>
+                </div>
+                <div class="partners__item">
+                    <img src="./img/vk-combo.png" class="partners__item-icon" alt="Partners item icon" title="Партнёр">
+                    <div class="partners__item-wrapper">
+                        <div class="partners__item-title">VK Combo</div>
+                        <div class="partners__item-desc">Музыка без рекламы</div>
+                    </div>
+                </div>
+                <div class="partners__item">
+                    <img src="./img/yula.png" class="partners__item-icon" alt="Partners item icon" title="Партнёр">
+                    <div class="partners__item-wrapper">
+                        <div class="partners__item-title">Юла</div>
+                        <div class="partners__item-desc">Бесплатные объявления</div>
+                    </div>
+                </div>
+                <div class="partners__item">
+                    <img src="./img/aliexpress.png" class="partners__item-icon" alt="Partners item icon" title="Партнёр">
+                    <div class="partners__item-wrapper">
+                        <div class="partners__item-title">AliExpress Россия</div>
+                        <div class="partners__item-desc">Гигантский выбор и скидки</div>
+                    </div>
+                </div>
+                <div class="partners__item">
+                    <img src="./img/geekbrains.png" class="partners__item-icon" alt="Partners item icon" title="Партнёр">
+                    <div class="partners__item-wrapper">
+                        <div class="partners__item-title">GeekBrains</div>
+                        <div class="partners__item-desc">Онлайн-университет</div>
+                    </div>
+                </div>
+                <div class="partners__item">
+                    <img src="./img/skillbox.png" class="partners__item-icon" alt="Partners item icon" title="Партнёр">
+                    <div class="partners__item-wrapper">
+                        <div class="partners__item-title">Skillbox</div>
+                        <div class="partners__item-desc">Образовательная программа</div>
+                    </div>
+                </div>
+            </div>
+            <div class="aside-footer">
+                <a class="aside-footer__link">Политика конфиденциальности</a>
+                <a class="aside-footer__link">О компании</a>
+                <a class="aside-footer__link _last">
+                    <div class="aside-footer__more">
+                        <svg>
+                            <use xlink:href="#more"></use>
+                        </svg>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="main__info">
+            <div class="main-links">
+                <a class="main-links__item _first">Поиск в интернете</a>
+                <a class="main-links__item">Соцсети</a>
+                <a class="main-links__item">Картинки</a>
+                <a class="main-links__item">Видео</a>
+                <a class="main-links__item">Ответы</a>
+            </div>
+            <div class="search">
+                <div class="search__input-container">
+                    <input type="text" class="search__input">
+                    <svg class="search__icon">
+                        <use xlink:href="#search"></use>
+                    </svg>
+                    <a class="search__sample">Сейчас ищут: 
+                        <span class="search__sample-link">аэропорт алматы захвачен</span>
+                    </a>
+                </div>
+                <button class="search__button">Найти</button>
+            </div>
+            <div class="news-titles">
+                <a class="news-titles__item _active">Новости</a>
+                <a class="news-titles__item">COVID-19</a>
+                <a class="news-titles__item">Москва</a>
+                <a class="news-titles__item">Hi-Tech</a>
+                <a class="news-titles__item">Спорт</a>
+                <a class="news-titles__item">Леди</a>
+                <a class="news-titles__item">Авто</a>
+                <a class="news-titles__item">Кино</a>
+                <a class="news-titles__item">Игры</a>
+                <a class="news-titles__item">Дети</a>
+                <a class="news-titles__item">Здоровье</a>
+                <a class="news-titles__item">Дом</a>
+                <a class="news-titles__item">Питомцы</a>
+            </div>
+            <div class="main__info-wrapper">
+                <div class="news">
+                    <div class="main-news">
+                        <img src="./img/main-news.jpg" class="main-news__icon" alt="Main news icon">
+                        <div class="main-news__wrapper">
+                            <div class="main-news__title">США: ситуация в Казахстане не влияет
+                                на переговоры с Россией</div>
+                            <div class="main-news__desc">Нет никаких изменений в запланированных
+                            трех сериях встреч, отметила пресс-секретарь Белого дома Джен Псаки</div>
+                        </div>
+                    </div>
+                    <a class="news__item"><span>Протестующие в Актау перекрыли дорогу в аэропорт</span></a>
+                    <a class="news__item"><span>Эксперты перечислили города РФ с самым высоким
+                        качеством жизни</span></a>
+                    <a class="news__item"><span>Глава ОДКБ рассказал, что будут делать миротворцы
+                        в Казахстане</span></a>
+                    <a class="news__item"><span>Патриарх Кирилл начал рождественское богослужение</span></a>
+                    <a class="news__item"><span>5 традиций сочельника, которые нужно знать</span></a>
+                    <a class="news__item"><span>В космосе обнаружили древнюю гигантскую структуру</span></a>
+                    <a class="news__item"><span>Черчесов запретил игрокам «Ференцвароша» говорить
+                        два слова</span></a>
+                    <a class="news__item"><span>Названа общая сумма ущерба от беспорядков в Казахстане</span></a>
+                    <a class="news__item"><span>Суд арестовал имущество Порошенко в рамках дела о
+                        госизмене</span></a>
+                    <a class="news__item"><span>В России выявлены первые незавозные случаи заражения
+                        «омикроном»</span></a>
+                    <a class="news__item">
+                        <span class="news__item-title">HI-TECH</span>
+                        <span>Обычные телевизоры уходят в прошлое. Их заменит Freestyle</span>
+                    </a>
+                    <a class="news__item">
+                        <span class="news__item-title">Спорт</span>
+                        <span>Украинская гиманстка откровенно рассказала о своей зависимости</span>
+                    </a>
+                    <a class="news__item">
+                        <span class="news__item-title">ЛЕДИ</span>
+                        <span>Откровенное фото 40-летней Ксении Собчак в купели поразило сеть</span>
+                    </a>
+                    <a class="news__item">
+                        <span class="news__item-title">АВТО</span>
+                        <span>В Сочи придумали, как победить «обочечников» без камер и штрафов</span>
+                    </a>
+                </div>
+                <div class="advertisement">
+                    <div class="main-advertisement">
+                        <img src="./img/main-advertisement.jpg" class="main-advertisement__image" alt="Advertisement">
+                        <div class="main-advertisement__title">Трансфер из аэропорта</div>
+                        <p class="main-advertisement__desc">Трансфер из аэропорта Анталия, Белек,
+                            Кемер, Сиде, Алания
+                        </p>
+                        <div class="main-advertisement__footer">
+                            <div class="main-advertisement__company">ANTALYATRANSFER.CO</div>
+                            <div class="main-advertisement__label">Реклама</div>
+                        </div>
+                    </div>
+                    <div class="partner-advertisement">
+                        <img src="./img/partner-advertisement.png" class="partner-advertisement__image" alt="Advertisement">
+                    </div>
+                </div>
+            </div>
+            <div class="news-feed-titles">
+                <div class="news-feed-titles__name">
+                    <span class="news-feed-titles__pulse">Пульс</span>
+                    – ваша персональная лента
+                </div>
+                <div class="news-feed-titles__item _active">Рекомендации</div>
+                <div class="news-feed-titles__item">Популярное</div>
+            </div>
+            <div class="personal-feed">
+                <div class="personal-feed__item">
+                    <div class="personal-feed__item-image-container">
+                        <img src="./img/personal-feed-1.jpg" class="personal-feed__item-image" alt="Personal feed item image">
+                    </div>
+                    <div class="personal-feed__item-close">
+                        <svg>
+                            <use xlink:href="#close"></use>
+                        </svg>
+                    </div>
+                    <div class="personal-feed__item-title">2022: год нового начала</div>
+                    <div class="personal-feed__item-footer">
+                        <div class="personal-feed__item-company">expert.ru</div>
+                        <div class="personal-feed__item-wrapper">
+                            <div class="personal-feed__item-like">
+                                <svg class="personal-feed__item-like-icon">
+                                    <use xlink:href="#like"></use>
+                                </svg>
+                                <span class="personal-feed__item-like-couner">92</span>
+                            </div>
+                            <div class="personal-feed__item-comment">
+                                <svg class="personal-feed__item-comment-icon">
+                                    <use xlink:href="#comment"></use>
+                                </svg>
+                                <span class="personal-feed__item-comment-counter">8</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="personal-feed__item">
+                    <div class="personal-feed__item-image-container">
+                        <img src="./img/personal-feed-2.jpg" class="personal-feed__item-image" alt="Personal feed item image">
+                    </div>
+                    <div class="personal-feed__item-close">
+                        <svg>
+                            <use xlink:href="#close"></use>
+                        </svg>
+                    </div>
+                    <div class="pulse-and-goodness">
+                        Пульс × Добро
+                        <img src="./img/heart.png" class="pulse-and-goodness__icon" alt="Heart">
+                    </div>
+                    <div class="personal-feed__item-title">14 добрых комиксов, согревающих душу</div>
+                    <div class="personal-feed__item-footer">
+                        <div class="personal-feed__item-company">носик пёсика</div>
+                        <div class="personal-feed__item-wrapper">
+                            <div class="personal-feed__item-like">
+                                <svg class="personal-feed__item-like-icon">
+                                    <use xlink:href="#like"></use>
+                                </svg>
+                                <span class="personal-feed__item-like-couner">320</span>
+                            </div>
+                            <div class="personal-feed__item-comment">
+                                <svg class="personal-feed__item-comment-icon">
+                                    <use xlink:href="#comment"></use>
+                                </svg>
+                                <span class="personal-feed__item-comment-counter">37</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="personal-feed__item">
+                    <div class="personal-feed__item-image-container">
+                        <img src="./img/personal-feed-3.webp" class="personal-feed__item-image" alt="Personal feed item image">
+                    </div>
+                    <div class="personal-feed__item-close">
+                        <svg>
+                            <use xlink:href="#close"></use>
+                        </svg>
+                    </div>
+                    <div class="personal-feed__item-title">Курс: «GO Разработчик»</div>
+                    <p class="personal-feed__item-desc">Первые 3 месяца — 0 рублей. Акция:
+                        Гарантируем трудоустройство — или ...
+                    </p>
+                    <div class="personal-feed__item-footer">
+                        <div class="personal-feed__item-company">Реклама</div>
+                    </div>
+                </div>
+                <div class="personal-feed__item">
+                    <div class="personal-feed__item-image-container">
+                        <img src="./img/personal-feed-4.jpg" class="personal-feed__item-image" alt="Personal feed item image">
+                    </div>
+                    <div class="personal-feed__item-close">
+                        <svg>
+                            <use xlink:href="#close"></use>
+                        </svg>
+                    </div>
+                    <div class="personal-feed__item-title">Как бороться с падением уровня
+                        тестостерона</div>
+                    <div class="promo">Промо</div>
+                    <div class="personal-feed__item-footer">
+                        <div class="personal-feed__item-company">эвалар</div>
+                        <div class="personal-feed__item-wrapper">
+                            <div class="personal-feed__item-like">
+                                <svg class="personal-feed__item-like-icon">
+                                    <use xlink:href="#like"></use>
+                                </svg>
+                                <span class="personal-feed__item-like-couner">139</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="personal-feed__item">
+                    <div class="personal-feed__item-image-container">
+                        <img src="./img/personal-feed-5.jpg" class="personal-feed__item-image" alt="Personal feed item image">
+                    </div>
+                    <div class="personal-feed__item-close">
+                        <svg>
+                            <use xlink:href="#close"></use>
+                        </svg>
+                    </div>
+                    <div class="personal-feed__item-title">В Китае опубликовали статью о том,
+                        почему США никак не решится бросить открытый вызов России
+                    </div>
+                    <div class="personal-feed__item-footer">
+                        <div class="personal-feed__item-company">военная хроника</div>
+                        <div class="personal-feed__item-wrapper">
+                            <div class="personal-feed__item-like">
+                                <svg class="personal-feed__item-like-icon">
+                                    <use xlink:href="#like"></use>
+                                </svg>
+                                <span class="personal-feed__item-like-couner">115</span>
+                            </div>
+                            <div class="personal-feed__item-comment">
+                                <svg class="personal-feed__item-comment-icon">
+                                    <use xlink:href="#comment"></use>
+                                </svg>
+                                <span class="personal-feed__item-comment-counter">78</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="personal-feed__item">
+                    <div class="personal-feed__item-image-container">
+                        <img src="./img/personal-feed-6.jpg" class="personal-feed__item-image" alt="Personal feed item image">
+                    </div>
+                    <div class="personal-feed__item-close">
+                        <svg>
+                            <use xlink:href="#close"></use>
+                        </svg>
+                    </div>
+                    <div class="personal-feed__item-title">У Windows 11 проблемы с популярностью.
+                        Почему никто не обновляестя
+                    </div>
+                    <p class="personal-feed__item-desc"></p>
+                    <div class="personal-feed__item-footer">
+                        <div class="personal-feed__item-company">Дневник itшника</div>
+                        <div class="personal-feed__item-wrapper">
+                            <div class="personal-feed__item-like">
+                                <svg class="personal-feed__item-like-icon">
+                                    <use xlink:href="#like"></use>
+                                </svg>
+                                <span class="personal-feed__item-like-couner">23</span>
+                            </div>
+                            <div class="personal-feed__item-comment">
+                                <svg class="personal-feed__item-comment-icon">
+                                    <use xlink:href="#comment"></use>
+                                </svg>
+                                <span class="personal-feed__item-comment-counter">89</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="personal-feed__item">
+                    <div class="personal-feed__item-image-container">
+                        <img src="./img/personal-feed-7.jpg" class="personal-feed__item-image" alt="Personal feed item image">
+                    </div>
+                    <div class="personal-feed__item-close">
+                        <svg>
+                            <use xlink:href="#close"></use>
+                        </svg>
+                    </div>
+                    <div class="personal-feed__item-title">Получите бесплатно три части Tomb
+                        Raider в Epic Games Store</div>
+                    <p class="personal-feed__item-desc"></p>
+                    <div class="personal-feed__item-footer">
+                        <div class="personal-feed__item-company">droidnews.ru</div>
+                        <div class="personal-feed__item-wrapper">
+                            <div class="personal-feed__item-like">
+                                <svg class="personal-feed__item-like-icon">
+                                    <use xlink:href="#like"></use>
+                                </svg>
+                                <span class="personal-feed__item-like-couner">3</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="personal-feed__item">
+                    <div class="personal-feed__item-image-container">
+                        <img src="./img/personal-feed-8.jpg" class="personal-feed__item-image" alt="Personal feed item image">
+                    </div>
+                    <div class="personal-feed__item-close">
+                        <svg>
+                            <use xlink:href="#close"></use>
+                        </svg>
+                    </div>
+                    <div class="personal-feed__item-title">Топ 3 навыка, которые нужны вам в
+                        условиях жёсткой конкуренции
+                    </div>
+                    <p class="personal-feed__item-desc"></p>
+                    <div class="personal-feed__item-footer">
+                        <div class="personal-feed__item-company">womanel.com</div>
+                        <div class="personal-feed__item-wrapper">
+                            <div class="personal-feed__item-like">
+                                <svg class="personal-feed__item-like-icon">
+                                    <use xlink:href="#like"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="personal-feed__item">
+                    <div class="personal-feed__item-image-container">
+                        <img src="./img/personal-feed-9.jpg" class="personal-feed__item-image" alt="Personal feed item image">
+                    </div>
+                    <div class="personal-feed__item-close">
+                        <svg>
+                            <use xlink:href="#close"></use>
+                        </svg>
+                    </div>
+                    <div class="personal-feed__item-title">В Рязани после ремонта открылась
+                        библиотека № 12
+                    </div>
+                    <p class="personal-feed__item-desc"></p>
+                    <div class="personal-feed__item-footer">
+                        <div class="personal-feed__item-company">национальные проекты.рф</div>
+                        <div class="personal-feed__item-wrapper">
+                            <div class="personal-feed__item-like">
+                                <svg class="personal-feed__item-like-icon">
+                                    <use xlink:href="#like"></use>
+                                </svg>
+                                <span class="personal-feed__item-like-couner">23</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- inject:svg --><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="calendar"><path xmlns="http://www.w3.org/2000/svg" d="M12 15H2a2 2 0 01-2-2V3a2 2 0 011.999-2 1 1 0 012 0h6a1 1 0 012 0H12a2 2 0 012 2v10a2 2 0 01-2 2zM2.999 3a1 1 0 110 2 1 1 0 010-2zm8 0a1 1 0 110 2 1 1 0 010-2z" fill-rule="evenodd"/></symbol><symbol id="camera"><path xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" d="M8 14H3c-1.656 0-3-1.344-3-3V5c0-1.656 1.344-3 3-3h5c1.656 0 3 1.344 3 3v.938l3.355-2.702A1 1 0 0116 4v8a1 1 0 01-1.661.75L11 10.061V11c0 1.656-1.344 3-3 3zm-5-4a1 1 0 110 2 1 1 0 010-2z"/></symbol><symbol id="close" viewBox="0 0 16 16"><g fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M6.58625 7.9995L4.29325 5.7065C3.90225 5.3165 3.90225 4.6825 4.29325 4.2925C4.68325 3.9025 5.31725 3.9025 5.70725 4.2925L8.00025 6.5855L10.2933 4.2925C10.6832 3.9025 11.3173 3.9025 11.7073 4.2925C12.0972 4.6825 12.0972 5.3165 11.7073 5.7065L9.41425 7.9995L11.7073 10.2925C12.0972 10.6825 12.0972 11.3165 11.7073 11.7065C11.3173 12.0965 10.6832 12.0965 10.2933 11.7065L8.00025 9.4135L5.70725 11.7065C5.31725 12.0965 4.68325 12.0965 4.29325 11.7065C3.90225 11.3165 3.90225 10.6825 4.29325 10.2925L6.58625 7.9995Z" fill="#333333"/></g></symbol><symbol id="cloud"><path xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" d="M5.555 4.598a3.735 3.735 0 013.512-2.465 3.735 3.735 0 013.69 4.299A3.737 3.737 0 0116 10.133a3.735 3.735 0 01-3.733 3.734 3.72 3.72 0 01-2.508-.969 3.187 3.187 0 01-2.292.969 3.19 3.19 0 01-2.134-.816 3.188 3.188 0 01-2.133.816 3.202 3.202 0 01-1.451-6.053 2.668 2.668 0 013.806-3.216z"/></symbol><symbol id="cloudy" viewBox="0 0 40 40"><g fill="none"><mask id="a" height="40" maskUnits="userSpaceOnUse" width="40" x="0" y="0"><path d="m0 0h40v40h-40z" fill="#fff"/></mask><mask id="b" height="18" maskUnits="userSpaceOnUse" width="26" x="14" y="12"><path clip-rule="evenodd" d="m39.8508 21c0-2.3872-.9519-4.6766-2.6346-6.3641-1.6923-1.6875-3.9808-2.6359-6.3654-2.6359-7.1634 0-16 0-16 0v18h16c2.3846 0 4.6731-.9484 6.3654-2.6359 1.6827-1.6875 2.6346-3.9769 2.6346-6.3641z" fill="#fff" fill-rule="evenodd"/></mask><mask id="c" height="14" maskUnits="userSpaceOnUse" width="18" x="0" y="27"><path clip-rule="evenodd" d="m.38489 33.6911c0-1.7308.68538-3.3898 1.91077-4.6132 1.22538-1.2235 2.87999-1.911 4.61076-1.911h10.48148v13.05s-5.6838 0-10.48148 0c-1.73077 0-3.38538-.6876-4.61076-1.911-1.22539-1.2235-1.91077-2.8825-1.91077-4.6132 0-.0008 0-.0008 0-.0016z" fill="#fff" fill-rule="evenodd"/></mask><g mask="url(#a)"><path clip-rule="evenodd" d="m39.8508 21c0-2.3872-.9519-4.6766-2.6346-6.3641-1.6923-1.6875-3.9808-2.6359-6.3654-2.6359-7.1634 0-16 0-16 0v18h16c2.3846 0 4.6731-.9484 6.3654-2.6359 1.6827-1.6875 2.6346-3.9769 2.6346-6.3641z" fill="#acacac" fill-rule="evenodd"/><path clip-rule="evenodd" d="m39.8508 21c0-2.3872-.9519-4.6766-2.6346-6.3641-1.6923-1.6875-3.9808-2.6359-6.3654-2.6359-7.1634 0-16 0-16 0v18h16c2.3846 0 4.6731-.9484 6.3654-2.6359 1.6827-1.6875 2.6346-3.9769 2.6346-6.3641z" fill="#d5d5d5" fill-rule="evenodd"/><g mask="url(#b)"><path clip-rule="evenodd" d="m23.8508 0v19h4.19c2.31 0 4.4-1.377 5.31-3.5s3-3.5 5.31-3.5h1.19v-12z" fill="#999" fill-rule="evenodd"/></g><g clip-rule="evenodd" fill-rule="evenodd"><path d="m14.8499 29.9995c8.2842 0 15-6.7157 15-15 0-8.28426-6.7158-14.99998828-15-14.99998828-8.28432 0-15.000046 6.71572828-15.000046 14.99998828 0 8.2843 6.715726 15 15.000046 15z" fill="#d5d5d5"/><path d="m.38489 33.6911c0-1.7308.68538-3.3898 1.91077-4.6132 1.22538-1.2235 2.87999-1.911 4.61076-1.911h10.48148v13.05s-5.6838 0-10.48148 0c-1.73077 0-3.38538-.6876-4.61076-1.911-1.22539-1.2235-1.91077-2.8825-1.91077-4.6132 0-.0008 0-.0008 0-.0016z" fill="#d5d5d5"/><path d="m.38489 33.6911c0-1.7308.68538-3.3898 1.91077-4.6132 1.22538-1.2235 2.87999-1.911 4.61076-1.911h10.48148v13.05s-5.6838 0-10.48148 0c-1.73077 0-3.38538-.6876-4.61076-1.911-1.22539-1.2235-1.91077-2.8825-1.91077-4.6132 0-.0008 0-.0008 0-.0016z" fill="#e7e7e7"/></g><g mask="url(#c)"><path clip-rule="evenodd" d="m11.8979 19.4669v13.775s-1.1447 0-2.41915 0c-2.02319 0-3.85919-1.2107-4.65119-3.0761v-.0008c-.5184-1.2114-1.7064-1.9981-3.02399-1.9981-.756 0-1.425602 0-1.425602 0v-8.7z" fill="#999" fill-rule="evenodd"/></g><path clip-rule="evenodd" d="m17.3818 40.167c-5.5228 0-10.00001-4.4772-10.00001-10 0-5.5229 4.47721-10 10.00001-10 5.5229 0 10 4.4771 10 10 0 5.5228-4.4771 10-10 10z" fill="#e7e7e7" fill-rule="evenodd"/></g></g></symbol><symbol id="comment" viewBox="0 0 16 16"><g fill="none"><path clip-rule="evenodd" d="M15 14a1.002 1.002 0 01-1.703.71h-.004l-.003-.01-1.704-1.7H3c-1.104 0-2-.9-2-2V3c0-1.1.896-2 2-2h10c1.104 0 2 .9 2 2v11zM5 6c.552 0 1 .45 1 1s-.448 1-1 1-1-.45-1-1 .448-1 1-1zm3 0c.552 0 1 .45 1 1s-.448 1-1 1-1-.45-1-1 .448-1 1-1zm3 0c.552 0 1 .45 1 1s-.448 1-1 1-1-.45-1-1 .448-1 1-1z" fill="currentColor" fill-rule="evenodd"/></g></symbol><symbol id="dollar" viewBox="0 0 16 16"><g fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M6.996 1.188v-.129a1.003 1.003 0 0 1 .929-.997c.072-.003.071-.003.143 0 .095.01.187.027.278.06a1.005 1.005 0 0 1 .65.937v.185c.819.13 1.616.403 2.348.791.31.165.609.345.899.542.195.133.384.275.576.413l.095.069a1.245 1.245 0 0 1 .476 1.037 1.259 1.259 0 0 1-.972 1.165c-.29.066-.6.024-.863-.115-.085-.045-.163-.102-.241-.158-.133-.097-.265-.195-.399-.29a13.257 13.257 0 0 0-.247-.165 5.82 5.82 0 0 0-1.672-.741v2.906c.191.047.382.093.572.142l.378.099c.185.052.371.105.555.163.854.27 1.722.639 2.339 1.311a2.917 2.917 0 0 1 .646 1.114c.075.24.121.49.135.741.018.344-.028.691-.116 1.023a4.286 4.286 0 0 1-1.157 1.961 5.054 5.054 0 0 1-1.924 1.144 6.858 6.858 0 0 1-1.418.307c-.002.1-.006.2-.012.3a1.016 1.016 0 0 1-.103.385.997.997 0 0 1-1.894-.427l-.004-.262a6.61 6.61 0 0 1-2.279-.681 5.592 5.592 0 0 1-1.256-.892 5.097 5.097 0 0 1-1.05-1.398c-.126-.252-.238-.515-.237-.802a1.245 1.245 0 0 1 .355-.87 1.262 1.262 0 0 1 1.501-.221 1.271 1.271 0 0 1 .507.525c.032.068.058.138.089.206.087.179.196.344.323.497a3.075 3.075 0 0 0 .655.582 3.76 3.76 0 0 0 1.395.529V8.759c-.815-.239-1.622-.527-2.355-.961-.539-.318-1.038-.724-1.392-1.245a3.017 3.017 0 0 1-.367-.739c-.3-.906-.112-1.929.395-2.725.251-.396.583-.735.966-1.005.806-.57 1.781-.812 2.753-.896zm2 8.086v2.907c.244-.04.485-.1.717-.185.274-.1.536-.236.762-.421.151-.124.285-.27.392-.433.072-.109.167-.39.131-.718-.051-.451-.56-.684-.723-.751a7.362 7.362 0 0 0-.675-.232c-.2-.06-.401-.115-.604-.167zm-2-5.576l-.119.016c-.273.04-.545.102-.801.205-.17.068-.334.155-.475.272-.09.074-.291.311-.317.567-.043.417.283.653.353.705.149.112.311.208.476.294a6.491 6.491 0 0 0 .883.377V3.698z" fill="#333"/></g></symbol><symbol id="drop-up"><path xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" d="M5.171 8.774A.75.75 0 005.75 10h4.5a.75.75 0 00.579-1.226L8.606 5.808a.75.75 0 00-1.212 0L5.171 8.774z"/></symbol><symbol id="euro" viewBox="0 0 16 16"><g fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M2.562 5.418l.026-.065a7.213 7.213 0 0 1 3.276-3.699A7.153 7.153 0 0 1 9.212.782h.232a7.223 7.223 0 0 1 3.674 1.089c.113.07.23.141.332.228a1.245 1.245 0 0 1-.325 2.1 1.256 1.256 0 0 1-.903.029 1.58 1.58 0 0 1-.209-.096c-.098-.061-.193-.125-.291-.184a4.72 4.72 0 0 0-6.366 1.47h4.98a1 1 0 0 1 0 2.001H4.621c-.059.479-.044.968.043 1.443H9.53a1 1 0 0 1 0 2H5.554c.358.468.803.868 1.306 1.174.51.31 1.078.521 1.667.619a4.76 4.76 0 0 0 2.015-.1 4.774 4.774 0 0 0 1.989-1.113l.058-.051a1.268 1.268 0 0 1 .705-.279 1.26 1.26 0 0 1 1.262.823 1.242 1.242 0 0 1 .006.831 1.335 1.335 0 0 1-.278.457c-.056.055-.114.108-.172.161a7.201 7.201 0 0 1-5.635 1.788 7.21 7.21 0 0 1-2.613-.826 7.28 7.28 0 0 1-3.187-3.484H2a1 1 0 0 1 0-2h.137a7.327 7.327 0 0 1-.028-1.443H2a1.001 1.001 0 0 1 0-2.001h.562z" fill="#333"/></g></symbol><symbol id="horoscope" viewBox="0 0 16 16"><g fill="#fff">
+  <path d="M15.276 14.039c.531.153.837.707.685 1.238-.126.438-.526.724-.961.724-.091 0-.184-.012-.276-.039-1.086-.311-1.934-.78-2.598-1.326-.619.185-1.3.312-2.059.362a.7906.7906 0 01-.068.003c-.522 0-.961-.405-.997-.933-.037-.551.38-1.028.931-1.065.27-.018.522-.049.765-.088-.585-1.075-.747-2.169-.699-2.919V3.501c-.031-.5-.547-.5-.741-.5-1.131 0-1.581.797-1.707 1.083v5.917c0 .552-.448 1-1 1-.553 0-1-.448-1-1v-6.5c-.018-.5-.407-.5-.616-.5-1.067 0-1.714.891-1.935 1.258v5.742c0 .552-.448 1-1 1s-1-.448-1-1v-6c.002-.532-.184-.946-.511-1.14C.015 2.579-.142 1.965.14 1.49c.282-.474.895-.633 1.371-.349.345.206.618.499.851.826.615-.521 1.464-.966 2.573-.966.973 0 1.566.393 1.894.723.024.025.042.053.065.079.582-.456 1.354-.802 2.364-.802 1.996 0 2.733 1.49 2.741 2.492v2.39c.383-.226.799-.357 1.238-.357.644 0 1.262.282 1.739.796.74.794 1.122 2.107 1.021 3.513-.062.869-.301 1.681-.681 2.375-.007.015-.007.032-.015.047-.012.02-.027.037-.038.057-.014.024-.025.051-.039.075-.02.032-.047.057-.07.087-.274.427-.609.801-1.002 1.121.324.17.696.32 1.124.442zm-3.28-3.96c-.012.181-.04 1.18.62 2.17.386-.249.689-.559.91-.927.262-.45.433-1.025.476-1.63.073-1.016-.218-1.716-.489-2.008-.098-.105-.191-.158-.276-.158-.374 0-1.124.877-1.227 2.309-.001.015-.01.026-.011.041v.125c0 .014-.007.025-.008.038 0 .014.006.026.005.04z"/>
+</g></symbol><symbol id="like" viewBox="0 0 16 16"><g fill="none"><path clip-rule="evenodd" d="M7.989 3.906l.514-.513C9.278 2.617 10.511 2 11.609 2c1.097 0 2.149.436 2.925 1.212l.233.233a4.134 4.134 0 010 5.85l-4.495 4.495a3.228 3.228 0 01-4.566 0L1.211 9.295a4.136 4.136 0 010-5.85l.233-.233A4.137 4.137 0 014.369 2c1.098 0 2.33.616 3.106 1.392l.514.514z" fill="currentColor" fill-rule="evenodd"/></g></symbol><symbol id="mail" viewBox="0 0 187 32"><g fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M16 0C7.17753 0 0 7.17755 0 15.9999C0 24.8224 7.17753 32 16 32C19.2436 32 22.3702 31.023 25.0124 29.2171L22.9153 26.7791C20.865 28.098 18.4754 28.8099 16 28.8099C8.9365 28.8099 3.19009 23.0635 3.19009 15.9999C3.19009 8.93643 8.9365 3.19 16 3.19C23.0635 3.19 28.8099 8.93643 28.8099 15.9999C28.8099 16.9301 28.7055 17.855 28.5081 18.7547C28.0975 20.4386 26.9234 20.9594 26.0213 20.8889C25.1318 20.8173 24.0751 20.1831 24.0682 18.617V15.9999C24.0682 11.5512 20.4487 7.93174 16 7.93174C11.5514 7.93174 7.93172 11.5512 7.93172 15.9999C7.93172 20.4489 11.5514 24.0683 16 24.0683C18.2546 24.0683 20.2949 23.1375 21.7603 21.6416C22.6233 23.0197 24.0522 23.9311 25.7657 24.0688C25.9085 24.0802 26.0512 24.0859 26.1934 24.0859C27.3544 24.0859 28.4866 23.7067 29.4206 22.9975C30.3848 22.2656 31.0867 21.2253 31.4801 19.9668C31.543 19.7658 31.6583 19.3001 31.6596 19.2939C31.9219 18.158 32 17.1099 32 15.9999C32 7.17755 24.8224 0 16 0ZM11.1218 15.9999C11.1218 13.3102 13.3102 11.1218 16 11.1218C18.6898 11.1218 20.8781 13.3102 20.8781 15.9999C20.8781 18.6898 18.6898 20.8782 16 20.8782C13.3102 20.8782 11.1218 18.6898 11.1218 15.9999Z" fill="#FF9E00"/><path fill-rule="evenodd" clip-rule="evenodd" d="M82.5277 23.9931H79.5056V22.8887C78.338 23.903 76.8126 24.5072 75.018 24.5072C70.7264 24.5072 67.2422 21.0517 67.2422 16.7955C67.2422 12.5393 70.7264 9.08386 75.018 9.08386C76.8126 9.08386 78.338 9.68804 79.5056 10.7023V9.59791H82.5277V23.9931ZM44.1648 23.9931H41.1429V9.59801H44.1648V10.3974C44.8359 9.77162 46.099 9.08597 47.666 9.08386C49.6784 9.08386 51.4805 9.9928 52.678 11.4181C53.8756 9.9928 55.6777 9.08386 57.6901 9.08386C61.2869 9.08386 64.2132 11.986 64.2132 15.5532V23.9931H61.1912V15.5532C61.1912 13.6387 59.6205 12.081 57.6901 12.081C55.7595 12.081 54.1891 13.6387 54.1891 15.5532V23.9931H51.167V15.5532C51.167 13.6387 49.5964 12.081 47.666 12.081C45.7355 12.081 44.1648 13.6387 44.1648 15.5532V23.9931ZM86.1389 23.9929H89.161V9.59787H86.1389V23.9929ZM92.7728 23.993H95.7949V3.42858H92.7728V23.993ZM75.0176 12.0405C77.6638 12.0405 79.749 14.1712 79.749 16.7955C79.749 19.4198 77.6638 21.5504 75.0176 21.5504C72.3715 21.5504 70.2231 19.4198 70.2231 16.7955C70.2231 14.1712 72.3715 12.0405 75.0176 12.0405ZM87.6524 2.91434C88.798 2.91434 89.728 3.83679 89.728 4.97288C89.728 6.10906 88.798 7.03152 87.6524 7.03152C86.5067 7.03152 85.5767 6.10906 85.5767 4.97288C85.5767 3.83679 86.5067 2.91434 87.6524 2.91434Z" fill="white"/><path fill-rule="evenodd" clip-rule="evenodd" d="M175.836 14.1125C175.902 17.381 177.621 19.3472 180.458 19.3472H180.629V17.4766C181.659 17.5822 182.434 18.3516 182.746 19.3472H184.234C183.832 17.8588 182.781 17.0341 182.132 16.7223C182.781 16.3351 183.701 15.3897 183.917 14.1125H182.565C182.283 15.1534 181.438 16.0937 180.629 16.1842V14.1125H179.251V17.7381C178.411 17.5319 177.32 16.5111 177.275 14.1125H175.836ZM180.267 22.8572H179.744H179.696C176.886 22.8572 175.469 22.8572 174.594 21.9772C173.714 21.0921 173.714 19.6741 173.714 16.838V16.3049V16.2572C173.714 13.4578 173.714 12.0408 174.594 11.1657C175.479 10.2857 176.902 10.2857 179.744 10.2857H180.267C183.108 10.2857 184.531 10.2857 185.411 11.1657C186.286 12.0508 186.286 13.4688 186.286 16.3049V16.838C186.286 19.6691 186.286 21.0921 185.411 21.9772C184.531 22.8572 183.108 22.8572 180.267 22.8572ZM128.567 12.7528V23.3584H130.243V19.204C130.544 19.5746 130.933 19.8866 131.409 20.1402C131.885 20.384 132.429 20.5059 133.041 20.5059C133.75 20.5059 134.386 20.3401 134.95 20.0085C135.513 19.6672 135.95 19.1991 136.261 18.6042C136.582 17.9996 136.742 17.3169 136.742 16.5562C136.742 15.7956 136.582 15.1178 136.261 14.5229C135.95 13.9182 135.513 13.4501 134.95 13.1186C134.386 12.7772 133.75 12.6066 133.041 12.6066C132.409 12.6066 131.851 12.7431 131.365 13.0162C130.879 13.2795 130.481 13.6013 130.17 13.9816L129.82 12.7528H128.567ZM134.338 18.3263C133.9 18.7749 133.332 18.9992 132.633 18.9992C131.923 18.9992 131.345 18.7749 130.899 18.3263C130.461 17.8679 130.243 17.2779 130.243 16.5562C130.243 15.8346 130.461 15.2494 130.899 14.8008C131.345 14.3425 131.923 14.1133 132.633 14.1133C133.332 14.1133 133.9 14.3425 134.338 14.8008C134.775 15.2494 134.993 15.8346 134.993 16.5562C134.993 17.2779 134.775 17.8679 134.338 18.3263ZM120 20.3596H121.676V14.2888H124.998V20.3596H126.674V12.7528H120V20.3596ZM141.815 20.5059C141.038 20.5059 140.338 20.3401 139.717 20.0085C139.105 19.6672 138.624 19.1991 138.274 18.6042C137.934 17.9996 137.764 17.3169 137.764 16.5562C137.764 15.7956 137.934 15.1178 138.274 14.5229C138.624 13.9182 139.105 13.4501 139.717 13.1186C140.338 12.7772 141.038 12.6066 141.815 12.6066C142.592 12.6066 143.287 12.7772 143.899 13.1186C144.521 13.4501 145.002 13.9182 145.342 14.5229C145.691 15.1178 145.866 15.7956 145.866 16.5562C145.866 17.3169 145.691 17.9996 145.342 18.6042C145.002 19.1991 144.521 19.6672 143.899 20.0085C143.287 20.3401 142.592 20.5059 141.815 20.5059ZM141.815 18.9699C142.495 18.9699 143.049 18.7505 143.476 18.3116C143.904 17.863 144.118 17.2779 144.118 16.5562C144.118 15.8346 143.904 15.2543 143.476 14.8155C143.049 14.3668 142.495 14.1425 141.815 14.1425C141.135 14.1425 140.581 14.3668 140.154 14.8155C139.726 15.2543 139.513 15.8346 139.513 16.5562C139.513 17.2779 139.726 17.863 140.154 18.3116C140.581 18.7505 141.135 18.9699 141.815 18.9699ZM154.726 17.0097C154.745 16.7952 154.755 16.6147 154.755 16.4685C154.755 15.7468 154.585 15.0934 154.245 14.5083C153.915 13.9134 153.448 13.4501 152.846 13.1186C152.253 12.7772 151.578 12.6066 150.821 12.6066C150.063 12.6066 149.383 12.7772 148.78 13.1186C148.188 13.4501 147.721 13.9182 147.381 14.5229C147.051 15.1178 146.886 15.7956 146.886 16.5562C146.886 17.3169 147.051 17.9996 147.381 18.6042C147.721 19.1991 148.188 19.6672 148.78 20.0085C149.383 20.3401 150.063 20.5059 150.821 20.5059C151.637 20.5059 152.375 20.3157 153.036 19.9354C153.706 19.5551 154.177 19.0138 154.449 18.3116L152.875 18.0483C152.691 18.3311 152.423 18.5554 152.074 18.7212C151.734 18.887 151.35 18.9699 150.923 18.9699C150.291 18.9699 149.771 18.7944 149.363 18.4433C148.955 18.0825 148.712 17.6046 148.635 17.0097H154.726ZM149.494 14.5083C149.873 14.2157 150.315 14.0694 150.821 14.0694C151.335 14.0694 151.777 14.2206 152.147 14.5229C152.526 14.8155 152.788 15.2055 152.934 15.6932H148.737C148.873 15.1958 149.125 14.8008 149.494 14.5083ZM162.968 20.3596H160.768L158.145 17.3315H157.737V20.3596H156.061V12.7528H157.737V15.7078H158.145L160.68 12.7528H162.677L159.485 16.4099L162.968 20.3596ZM165.811 20.3596H167.487V14.2888H170.11V12.7528H163.188V14.2888H165.811V20.3596Z" fill="white" fill-opacity="0.48"/><path fill-rule="evenodd" clip-rule="evenodd" d="M107.429 22.8572L107.429 10.2857L108.571 10.2857L108.571 22.8572H107.429Z" fill="white" fill-opacity="0.48"/></g></symbol><symbol id="more"><path xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" d="M4.635 8a1.817 1.817 0 01-3.632 0 1.817 1.817 0 013.632 0zm5.191 0a1.826 1.826 0 01-3.65 0 1.826 1.826 0 013.65 0zm5.171 0a1.81 1.81 0 11-3.617-.001A1.81 1.81 0 0114.997 8z"/></symbol><symbol id="next"><path xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" d="M12.696 7.256L9.657 4.217a1 1 0 00-1.415 1.414l1.344 1.344H3.949a1.001 1.001 0 000 2h5.637l-1.344 1.343a1.002 1.002 0 000 1.415c.391.39 1.024.39 1.415 0l3.039-3.04A.993.993 0 0013 7.975a.997.997 0 00-.293-.708l-.011-.011z"/></symbol><symbol id="oil" viewBox="0 0 18 19"><g fill="#333" fill-rule="evenodd"><path d="M11.847 8.626l2.302 8.702a1.174 1.174 0 0 1-.82 1.443 1.164 1.164 0 0 1-1.426-.834L9.688 9.58h-.05l-2.211 8.356c-.165.628-.805 1-1.426.834a1.18 1.18 0 0 1-.824-1.443L7.5 8.562a2.948 2.948 0 0 1-.638-1.28l-2.825-.596a1.153 1.153 0 0 1-.26-.088c-.343 1.58-.686 3.16-.923 4.259a.776.776 0 0 1-.553.579.749.749 0 0 1-.757-.236c-.13-.142-.261-.294-.397-.446a4.405 4.405 0 0 1-.985-3.881C.604 4.92 1.23 2.173 1.53.843A.79.79 0 0 1 2.48.24l1.785.407a.81.81 0 0 1 .601.961l-.6 2.748c.081-.001.164.007.246.024l2.792.59a2.897 2.897 0 0 1 2.398-1.276c1.417 0 2.598 1.026 2.857 2.384l4.49.947a1.18 1.18 0 0 1 .902 1.393 1.166 1.166 0 0 1-1.378.913l-4.524-.954c-.063.087-.13.17-.202.25zm-2.145-.811a1.17 1.17 0 0 0 1.163-1.178A1.17 1.17 0 0 0 9.702 5.46a1.17 1.17 0 0 0-1.164 1.177c0 .65.52 1.178 1.164 1.178z"/><path d="M12.441 14.998c0-.549-.523-.998-1.168-.998h-3.11C7.52 14 7 14.45 7 14.998 7 15.55 7.519 16 8.164 16h3.109c.645 0 1.168-.45 1.168-1.002z"/></g></symbol><symbol id="project" viewBox="0 0 14 14"><g fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M0 1.735C0 1.047 0 .703.162.455A1 1 0 0 1 .454.161C.704 0 1.047 0 1.735 0s1.032 0 1.28.162a1 1 0 0 1 .293.292c.162.25.162.593.162 1.281s0 1.032-.162 1.28a1 1 0 0 1-.292.293c-.249.162-.593.162-1.281.162s-1.032 0-1.28-.162a1 1 0 0 1-.293-.292C0 2.767 0 2.423 0 1.735zM0 7c0-.688 0-1.032.162-1.28a1 1 0 0 1 .292-.293c.25-.162.593-.162 1.281-.162s1.032 0 1.28.162a1 1 0 0 1 .293.292c.162.25.162.593.162 1.281s0 1.032-.162 1.28a1 1 0 0 1-.292.293c-.249.162-.593.162-1.281.162s-1.032 0-1.28-.162a1 1 0 0 1-.293-.292C0 8.032 0 7.688 0 7zm.162 3.984C0 11.233 0 11.577 0 12.264c0 .689 0 1.033.162 1.282a1 1 0 0 0 .292.292c.25.162.593.162 1.281.162s1.032 0 1.28-.162a1 1 0 0 0 .293-.292c.162-.25.162-.593.162-1.281s0-1.032-.162-1.281a1 1 0 0 0-.292-.292c-.249-.162-.593-.162-1.281-.162s-1.032 0-1.28.162a1 1 0 0 0-.293.292zm5.103-9.249c0-.688 0-1.032.162-1.28a1 1 0 0 1 .292-.293C5.968 0 6.312 0 7 0c.689 0 1.033 0 1.282.162a1 1 0 0 1 .292.292c.162.25.162.593.162 1.281s0 1.032-.162 1.28a1 1 0 0 1-.292.293c-.25.162-.593.162-1.281.162s-1.032 0-1.28-.162a1 1 0 0 1-.293-.292c-.162-.249-.162-.593-.162-1.281zm.162 3.984c-.162.25-.162.593-.162 1.281s0 1.032.162 1.28a1 1 0 0 0 .292.293c.249.162.593.162 1.28.162.689 0 1.033 0 1.282-.162a1 1 0 0 0 .292-.292c.162-.249.162-.593.162-1.281s0-1.032-.162-1.28a1 1 0 0 0-.292-.293c-.25-.162-.593-.162-1.281-.162s-1.032 0-1.28.162a1 1 0 0 0-.293.292zm-.162 6.546c0-.688 0-1.032.162-1.281a1 1 0 0 1 .292-.292c.249-.162.593-.162 1.28-.162.689 0 1.033 0 1.282.162a1 1 0 0 1 .292.292c.162.249.162.593.162 1.28 0 .689 0 1.033-.162 1.282a1 1 0 0 1-.292.292C8.03 14 7.688 14 7 14s-1.032 0-1.28-.162a1 1 0 0 1-.293-.292c-.162-.25-.162-.593-.162-1.281zM10.692.455c-.162.248-.162.592-.162 1.28 0 .688 0 1.032.162 1.28a1 1 0 0 0 .292.293c.25.162.593.162 1.281.162s1.032 0 1.28-.162a1 1 0 0 0 .293-.292C14 2.767 14 2.423 14 1.735s0-1.032-.162-1.28a1 1 0 0 0-.292-.293C13.297 0 12.953 0 12.265 0s-1.032 0-1.28.162a1 1 0 0 0-.293.292zM10.53 7c0-.688 0-1.032.162-1.28a1 1 0 0 1 .292-.293c.25-.162.593-.162 1.281-.162s1.032 0 1.28.162a1 1 0 0 1 .293.292C14 5.97 14 6.312 14 7s0 1.032-.162 1.28a1 1 0 0 1-.292.293c-.249.162-.593.162-1.281.162s-1.032 0-1.28-.162a1 1 0 0 1-.293-.292c-.162-.249-.162-.593-.162-1.281zm.162 3.984c-.162.249-.162.593-.162 1.28 0 .689 0 1.033.162 1.282a1 1 0 0 0 .292.292c.25.162.593.162 1.281.162s1.032 0 1.28-.162a1 1 0 0 0 .293-.292c.162-.25.162-.593.162-1.281s0-1.032-.162-1.281a1 1 0 0 0-.292-.292c-.249-.162-.593-.162-1.281-.162s-1.032 0-1.28.162a1 1 0 0 0-.293.292z" fill="#A5A7AD"/></g></symbol><symbol id="search" viewBox="0 0 16 16"><path d="M12.71 11.085A7.008 7.008 0 0 0 7.008 0a7.008 7.008 0 1 0 4.076 12.71l2.954 2.953a1.149 1.149 0 0 0 1.625-1.624l-2.955-2.954zM7.007 2.441a4.567 4.567 0 1 1 0 9.135 4.567 4.567 0 0 1 0-9.135z" fill="#A6A6A6" fill-rule="evenodd"/></symbol><symbol id="snow" viewBox="0 0 40 40"><g fill="none"><mask id="a" height="40" maskUnits="userSpaceOnUse" width="40" x="0" y="0"><path d="m0 0h40v40h-40z" fill="#fff"/></mask><mask id="b" height="18" maskUnits="userSpaceOnUse" width="25" x="15" y="12"><path clip-rule="evenodd" d="m40 21c0-2.3873-.9519-4.6766-2.6346-6.3641-1.6923-1.6875-3.9808-2.6359-6.3654-2.6359-7.1635 0-16 0-16 0v18h16c2.3846 0 4.6731-.9484 6.3654-2.6359 1.6827-1.6875 2.6346-3.9769 2.6346-6.3641z" fill="#fff" fill-rule="evenodd"/></mask><g mask="url(#a)"><g clip-rule="evenodd" fill-rule="evenodd"><path d="m8.70039 34.095c.06.035.14.035.2 0 .06-.036.1-.102.1-.173 0-.376 0-.922 0-.922 0-.552.45-1 1.00001-1 .55 0 1 .448 1 1v.922c0 .071.04.137.1.173.06.035.14.035.2 0 .32-.184.78-.449.78-.449.23-.135.51-.172.77-.102.27.07.49.242.63.478v.001c.13.223.16.489.09.739-.06.249-.23.462-.45.591 0 0-.49.282-.82.474-.06.036-.1.102-.1.173s.04.137.1.173c.33.192.82.474.82.474.22.129.39.342.45.591.07.25.04.516-.09.739v.001c-.14.236-.36.408-.63.478-.26.07-.54.033-.77-.102 0 0-.46-.265-.78-.449-.06-.035-.14-.035-.2 0-.06.036-.1.102-.1.173v.922c0 .552-.45 1-1 1-.55001 0-1.00001-.448-1.00001-1 0 0 0-.546 0-.922 0-.071-.04-.137-.1-.173-.06-.035-.14-.035-.2 0-.33.192-.82.474-.82.474-.22.129-.49.164-.74.097s-.46-.23-.59-.453c0-.001 0-.001 0-.001-.14-.236-.17-.516-.1-.778.07-.263.24-.487.47-.623 0 0 .46-.264.78-.448.06-.036.1-.102.1-.173s-.04-.137-.1-.173c-.32-.184-.78-.448-.78-.448-.23-.136-.4-.36-.47-.623-.07-.262-.04-.542.1-.778 0 0 0 0 0-.001.13-.223.34-.386.59-.453s.52-.032.74.097c0 0 .49.282.82.474z" fill="#0dcaf2"/><path d="m18.7001 34.095c.06.035.14.035.2 0 .06-.036.1-.102.1-.173 0-.376 0-.922 0-.922 0-.552.45-1 1-1s1 .448 1 1v.922c0 .071.04.137.1.173.06.035.14.035.2 0 .32-.188.8-.462.8-.462.48-.275 1.09-.112 1.36.366v.001c.28.478.12 1.09-.36 1.366 0 0-.48.273-.8.461-.06.036-.1.102-.1.173s.04.137.1.173c.32.188.8.461.8.461.48.276.64.888.36 1.366v.001c-.27.478-.88.641-1.36.366 0 0-.48-.274-.8-.462-.06-.035-.14-.035-.2 0-.06.036-.1.102-.1.173v.922c0 .552-.45 1-1 1s-1-.448-1-1c0 0 0-.546 0-.922 0-.071-.04-.137-.1-.173-.06-.035-.14-.035-.2 0-.32.188-.8.462-.8.462-.48.275-1.09.112-1.36-.366v-.001c-.28-.478-.12-1.09.36-1.366 0 0 .48-.273.8-.461.06-.036.1-.102.1-.173s-.04-.137-.1-.173c-.32-.188-.8-.461-.8-.461-.48-.276-.64-.888-.36-1.366v-.001c.27-.478.88-.641 1.36-.366 0 0 .48.274.8.462z" fill="#0dcaf2"/><path d="m28.7004 34.095c.06.035.14.035.2 0 .06-.036.1-.102.1-.173 0-.376 0-.922 0-.922 0-.552.45-1 1-1s1 .448 1 1v.922c0 .071.04.137.1.173.06.035.14.035.2 0 .33-.192.82-.474.82-.474.22-.129.49-.164.74-.097s.46.23.59.453v.001c.14.236.17.516.1.778-.07.263-.24.487-.47.623 0 0-.46.264-.78.448-.06.036-.1.102-.1.173s.04.137.1.173c.32.184.78.448.78.448.23.136.4.36.47.623.07.262.04.542-.1.778v.001c-.13.223-.34.386-.59.453s-.52.032-.74-.097c0 0-.49-.282-.82-.474-.06-.035-.14-.035-.2 0-.06.036-.1.102-.1.173v.922c0 .552-.45 1-1 1s-1-.448-1-1c0 0 0-.546 0-.922 0-.071-.04-.137-.1-.173-.06-.035-.14-.035-.2 0-.33.192-.82.474-.82.474-.22.129-.49.164-.74.097s-.46-.23-.59-.453c0-.001 0-.001 0-.001-.14-.236-.17-.516-.1-.778.07-.263.24-.487.47-.623 0 0 .46-.264.78-.448.06-.036.1-.102.1-.173s-.04-.137-.1-.173c-.32-.184-.78-.448-.78-.448-.23-.136-.4-.36-.47-.623-.07-.262-.04-.542.1-.778 0 0 0 0 0-.001.13-.223.34-.386.59-.453s.52-.032.74.097c0 0 .49.282.82.474z" fill="#0dcaf2"/><path d="m40 21c0-2.3873-.9519-4.6766-2.6346-6.3641-1.6923-1.6875-3.9808-2.6359-6.3654-2.6359-7.1635 0-16 0-16 0v18h16c2.3846 0 4.6731-.9484 6.3654-2.6359 1.6827-1.6875 2.6346-3.9769 2.6346-6.3641z" fill="#acacac"/><path d="m40 21c0-2.3873-.9519-4.6766-2.6346-6.3641-1.6923-1.6875-3.9808-2.6359-6.3654-2.6359-7.1635 0-16 0-16 0v18h16c2.3846 0 4.6731-.9484 6.3654-2.6359 1.6827-1.6875 2.6346-3.9769 2.6346-6.3641z" fill="#d5d5d5"/></g><g mask="url(#b)"><path clip-rule="evenodd" d="m24 0v19h4.19c2.31 0 4.4-1.377 5.31-3.5s3-3.5 5.31-3.5h1.19v-12z" fill="#999" fill-rule="evenodd"/></g><path clip-rule="evenodd" d="m15 29.9995c8.2843 0 15-6.7157 15-15 0-8.28427-6.7157-14.99998828-15-14.99998828-8.28428 0-15 6.71571828-15 14.99998828 0 8.2843 6.71572 15 15 15z" fill="#d5d5d5" fill-rule="evenodd"/></g></g></symbol><symbol id="sun-and-cloud" viewBox="0 0 40 40"><g fill="none"><mask id="a" height="40" maskUnits="userSpaceOnUse" width="40" x="0" y="0"><path d="m0 0h39.9999v39.9999h-39.9999z" fill="#fff"/></mask><mask id="b" height="14" maskUnits="userSpaceOnUse" width="18" x="22" y="22"><path clip-rule="evenodd" d="m39.982 28.5242c0-1.7308-.6853-3.3898-1.9107-4.6132s-2.88-1.911-4.6108-1.911c-4.7977 0-10.4815 0-10.4815 0v13.05h10.4815c1.7308 0 3.3854-.6876 4.6108-1.911 1.2254-1.2235 1.9107-2.8825 1.9107-4.6132 0-.0008 0-.0008 0-.0016z" fill="#fff" fill-rule="evenodd"/></mask><g mask="url(#a)"><g clip-rule="evenodd" fill-rule="evenodd"><path d="m15.0023 30.0007c8.2843 0 15.0001-6.7158 15.0001-15 0-8.28426-6.7158-14.99996758-15.0001-14.99996758-8.28424 0-14.99998066 6.71570758-14.99998066 14.99996758 0 8.2842 6.71574066 15 14.99998066 15z" fill="#ffdc55"/><path d="m39.982 28.5242c0-1.7308-.6853-3.3898-1.9107-4.6132s-2.88-1.911-4.6108-1.911c-4.7977 0-10.4815 0-10.4815 0v13.05h10.4815c1.7308 0 3.3854-.6876 4.6108-1.911 1.2254-1.2235 1.9107-2.8825 1.9107-4.6132 0-.0008 0-.0008 0-.0016z" fill="#acacac"/><path d="m39.982 28.5242c0-1.7308-.6853-3.3898-1.9107-4.6132s-2.88-1.911-4.6108-1.911c-4.7977 0-10.4815 0-10.4815 0v13.05h10.4815c1.7308 0 3.3854-.6876 4.6108-1.911 1.2254-1.2235 1.9107-2.8825 1.9107-4.6132 0-.0008 0-.0008 0-.0016z" fill="#d5d5d5"/></g><g mask="url(#b)"><path clip-rule="evenodd" d="m28.469 14.3v13.775h2.4192c2.0232 0 3.8592-1.2107 4.6512-3.0762v-.0007c.5184-1.2115 1.7064-1.9981 3.024-1.9981h1.4256v-8.7z" fill="#999" fill-rule="evenodd"/></g><path clip-rule="evenodd" d="m22.985 34.9999c5.5229 0 10-4.4771 10-9.9999 0-5.5229-4.4771-10-10-10s-10 4.4771-10 10c0 5.5228 4.4771 9.9999 10 9.9999z" fill="#d5d5d5" fill-rule="evenodd"/></g></g></symbol><symbol id="sun-and-snow" viewBox="0 0 40 40"><g fill="none"><mask id="a" height="40" maskUnits="userSpaceOnUse" width="40" x="0" y="0"><path d="m0 0h40v40h-40z" fill="#fff"/></mask><mask id="b" height="14" maskUnits="userSpaceOnUse" width="18" x="22" y="22"><path clip-rule="evenodd" d="m39.9816 28.5907c0-1.7479-.6923-3.4241-1.9316-4.6606-1.2323-1.2356-2.9077-1.9297-4.6592-1.9297-4.7769 0-10.4123 0-10.4123 0v13.05h10.5438c1.717 0 3.3577-.6802 4.5693-1.8914 1.2115-1.2112 1.89-2.8539 1.89-4.5667 0-.0008 0-.0016 0-.0016z" fill="#fff" fill-rule="evenodd"/></mask><g mask="url(#a)"><path clip-rule="evenodd" d="m15 30.0006c8.2843 0 15-6.7157 15-15s-6.7157-15.00005068-15-15.00005068c-8.28427 0-15 6.71575068-15 15.00005068s6.71573 15 15 15z" fill="#ffdc55" fill-rule="evenodd"/><path clip-rule="evenodd" d="m39.9816 28.5907c0-1.7479-.6923-3.4241-1.9316-4.6606-1.2323-1.2356-2.9077-1.9297-4.6592-1.9297-4.7769 0-10.4123 0-10.4123 0v13.05h10.5438c1.717 0 3.3577-.6802 4.5693-1.8914 1.2115-1.2112 1.89-2.8539 1.89-4.5667 0-.0008 0-.0016 0-.0016z" fill="#acacac" fill-rule="evenodd"/><path clip-rule="evenodd" d="m39.9816 28.5907c0-1.7479-.6923-3.4241-1.9316-4.6606-1.2323-1.2356-2.9077-1.9297-4.6592-1.9297-4.7769 0-10.4123 0-10.4123 0v13.05h10.5438c1.717 0 3.3577-.6802 4.5693-1.8914 1.2115-1.2112 1.89-2.8539 1.89-4.5667 0-.0008 0-.0016 0-.0016z" fill="#d5d5d5" fill-rule="evenodd"/><g mask="url(#b)"><path clip-rule="evenodd" d="m28.4688 14.3004v13.775h2.4191c2.0232 0 3.8592-1.2107 4.6512-3.0762v-.0007c.5184-1.2115 1.7064-1.9981 3.024-1.9981h1.4256v-8.7z" fill="#999" fill-rule="evenodd"/></g><g clip-rule="evenodd" fill-rule="evenodd"><path d="m22.9844 35.0005c5.5229 0 10-4.4772 10-10 0-5.5229-4.4771-10.0001-10-10.0001s-10 4.4772-10 10.0001c0 5.5228 4.4771 10 10 10z" fill="#d5d5d5"/><path d="m17.1106 34.0951c.06.035.14.035.2 0 .06-.036.1-.102.1-.173 0-.376 0-.922 0-.922 0-.552.45-1 1-1s1 .448 1 1v.922c0 .071.04.137.1.173.06.035.14.035.2 0 .32-.184.78-.449.78-.449.23-.135.51-.172.77-.102.27.07.49.242.63.478v.001c.13.223.16.489.09.739-.06.249-.23.462-.45.591 0 0-.49.282-.82.474-.06.036-.1.102-.1.173s.04.137.1.173c.33.192.82.474.82.474.22.129.39.342.45.591.07.25.04.516-.09.739v.001c-.14.236-.36.408-.63.478-.26.07-.54.033-.77-.102 0 0-.46-.265-.78-.449-.06-.035-.14-.035-.2 0-.06.036-.1.102-.1.173v.922c0 .552-.45 1-1 1s-1-.448-1-1c0 0 0-.546 0-.922 0-.071-.04-.137-.1-.173-.06-.035-.14-.035-.2 0-.33.192-.82.474-.82.474-.22.129-.49.164-.74.097s-.46-.23-.59-.453c0-.001 0-.001 0-.001-.14-.236-.17-.516-.1-.778.07-.263.24-.487.47-.623 0 0 .46-.264.78-.448.06-.036.1-.102.1-.173s-.04-.137-.1-.173c-.32-.184-.78-.448-.78-.448-.23-.136-.4-.36-.47-.623-.07-.262-.04-.542.1-.778 0 0 0 0 0-.001.13-.223.34-.386.59-.453s.52-.032.74.097c0 0 .49.282.82.474z" fill="#0dcaf2"/><path d="m26.1103 34.0951c.06.035.14.035.2 0 .06-.036.1-.102.1-.173 0-.376 0-.922 0-.922 0-.552.45-1 1-1s1 .448 1 1v.922c0 .071.04.137.1.173.06.035.14.035.2 0 .32-.188.8-.462.8-.462.48-.275 1.09-.112 1.36.366v.001c.28.478.12 1.09-.36 1.366 0 0-.48.273-.8.461-.06.036-.1.102-.1.173s.04.137.1.173c.32.188.8.461.8.461.48.276.64.888.36 1.366v.001c-.27.478-.88.641-1.36.366 0 0-.48-.274-.8-.462-.06-.035-.14-.035-.2 0-.06.036-.1.102-.1.173v.922c0 .552-.45 1-1 1s-1-.448-1-1c0 0 0-.546 0-.922 0-.071-.04-.137-.1-.173-.06-.035-.14-.035-.2 0-.32.188-.8.462-.8.462-.48.275-1.09.112-1.36-.366v-.001c-.28-.478-.12-1.09.36-1.366 0 0 .48-.273.8-.461.06-.036.1-.102.1-.173s-.04-.137-.1-.173c-.32-.188-.8-.461-.8-.461-.48-.276-.64-.888-.36-1.366v-.001c.27-.478.88-.641 1.36-.366 0 0 .48.274.8.462z" fill="#0dcaf2"/><path d="m35.1106 34.0951c.06.035.14.035.2 0 .06-.036.1-.102.1-.173 0-.376 0-.922 0-.922 0-.552.45-1 1-1s1 .448 1 1v.922c0 .071.04.137.1.173.06.035.14.035.2 0 .33-.192.82-.474.82-.474.22-.129.49-.164.74-.097s.46.23.59.453v.001c.14.236.17.516.1.778-.07.263-.24.487-.47.623 0 0-.46.264-.78.448-.06.036-.1.102-.1.173s.04.137.1.173c.32.184.78.448.78.448.23.136.4.36.47.623.07.262.04.542-.1.778v.001c-.13.223-.34.386-.59.453s-.52.032-.74-.097c0 0-.49-.282-.82-.474-.06-.035-.14-.035-.2 0-.06.036-.1.102-.1.173v.922c0 .552-.45 1-1 1s-1-.448-1-1c0 0 0-.546 0-.922 0-.071-.04-.137-.1-.173-.06-.035-.14-.035-.2 0-.33.192-.82.474-.82.474-.22.129-.49.164-.74.097s-.46-.23-.59-.453c0-.001 0-.001 0-.001-.14-.236-.17-.516-.1-.778.07-.263.24-.487.47-.623 0 0 .46-.264.78-.448.06-.036.1-.102.1-.173s-.04-.137-.1-.173c-.32-.184-.78-.448-.78-.448-.23-.136-.4-.36-.47-.623-.07-.262-.04-.542.1-.778 0 0 0 0 0-.001.13-.223.34-.386.59-.453s.52-.032.74.097c0 0 .49.282.82.474z" fill="#0dcaf2"/></g></g></g></symbol><symbol id="vk"><path xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" d="M1.125 1.125C0 2.249 0 4.06 0 7.68v.64c0 3.62 0 5.43 1.125 6.555C2.249 16 4.06 16 7.68 16h.64c3.62 0 5.43 0 6.555-1.125C16 13.751 16 11.94 16 8.32v-.64c0-3.62 0-5.43-1.125-6.555C13.751 0 11.94 0 8.32 0h-.64C4.06 0 2.25 0 1.125 1.125zM2.75 5c.087 4.16 2.167 6.66 5.813 6.66h.207V9.28c1.34.133 2.353 1.113 2.76 2.38h1.893c-.52-1.893-1.886-2.94-2.74-3.34.854-.493 2.054-1.693 2.34-3.32h-1.72c-.373 1.32-1.48 2.517-2.533 2.63V5H7.05v4.61C5.983 9.343 4.637 8.053 4.577 5H2.75z"/></symbol></svg><!-- endinject -->
+</body>
+</html>
