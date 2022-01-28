@@ -1,7 +1,7 @@
 {
-  "name": "initial-project",
+  "name": "mail-layout",
   "version": "1.0.0",
-  "description": "initial project",
+  "description": "Layout of mail",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

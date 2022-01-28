@@ -1,0 +1,66 @@
+@import "../variables";
+
+.main-advertisement {
+    margin-left: 20px;
+    margin-top: 4px;
+    height: auto;
+    min-height: 300px;
+    background: @color-main-block;
+    box-shadow: 0 4px 12px @color-separator-primary;
+    border-radius: 8px;
+    border: 0;
+    transition: box-shadow .5s;
+    cursor: pointer;
+
+    &:hover {
+        box-shadow: 0 4px 20px 0 @color-separator-primary;
+    }
+
+    &__image {
+        height: 168px;
+        margin-bottom: 5px;
+    }
+
+    &__title {
+        color: @color-main-titles;
+        font-size: 17px;
+        font-weight: 700;
+        line-height: 24px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding: 0 16px;
+    }
+
+    &__desc {
+        font-size: 15px;
+        line-height: 20px;
+        color: @color-main-titles;
+        padding: 0 16px;
+        margin-top: 0;
+    }
+
+    &__footer {
+        padding: 7px 16px 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__company {
+        color: @color-main-titles;
+        text-transform: uppercase;
+        font-size: 11px;
+        line-height: 36px;
+    }
+
+    &__label {
+        color: @color-desc;
+        font-size: 11px;
+        line-height: 36px;
+    }
+}
+
+@media (min-width: 1521px) {
+    .main-advertisement {
+        width: 300px;
+    }
+}

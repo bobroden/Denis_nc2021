@@ -1,0 +1,59 @@
+@import "../variables";
+
+.quotes {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    height: 46px;
+    padding: 10px 20px 0;
+    overflow: hidden;
+    background: @color-main-block;
+    box-shadow: 0 4px 12px @color-separator-primary;
+    border-radius: 8px;
+    margin-top: 8px;
+    border: 0;
+    transition: box-shadow .5s;
+
+    &:hover {
+        box-shadow: 0 4px 20px 0 @color-separator-primary;
+    }
+
+    &__item {
+        max-width: 33%;
+        cursor: pointer;
+    }
+
+    &__wrapper {
+
+        svg {
+            width: 16px;
+            height: 16px;
+            margin-top: 2px;
+        }
+    }
+
+    &__label {
+        display: inline-block;
+        margin-left: 1px;
+        vertical-align: top;
+    }
+
+    &__diff {
+        color: @color-horoscope-bg;
+        font-size: 11px;
+        line-height: 12px;
+        font-weight: 400;
+        .main-font;
+        display: flex;
+        justify-content: center;
+        padding-top: 1px;
+        padding-left: 22px;
+
+        svg {
+            width: 16px;
+            height: 16px;
+            fill: @color-horoscope-bg;
+            margin-top: -2px;
+        }
+    }
+}

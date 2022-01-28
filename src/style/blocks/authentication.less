@@ -1,0 +1,45 @@
+@import "../variables";
+
+.authentication {
+    display: flex;
+    padding-top: 1px;
+
+    &__registration {
+        padding: 5px;
+        color: @color-text-accent;
+        margin-right: 1px;
+        align-items: center;
+        padding: 4px 8px;
+        border-radius: 8px;
+        text-align: center;
+        vertical-align: middle;
+        white-space: nowrap;
+        cursor: pointer;
+
+        &:hover {
+            background: @custom-color-project-dark-bg-hover;
+        }
+    }
+
+    &__login {
+        height: 19px;
+        align-items: center;
+        padding: 4px 8px;
+        border-radius: 8px;
+        text-align: center;
+        vertical-align: middle;
+        white-space: nowrap;
+        cursor: pointer;
+        font-size: 13px;
+        line-height: 18px;
+        .main-font;
+        font-weight: 400;
+        background-color: @color-text-accent;
+        color: @color-background-modal;
+        transition: background .2s ease;
+
+        &:hover {
+            background: @color-text-accent-hover;
+        }
+    }
+}

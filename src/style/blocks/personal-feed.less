@@ -1,0 +1,146 @@
+@import "../variables";
+
+.personal-feed {
+    padding-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    .news-feed-font;
+    margin-left: -20px;
+    cursor: pointer;
+
+    &__item {
+        color: @color-text-primary;
+        font-weight: 400;
+        min-height: 300px;
+        margin: 0 0 20px 20px;
+        min-width: 240px;
+        width: calc((100% - 60px) / 3);
+        transition: box-shadow .5s;
+        box-shadow: 0 2px 14px @custom-color-project-dark-bg-active;
+        position: relative;
+
+        &:hover {
+            box-shadow: 0 4px 20px 0 @color-separator-primary;
+        }
+
+        &:hover &-close {
+            opacity: 1;
+        }
+    }
+
+    &__item-image-container {
+        height: 168px;
+        width: 100%;
+    }
+
+    &__item-image {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+
+    &__item-title {
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 20px;
+        overflow: hidden;
+        padding: 12px 16px 0;
+    }
+
+    &__item-desc {
+        padding: 4px 16px;
+        margin: 0;
+    }
+
+    &__item-like-icon, &__item-comment-icon {
+        width: 16px;
+        height: 16px;
+        color: @color-users-icons;
+        padding-top: 3px;
+    }
+
+    &__item-like-couner, &__item-comment-counter {
+        font-size: 13px;
+        color: @color-text-primary;
+        margin-left: 4px;
+        vertical-align: top;
+    }
+
+    &__item-like, &__item-comment {
+        line-height: 20px;
+        cursor: pointer;
+        padding-top: 2px;
+        margin-left: 16px;
+    }
+
+    &__item-like:hover &__item-like-icon {
+        color: #ff1100;
+    }
+
+    &__item-comment:hover &__item-comment-icon {
+        color: @color-text-primary;
+    }
+
+    &__item-close {
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        width: 16px;
+        height: 16px;
+        font-size: 0;
+        overflow: hidden;
+        transition: opacity .3s ease-in-out;
+        cursor: pointer;
+        opacity: 0;
+        background-color: @color-main-block;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        svg {
+            width: 16px;
+            height: 16px;
+        }
+    }
+
+    &__item-footer {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 36px;
+        padding: 0 16px;
+        box-sizing: border-box;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+
+    &__item-wrapper {
+        display: flex;
+        padding-top: 5px;
+    }
+
+    &__item-company {
+        text-transform: uppercase;
+        font-size: 11px;
+        padding-top: 7px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+@media (max-width: 1189px) {
+    .personal-feed {
+        &__item-like-couner, &__item-comment-counter {
+            display: none;
+        }
+    }
+}

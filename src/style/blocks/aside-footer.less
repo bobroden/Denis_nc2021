@@ -1,0 +1,43 @@
+@import "../variables";
+
+.aside-footer {
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 400;
+    .main-font;
+    margin-top: 16px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+    &__link {
+        height: 32px;
+        cursor: pointer;
+        text-decoration: none;
+        display: block;
+        color: @color-link-secondary;
+        padding: 6px 8px;
+        white-space: nowrap;
+        box-sizing: border-box;
+
+        svg {
+            width: 16px;
+            height: 16px;
+            fill: @color-link-secondary;
+        }
+
+        &:hover {
+            background: @custom-color-project-dark-bg-hover;
+            border-radius: 8px;
+        }
+    }
+
+    &__more {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 24px;
+        height: 24px;
+        padding: 0 2px;
+    }
+}
