@@ -4,12 +4,786 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./img/site-icon.ico">
+    <!--<link rel="shortcut icon" href="./img/site-icon.ico">-->
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="index.css">
     <title>CSS-Tricks</title>
 </head>
 <body>
-    
+    <header class="header">
+        <div class="logo">
+            <svg class="logo__icon"></svg>
+            CSS-TRICKS
+        </div>
+        <div class="header__wrapper">
+            <nav class="navigation">
+                <ul class="navigation__list">
+                    <li class="navaigation__item">Articles</li>
+                    <li class="navaigation__item">Videos</li>
+                    <li class="navaigation__item">Almanac</li>
+                    <li class="navaigation__item">Newsletter</li>
+                    <li class="navaigation__item">Guides</li>
+                    <li class="navaigation__item">Books</li>
+                </ul>
+            </nav>
+            <div class="account">
+                <svg class="account__search"></svg>
+                <svg class="account__profile"></svg>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="main-news">
+            <div class="main-news__tags">
+                <a>Fonts</a>
+                <a>Text-decoration</a>
+            </div>
+            <h1 class="main-news__title">The CSS from-font Value Explained in 4 Demos</h1>
+            <p class="main-news__desc">I was my Advent of UI Components, and I stumbled upon
+                from-font value for the text-decoration-thickness CSS property. I was curious
+                about it, so I did a little research and I think what I found (and learned) is
+                both interesting and worth sharing.
+            </p>
+            <div class="main-news__author">
+                <svg class="main-news__author-icon"></svg>
+                <span class="main-news__author-name">Silvestar Bistrović</span>
+                <span class="main-news__date">on Jan 28, 2022</span>
+           </div>
+        </div>
+        <div class="popular-articles">
+            <div class="popular-articles__header">
+                <h2 class="popular-articles__header-title">Popular this month</h2>
+                <p class="popular-articles__header-desc">Sponsored by</p>
+            </div>
+            <div class="popular-articles__cards">
+                <div class="popular-articles__card">
+                    <p class="popular-articles__card-date">
+                        <span class="popular-articles__card-type">Article</span>
+                        on Nov 29, 2021
+                    </p>
+                    <h2 class="popular-articles__card-title">A Handly Little System
+                        for Animated Entrances in CSS
+                    </h2>
+                    <ul class="popular-articles__card-tags">
+                        <li class="popular-articles__card-tag">Animation</li>
+                        <li class="popular-articles__card-tag">Animation-delay</li>
+                        <li class="popular-articles__card-tag">CSS</li>
+                        <li class="popular-articles__card-tag">Animation</li>
+                        <li class="popular-articles__card-tag">Keyframes</li>
+                    </ul>
+                    <div class="popular-articles__card-author">
+                        <img src class="popular-articles__card-author-icon" alt="Author's icon">
+                        <span class="popular-articles__card-author-name">
+                            Neale Van Fleet
+                        </span>
+                    </div>
+                </div>
+                <div class="popular-articles__card">
+                    <p class="popular-articles__card-date">
+                        <span class="popular-articles__card-type">Article</span>
+                        on Dec 7, 2021
+                    </p>
+                    <h2 class="popular-articles__card-title">Test Your Product on
+                        a Crappy Laptop
+                    </h2>
+                    <ul class="popular-articles__card-tags">
+                        <li class="popular-articles__card-tag">Testing</li>
+                    </ul>
+                    <div class="popular-articles__card-author">
+                        <img src class="popular-articles__card-author-icon" alt="Author's icon">
+                        <span class="popular-articles__card-author-name">
+                            Eric Bailey
+                        </span>
+                    </div>
+                </div>
+                <div class="popular-articles__card">
+                    <p class="popular-articles__card-date">
+                        <span class="popular-articles__card-type">Article</span>
+                        on Nov 22, 2021
+                    </p>
+                    <h2 class="popular-articles__card-title">Responsive Layouts Fewe Madia
+                        Queries
+                    </h2>
+                    <ul class="popular-articles__card-tags">
+                        <li class="popular-articles__card-tag">Clamp</li>
+                        <li class="popular-articles__card-tag">Flexbox</li>
+                        <li class="popular-articles__card-tag">Grid</li>
+                        <li class="popular-articles__card-tag">Media</li>
+                        <li class="popular-articles__card-tag">Queries</li>
+                        <li class="popular-articles__card-tag">Responsive</li>
+                    </ul>
+                    <div class="popular-articles__card-author">
+                        <img src class="popular-articles__card-author-icon" alt="Author's icon">
+                        <span class="popular-articles__card-author-name">
+                            Temani Afif
+                        </span>
+                    </div>
+                </div>
+                <div class="popular-articles__card">
+                    <p class="popular-articles__card-date">
+                        <span class="popular-articles__card-type">Article</span>
+                        on Jan 18, 2022
+                    </p>
+                    <h2 class="popular-articles__card-title">Empathetic Animation
+                    </h2>
+                    <ul class="popular-articles__card-tags">
+                        <li class="popular-articles__card-tag">Accessibility</li>
+                        <li class="popular-articles__card-tag">Animation</li>
+                        <li class="popular-articles__card-tag">Prefers-reduced-motion</li>
+                    </ul>
+                    <div class="popular-articles__card-author">
+                        <img src class="popular-articles__card-author-icon" alt="Author's icon">
+                        <span class="popular-articles__card-author-name">
+                            Cassie Evans
+                        </span>
+                    </div>
+                </div>
+                <div class="popular-articles__card">
+                    <p class="popular-articles__card-date">
+                        <span class="popular-articles__card-type">Article</span>
+                        on Dec 7, 2021
+                    </p>
+                    <h2 class="popular-articles__card-title">Open Props (and Custom Properties
+                        as a System)
+                    </h2>
+                    <ul class="popular-articles__card-tags">
+                        <li class="popular-articles__card-tag">Design Token</li>
+                        <li class="popular-articles__card-tag">Framework</li>
+                        <li class="popular-articles__card-tag">Utility</li>
+                        <li class="popular-articles__card-tag">Classes</li>
+                    </ul>
+                    <div class="popular-articles__card-author">
+                        <img src class="popular-articles__card-author-icon" alt="Author's icon">
+                        <span class="popular-articles__card-author-name">
+                            Chris Coyier
+                        </span>
+                    </div>
+                </div>
+                <div class="popular-articles__card">
+                    <p class="popular-articles__card-date">
+                        <span class="popular-articles__card-type">Article</span>
+                        on Dec 13, 2021
+                    </p>
+                    <h2 class="popular-articles__card-title">Embrace the Platform
+                    </h2>
+                    <ul class="popular-articles__card-tags">
+                        <li class="popular-articles__card-tag">Progressive Enhancement</li>
+                    </ul>
+                    <div class="popular-articles__card-author">
+                        <img src class="popular-articles__card-author-icon" alt="Author's icon">
+                        <span class="popular-articles__card-author-name">
+                            Bramus
+                        </span>
+                    </div>
+                </div>
+                <div class="popular-articles__card">
+                    <p class="popular-articles__card-date">
+                        <span class="popular-articles__card-type">Article</span>
+                        on Dec 17, 2021
+                    </p>
+                    <h2 class="popular-articles__card-title">Consistent, Fluidly Scaling
+                        Type and Spacing
+                    </h2>
+                    <ul class="popular-articles__card-tags">
+                        <li class="popular-articles__card-tag">Fluid Type</li>
+                        <li class="popular-articles__card-tag">Typography</li>
+                    </ul>
+                    <div class="popular-articles__card-author">
+                        <img src class="popular-articles__card-author-icon" alt="Author's icon">
+                        <span class="popular-articles__card-author-name">
+                            Andy Bell
+                        </span>
+                    </div>
+                </div>
+                <div class="popular-articles__card">
+                    <p class="popular-articles__card-date">
+                        <span class="popular-articles__card-type">Article</span>
+                        on Dec 10, 2021
+                    </p>
+                    <h2 class="popular-articles__card-title">Standardizing Focus Styles With
+                        Custom Properties
+                    </h2>
+                    <ul class="popular-articles__card-tags">
+                        <li class="popular-articles__card-tag">:Focus-Visible</li>
+                        <li class="popular-articles__card-tag">Focus</li>
+                    </ul>
+                    <div class="popular-articles__card-author">
+                        <img src class="popular-articles__card-author-icon" alt="Author's icon">
+                        <span class="popular-articles__card-author-name">
+                            Stephanie Eckles
+                        </span>
+                    </div>
+                </div>
+                <div class="popular-articles__card">
+                    <p class="popular-articles__card-date">
+                        <span class="popular-articles__card-type">Article</span>
+                        on Dec 24, 2021
+                    </p>
+                    <h2 class="popular-articles__card-title">Care for the Text
+                    </h2>
+                    <div class="popular-articles__card-author">
+                        <img src class="popular-articles__card-author-icon" alt="Author's icon">
+                        <span class="popular-articles__card-author-name">
+                            Robin Rendle
+                        </span>
+                    </div>
+                </div>
+                <div class="popular-articles__card">
+                    <p class="popular-articles__card-date">
+                        <span class="popular-articles__card-type">Article</span>
+                        on Nov 30, 2021
+                    </p>
+                    <h2 class="popular-articles__card-title">Diagonal Stripes Wipe Animation
+                    </h2>
+                    <ul class="popular-articles__card-tags">
+                        <li class="popular-articles__card-tag">@Property</li>
+                        <li class="popular-articles__card-tag">CSS Animation</li>
+                        <li class="popular-articles__card-tag">Keyframes</li>
+                        <li class="popular-articles__card-tag">Repeating Gradient</li>
+                    </ul>
+                    <div class="popular-articles__card-author">
+                        <img src class="popular-articles__card-author-icon" alt="Author's icon">
+                        <span class="popular-articles__card-author-name">
+                            Chris Coyier
+                        </span>
+                    </div>
+                </div>
+                <div class="popular-articles__card">
+                    <p class="popular-articles__card-date">
+                        <span class="popular-articles__card-type">Article</span>
+                        on Dec 8, 2021
+                    </p>
+                    <h2 class="popular-articles__card-title">Reduce Your Website's
+                        Environmantal Impact With a Carbon Budget
+                    </h2>
+                    <ul class="popular-articles__card-tags">
+                        <li class="popular-articles__card-tag">Carbon Budget</li>
+                        <li class="popular-articles__card-tag">Enviroment</li>
+                    </ul>
+                    <div class="popular-articles__card-author">
+                        <img src class="popular-articles__card-author-icon" alt="Author's icon">
+                        <span class="popular-articles__card-author-name">
+                            Michelle Barker
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="articles">
+            <div class="articles__item">
+                <img src="" class="arcticles__item-photo" alt="Article's photo">
+                <div class="arcticles__item-tags">
+                    <span class="arcticles__item-tag">Fonts</span>
+                    <span class="arcticles__item-tag">TextDecoration</span>
+                </div>
+                <h2 class="arcticles__item-title">The CSS from-font Value Explained in 4 Demos</h2>
+                <p class="arcticles__item-desc">
+                    I was doing my <a class="arcticles__item-link">Advent of UI Components</a>,
+                    and I stumbled upon the <a class="arcticles__item-link">from-font</a>
+                    value for the text-decoration-thickness CSS property. I was curious about
+                    it, so I did a little research and I think what I found (and learned) ...
+                </p>
+                <div class="articles__item-about">
+                    <img src="" class="articles__item-author-icon" alt="Author's icon">
+                    <div class="articles__item-author">
+                        Silvestar Bistrović <span class="articles__item-date">
+                            on Jan 28, 2022 (Updated Jan 31, 2022)
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="articles__item">
+                <img src="" class="arcticles__item-photo" alt="Article's photo">
+                <div class="arcticles__item-tags">
+                    <span class="arcticles__item-tag">Git</span>
+                    <span class="arcticles__item-tag">Git Tower</span>
+                </div>
+                <h2 class="arcticles__item-title">Git: Switching Unstaged Changes to a New Branch</h2>
+                <p class="arcticles__item-desc">
+                    I’m always on the wrong branch. I’m either on master or main working on
+                    something that should be on a fix or feature branch. Or I’m on the last
+                    branch I was working on and should have cut a new ... 
+                </p>
+                <div class="articles__item-about">
+                    <img src="" class="articles__item-author-icon" alt="Author's icon">
+                    <div class="articles__item-author">
+                        Chris Coyier <span class="articles__item-date">
+                            on Jan 27, 2022
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="articles__item">
+                <img src="" class="arcticles__item-photo" alt="Article's photo">
+                <div class="arcticles__item-tags">
+                    <span class="arcticles__item-tag">Typescript</span>
+                </div>
+                <h2 class="arcticles__item-title">Demystifying TypeScript Discriminated Unions</h2>
+                <p class="arcticles__item-desc">
+                    TypeScript is a wonderful tool for writing JavaScript that scales.
+                    It’s more or less the de facto standard for the web when it comes to
+                    large JavaScript projects. As outstanding as it is, there are some
+                    <a class="arcticles__item-link">thicky pieces for the</a> ...
+                </p>
+                <div class="articles__item-about">
+                    <img src="" class="articles__item-author-icon" alt="Author's icon">
+                    <div class="articles__item-author">
+                        Adam Rackis <span class="articles__item-date">
+                            on Jan 27, 2022
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="articles__item">
+                <img src="" class="arcticles__item-photo" alt="Article's photo">
+                <div class="arcticles__item-tags">
+                    <span class="arcticles__item-tag">Backlight</span>
+                    <span class="arcticles__item-tag">Design Systems</span>
+                </div>
+                <h2 class="arcticles__item-title">Build, Ship, & Maintain Design Systems
+                    with Backlight
+                </h2>
+                <p class="arcticles__item-desc">
+                    Design systems are an entire job these days. Agencies are hired to create
+                    them. In-house teams are formed to handle them, shipping them so that
+                    other teams can use them and helping ensure they do. Design systems
+                    aren’t a fad, ...
+                </p>
+                <div class="articles__item-sponsor">
+                    ❥ Sponsored (Written by Chris Coyier)
+                </div>
+            </div>
+            <div class="articles__item _empty">
+            </div>
+            <div class="articles__item">
+                <img src="" class="arcticles__item-photo" alt="Article's photo">
+                <div class="arcticles__item-tags">
+                    <span class="arcticles__item-tag">Classes</span>
+                    <span class="arcticles__item-tag">Classlist</span>
+                    <span class="arcticles__item-tag">JavaScript</span>
+                </div>
+                <h2 class="arcticles__item-title">How to Cycle Through Clacsses
+                    on an HTML Element
+                </h2>
+                <p class="arcticles__item-desc">
+                    Say you have three HTML classes, and a DOM element should only have
+                    one of them at a time:
+                    <pre rel="HTML" class="arcticles__item-code-example" data-line="">
+                        <code markup="tt">
+                            &lt;div class="state-1"&lt;/div&lt;div 
+                            class="state-2"&lt;/div&lt;div class="state-3"&lt;/div
+                        </code>
+                    </pre>
+                    Now your job is to rotate them. That is, cycle through classes ...
+                </p>
+                <div class="articles__item-author">
+                    Chris Coyier <span class="articles__item-date">
+                        on Jan 26, 2022
+                    </span>
+                </div>
+            </div>
+            <div class="articles__item">
+                <img src="" class="arcticles__item-photo" alt="Article's photo">
+                <div class="arcticles__item-tags">
+                    <span class="arcticles__item-tag">Borders</span>
+                    <span class="arcticles__item-tag">Gradients</span>
+                    <span class="arcticles__item-tag">Mask</span>
+                </div>
+                <h2 class="arcticles__item-title">Fancy CSS Borders Using Masks</h2>
+                <p class="arcticles__item-desc">
+                    Have you ever tried to make CSS borders in a repeating zig-zag pattern?
+                    Like where a colored section of a website ends and another differently
+                    colored section begins — not with a straight line, but angled zig zags,
+                    rounded humps, ...
+                </p>
+                <div class="articles__item-about">
+                    <img src="" class="articles__item-author-icon" alt="Author's icon">
+                    <div class="articles__item-author">
+                        Temani Afif <span class="articles__item-date">
+                            on Jan 26, 2022
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="articles__item">
+                <img src="" class="arcticles__item-photo" alt="Article's photo">
+                <div class="arcticles__item-tags">
+                    <span class="arcticles__item-tag">Components</span>
+                    <span class="arcticles__item-tag">Design Systems</span>
+                    <span class="arcticles__item-tag">Layout</span>
+                </div>
+                <h2 class="arcticles__item-title">How Do You Handle Component Spacing
+                    in a Design System?</h2>
+                <p class="arcticles__item-desc">
+                    Say you’ve got a <code><Card /></code> component. It’s highly likely it
+                    shouldn’t be butted right up against any other components with no
+                    spacing around it. That’s true for... pretty much every component.
+                    So, how do you handle component spacing in ...
+                </p>
+                <div class="articles__item-about">
+                    <img src="" class="articles__item-author-icon" alt="Author's icon">
+                    <div class="articles__item-author">
+                        Chris Coyier <span class="articles__item-date">
+                            on Jan 25, 2022 (Updated on Jan 27, 2022)
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="articles__item">
+                <img src="" class="arcticles__item-photo" alt="Article's photo">
+                <div class="arcticles__item-tags">
+                    <span class="arcticles__item-tag">Intersectionobserver</span>
+                    <span class="arcticles__item-tag">Scroll Linked</span>
+                    <span class="arcticles__item-tag">Animation</span>
+                </div>
+                <h2 class="arcticles__item-title">How to Make a Scroll-Triggered Animation
+                    With Basic JavaScript
+                </h2>
+                <p class="arcticles__item-desc">
+                    A little bit of animation on a site can add some flair, impress users,
+                    and get their attention. You could have them run, no matter where they
+                    are on the page, immediately when the page loads. But what if your ...
+                </p>
+                <div class="articles__item-about">
+                    <img src="" class="articles__item-author-icon" alt="Author's icon">
+                    <div class="articles__item-author">
+                        Md Shuvo <span class="articles__item-date">
+                            on Jan 25, 2022
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="articles__item">
+                <img src="" class="arcticles__item-photo" alt="Article's photo">
+                <div class="arcticles__item-tags">
+                    <span class="arcticles__item-tag">Accessibility</span>
+                </div>
+                <h2 class="arcticles__item-title">Why Don't Developers Take Accessibility
+                    Seriously?
+                </h2>
+                <p class="arcticles__item-desc">
+                    You know that joke, “Two front-end developers walk into a bar and find
+                    they have nothing in common”? It’s funny, yet frustrating, because it’s
+                    true.
+
+                    This article will present three different perspectives on accessibility
+                    in web design and development. Three ...
+                </p>
+                <div class="articles__item-about">
+                    <img src="" class="articles__item-author-icon" alt="Author's icon">
+                    <div class="articles__item-author">
+                        Melanie Sumner <span class="articles__item-date">
+                            on Jan 24, 2022
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="articles__item">
+                <img src="" class="arcticles__item-photo" alt="Article's photo">
+                <div class="arcticles__item-tags">
+                    <span class="arcticles__item-tag">Security</span>
+                    <span class="arcticles__item-tag">SVG</span>
+                    <span class="arcticles__item-tag">WordPress</span>
+                </div>
+                <h2 class="arcticles__item-title">Using SVG in WordPress (2 Helpful Plugin
+                    Recommendations)
+                </h2>
+                <p class="arcticles__item-desc">
+                    SVG is a great image format, so it's nice to able to use it in WordPress.
+                    If you're looking to be using SVG in WordPress. ,
+                    we've got you covered here with all the best options.
+                </p>
+                <div class="articles__item-about">
+                    <img src="" class="articles__item-author-icon" alt="Author's icon">
+                    <div class="articles__item-author">
+                        Chris Coyier <span class="articles__item-date">
+                            on Jan 21, 2022
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="articles__item">
+                <img src="" class="arcticles__item-photo" alt="Article's photo">
+                <div class="arcticles__item-tags">
+                    <span class="arcticles__item-tag">Lifecycle Callbacks</span>
+                    <span class="arcticles__item-tag">Web Components</span>
+                </div>
+                <h2 class="arcticles__item-title">Context-Aware Web Components Are Easier Than
+                    You Think
+                </h2>
+                <p class="arcticles__item-desc">
+                    Another aspect of web components that we haven’t talked about yet is
+                    that a JavaScript function is called whenever a web component is added
+                    or removed from a page. These lifecycle callbacks can be used for many
+                    things, including making ...
+                </p>
+                <div class="articles__item-about">
+                    <img src="" class="articles__item-author-icon" alt="Author's icon">
+                    <div class="articles__item-author">
+                        John Rhea <span class="articles__item-date">
+                            on Jan 21, 2022
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="archive-button">Keep browsing in the archives</button>
+        <div class="popular-articles">
+            <div class="popular-articles__header">
+                <h2 class="popular-articles__header-title">The Monthly Mixup</h2>
+                <p class="popular-articles__header-desc">Sponsored by</p>
+            </div>
+            <div class="popular-articles__cards">
+                <div class="popular-articles__card">
+                    <p class="popular-articles__card-date">
+                        <span class="popular-articles__card-type">Article</span>
+                        on May 3, 2018
+                    </p>
+                    <h2 class="popular-articles__card-title">When To Use The Button Element
+                    </h2>
+                    <ul class="popular-articles__card-tags">
+                        <li class="popular-articles__card-tag">Buttons</li>
+                    </ul>
+                    <div class="popular-articles__card-author">
+                        <img src class="popular-articles__card-author-icon" alt="Author's icon">
+                        <span class="popular-articles__card-author-name">
+                            Chris Coyier
+                        </span>
+                    </div>
+                </div>
+                <div class="popular-articles__card">
+                    <p class="popular-articles__card-date">
+                        <span class="popular-articles__card-type">Video</span>
+                        on Dec 10, 2020
+                    </p>
+                    <h2 class="popular-articles__card-title">#200: Scroll to Zoom
+                    </h2>
+                    <p class="popular-articles__card-desc">▶ Running Time: 10:05</p>
+                    <div class="popular-articles__card-author">
+                        <img src class="popular-articles__card-author-icon" alt="Author's icon">
+                        <span class="popular-articles__card-author-name">
+                            Chris Coyier
+                        </span>
+                    </div>
+                </div>
+                <div class="popular-articles__card">
+                    <p class="popular-articles__card-date">
+                        <span class="popular-articles__card-type">Almanac</span>
+                        on May 29, 2019
+                    </p>
+                    <h2 class="popular-articles__card-title">scroll-snap-type
+                    </h2>
+                    <div class="popular-articles__card-author">
+                        <img src class="popular-articles__card-author-icon" alt="Author's icon">
+                        <span class="popular-articles__card-author-name">
+                            Andy Adams
+                        </span>
+                    </div>
+                </div>
+                <div class="popular-articles__card">
+                    <p class="popular-articles__card-date">
+                        <span class="popular-articles__card-type">Article</span>
+                        on Apr 7, 2020
+                    </p>
+                    <h2 class="popular-articles__card-title">Neumorphism and CSS
+                    </h2>
+                    <ul class="popular-articles__card-tags">
+                        <li class="popular-articles__card-tag">Neumorphism</li>
+                    </ul>
+                    <div class="popular-articles__card-author">
+                        <img src class="popular-articles__card-author-icon" alt="Author's icon">
+                        <span class="popular-articles__card-author-name">
+                            Adrian Bece
+                        </span>
+                    </div>
+                </div>
+                <div class="popular-articles__card">
+                    <p class="popular-articles__card-date">
+                        <span class="popular-articles__card-type">Almanac</span>
+                        on Jul 14, 2021
+                    </p>
+                    <h2 class="popular-articles__card-title">transform-origin
+                    </h2>
+                    <code class="css-code-example">
+                        <span class="css-code-example__yellow-elem">.element </span>
+                        <span class="css-code-example__blue-elem">{ transform-origin: </span>
+                        <span class="css-code-example__yellow-elem">top left</span>
+                        <span class="css-code-example__blue-elem">; }</span>
+                    </code>
+                    <ul class="popular-articles__card-tags">
+                        <li class="popular-articles__card-tag">Transform</li>
+                        <li class="popular-articles__card-tag">Transform-origin</li>
+                    </ul>
+                    <div class="popular-articles__card-author">
+                        <img src class="popular-articles__card-author-icon" alt="Author's icon">
+                        <span class="popular-articles__card-author-name">
+                            Chris Coyier
+                        </span>
+                    </div>
+                </div>
+                <div class="popular-articles__card">
+                    <p class="popular-articles__card-date">
+                        <span class="popular-articles__card-type">Article</span>
+                        on Jan 8, 2021
+                    </p>
+                    <h2 class="popular-articles__card-title">Build a Custom CMS for a Serverless
+                        Static Site Generator
+                    </h2>
+                    <ul class="popular-articles__card-tags">
+                        <li class="popular-articles__card-tag">AWS</li>
+                        <li class="popular-articles__card-tag">CMS</li>
+                        <li class="popular-articles__card-tag">Serverless</li>
+                        <li class="popular-articles__card-tag">Static Sites</li>
+                    </ul>
+                    <div class="popular-articles__card-author">
+                        <img src class="popular-articles__card-author-icon" alt="Author's icon">
+                        <span class="popular-articles__card-author-name">
+                            John Polacek
+                        </span>
+                    </div>
+                </div>
+                <div class="popular-articles__card">
+                    <p class="popular-articles__card-date">
+                        <span class="popular-articles__card-type">Snippet</span>
+                        on Mar 22, 2019
+                    </p>
+                    <h2 class="popular-articles__card-title">Text Rotation
+                    </h2>
+                    <ul class="popular-articles__card-tags">
+                        <li class="popular-articles__card-tag">Modernizer</li>
+                        <li class="popular-articles__card-tag">Rotate</li>
+                        <li class="popular-articles__card-tag">Transform</li>
+                        <li class="popular-articles__card-tag">Writing-mode</li>
+                    </ul>
+                    <div class="popular-articles__card-author">
+                        <img src class="popular-articles__card-author-icon" alt="Author's icon">
+                        <span class="popular-articles__card-author-name">
+                            Chris Coyier
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <svg class="footer__logo"></svg>
+        <div class="footer__form">
+            <p class="footer__form-desc">
+                CSS-Tricks is created by
+                <a class="footer__form-link">Chris</a> and a
+                <a class="footer__form-link">team</a> of swell people
+            </p>
+            <form class="subscribe-form">
+                <h4 class="subscribe-form__title">Keep up to date on web dev</h4>
+                <p class="subscribe-form__desc">with our hand-crafted weekly newsletter</p>
+                <div class="subscribe-form__input-wrapper">
+                    <input type="email" placeholder="smart@cookie.com" class="subscribe-form__email-input">
+                    <button class="subscribe-form__button">SUBSCRIBE</button>
+                </div>
+            </form>
+        </div>
+        <div class="footer__menu">
+            <div class="footer__menu-column">
+                <h5 class="footer__menu-title">Tech</h5>
+                <ul class="footer__menu-links">
+                    <li class="footer__menu-links-item">
+                        <a class="footer__menu-link">WordPress</a>
+                        <span class="footer__menu-adition">(CMS)</span>
+                    </li>
+                    <li class="footer__menu-links-item">
+                        <a class="footer__menu-link">Jetpack</a>
+                        <span class="footer__menu-adition">(Search, Backup)</span>
+                    </li>
+                    <li class="footer__menu-links-item">
+                        <a class="footer__menu-link">WooCommerce</a>
+                        <span class="footer__menu-adition">(eCommerce)</span>
+                    </li>
+                    <li class="footer__menu-links-item">
+                        <a class="footer__menu-link">Local</a>
+                        <span class="footer__menu-adition">(Development)</span>
+                    </li>
+                </ul>
+                <h5 class="footer__menu-title">Hosting</h5>
+                <ul class="footer__menu-links">
+                    <li class="footer__menu-links-item">
+                        <a class="footer__menu-link">Flywheel</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__menu-column">
+                <h5 class="footer__menu-title">Family</h5>
+                <ul class="footer__menu-links">
+                    <li class="footer__menu-links-item">
+                        <a class="footer__menu-link">CodePen</a>
+                    </li>
+                    <li class="footer__menu-links-item">
+                        <a class="footer__menu-link">ShopTalk Show</a>
+                    </li>
+                </ul>
+                <h5 class="footer__menu-title">Minisites</h5>
+                <ul class="footer__menu-links">
+                    <li class="footer__menu-links-item">
+                        <a class="footer__menu-link">The Power of Serverless</a>
+                    </li>
+                    <li class="footer__menu-links-item">
+                        <a class="footer__menu-link">Upcoming Conferences</a>
+                    </li>
+                    <li class="footer__menu-links-item">
+                        <a class="footer__menu-link">Coding Fonts</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__menu-column">
+                <h5 class="footer__menu-title">Contact</h5>
+                <ul class="footer__menu-links">
+                    <li class="footer__menu-links-item">
+                        <a class="footer__menu-link">Email</a>
+                    </li>
+                    <li class="footer__menu-links-item">
+                        <a class="footer__menu-link">Sponsorship Info</a>
+                    </li>
+                    <li class="footer__menu-links-item">
+                        <a class="footer__menu-link">Guest Writing</a>
+                    </li>
+                </ul>
+                <h5 class="footer__menu-title">Buy</h5>
+                <ul class="footer__menu-links">
+                    <li class="footer__menu-links-item">
+                        <a class="footer__menu-link">Posters & Swag</a>
+                    </li>
+                    <li class="footer__menu-links-item">
+                        <a class="footer__menu-link">Mambership</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__menu-column">
+                <h5 class="footer__menu-title">Follow</h5>
+                <ul class="footer__menu-links">
+                    <li class="footer__menu-links-item">
+                        <a class="footer__menu-link">Twitter</a>
+                    </li>
+                    <li class="footer__menu-links-item">
+                        <a class="footer__menu-link">Instagram</a>
+                    </li>
+                    <li class="footer__menu-links-item">
+                        <a class="footer__menu-link">YouTube</a>
+                    </li>
+                    <li class="footer__menu-links-item">
+                        <a class="footer__menu-link">CodePen</a>
+                    </li>
+                    <li class="footer__menu-links-item">
+                        <a class="footer__menu-link">GitHub</a>
+                    </li>
+                    <li class="footer__menu-links-item">
+                        <a class="footer__menu-link">iTunes</a>
+                    </li>
+                    <li class="footer__menu-links-item">
+                        <a class="footer__menu-link">RSS</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <svg class="top-of-site-link"></svg>
 </body>
 </html>
