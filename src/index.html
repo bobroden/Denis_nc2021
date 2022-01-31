@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--<link rel="shortcut icon" href="./img/site-icon.ico">-->
+    <link rel="shortcut icon" href="./img/favicon.ico">
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="index.css">
     <title>CSS-Tricks</title>
@@ -12,8 +12,12 @@
 <body>
     <header class="header">
         <div class="logo">
-            <svg class="logo__icon"></svg>
-            CSS-TRICKS
+            <svg class="logo__icon">
+                <use xlink:href="#logo-star"></use>
+            </svg>
+            <svg class="logo__text">
+                <use xlink:href="#logo-text"></use>
+            </svg>
         </div>
         <div class="header__wrapper">
             <nav class="navigation">
@@ -27,27 +31,32 @@
                 </ul>
             </nav>
             <div class="account">
-                <svg class="account__search"></svg>
-                <svg class="account__profile"></svg>
+                <svg class="account__search">
+                    <use xlink:href="#search"></use>
+                </svg>
+                <svg class="account__profile">
+                    <use xlink:href="#account"></use>
+                </svg>
             </div>
         </div>
     </header>
     <main class="main">
         <div class="main-news">
             <div class="main-news__tags">
-                <a>Fonts</a>
-                <a>Text-decoration</a>
+                <a>TypeScript</a>
             </div>
-            <h1 class="main-news__title">The CSS from-font Value Explained in 4 Demos</h1>
-            <p class="main-news__desc">I was my Advent of UI Components, and I stumbled upon
-                from-font value for the text-decoration-thickness CSS property. I was curious
-                about it, so I did a little research and I think what I found (and learned) is
-                both interesting and worth sharing.
+            <h1 class="main-news__title">The Relevance of TypeScript in 2022</h1>
+            <p class="main-news__desc">It’s 2022. And the current relevance of TypeScript is
+                undisputed. TypeScript has dominated the front-end developer experience by
+                many, many accounts. By now you likely already know that TypeScript is a
+                superset of JavaScript, building on JavaScript by adding syntax for type
+                declarations, classes, and other object-oriented features with type-checking.
+                And when I say dominated, [...]
             </p>
             <div class="main-news__author">
                 <svg class="main-news__author-icon"></svg>
-                <span class="main-news__author-name">Silvestar Bistrović</span>
-                <span class="main-news__date">on Jan 28, 2022</span>
+                <span class="main-news__author-name">Mamta Dalal</span>
+                <span class="main-news__date">on Jan 31, 2022</span>
            </div>
         </div>
         <div class="popular-articles">
@@ -72,7 +81,7 @@
                         <li class="popular-articles__card-tag">Keyframes</li>
                     </ul>
                     <div class="popular-articles__card-author">
-                        <img src class="popular-articles__card-author-icon" alt="Author's icon">
+                        <img src="./img/neale.png" class="popular-articles__card-author-icon" alt="Author's icon">
                         <span class="popular-articles__card-author-name">
                             Neale Van Fleet
                         </span>
@@ -90,7 +99,7 @@
                         <li class="popular-articles__card-tag">Testing</li>
                     </ul>
                     <div class="popular-articles__card-author">
-                        <img src class="popular-articles__card-author-icon" alt="Author's icon">
+                        <img src="./img/eric.png" class="popular-articles__card-author-icon" alt="Author's icon">
                         <span class="popular-articles__card-author-name">
                             Eric Bailey
                         </span>
@@ -113,7 +122,7 @@
                         <li class="popular-articles__card-tag">Responsive</li>
                     </ul>
                     <div class="popular-articles__card-author">
-                        <img src class="popular-articles__card-author-icon" alt="Author's icon">
+                        <img src="./img/temani.png" class="popular-articles__card-author-icon" alt="Author's icon">
                         <span class="popular-articles__card-author-name">
                             Temani Afif
                         </span>
@@ -132,7 +141,7 @@
                         <li class="popular-articles__card-tag">Prefers-reduced-motion</li>
                     </ul>
                     <div class="popular-articles__card-author">
-                        <img src class="popular-articles__card-author-icon" alt="Author's icon">
+                        <img src="./img/cassie.jpg" class="popular-articles__card-author-icon" alt="Author's icon">
                         <span class="popular-articles__card-author-name">
                             Cassie Evans
                         </span>
@@ -153,7 +162,7 @@
                         <li class="popular-articles__card-tag">Classes</li>
                     </ul>
                     <div class="popular-articles__card-author">
-                        <img src class="popular-articles__card-author-icon" alt="Author's icon">
+                        <img src="./img/chris.jpeg" class="popular-articles__card-author-icon" alt="Author's icon">
                         <span class="popular-articles__card-author-name">
                             Chris Coyier
                         </span>
@@ -170,7 +179,7 @@
                         <li class="popular-articles__card-tag">Progressive Enhancement</li>
                     </ul>
                     <div class="popular-articles__card-author">
-                        <img src class="popular-articles__card-author-icon" alt="Author's icon">
+                        <img src="./img/bramus.png" class="popular-articles__card-author-icon" alt="Author's icon">
                         <span class="popular-articles__card-author-name">
                             Bramus
                         </span>
@@ -189,7 +198,7 @@
                         <li class="popular-articles__card-tag">Typography</li>
                     </ul>
                     <div class="popular-articles__card-author">
-                        <img src class="popular-articles__card-author-icon" alt="Author's icon">
+                        <img src="./img/andy.jpg" class="popular-articles__card-author-icon" alt="Author's icon">
                         <span class="popular-articles__card-author-name">
                             Andy Bell
                         </span>
@@ -208,7 +217,7 @@
                         <li class="popular-articles__card-tag">Focus</li>
                     </ul>
                     <div class="popular-articles__card-author">
-                        <img src class="popular-articles__card-author-icon" alt="Author's icon">
+                        <img src="./img/staphanie.jpg" class="popular-articles__card-author-icon" alt="Author's icon">
                         <span class="popular-articles__card-author-name">
                             Stephanie Eckles
                         </span>
@@ -222,7 +231,7 @@
                     <h2 class="popular-articles__card-title">Care for the Text
                     </h2>
                     <div class="popular-articles__card-author">
-                        <img src class="popular-articles__card-author-icon" alt="Author's icon">
+                        <img src="./img/robin.jpg" class="popular-articles__card-author-icon" alt="Author's icon">
                         <span class="popular-articles__card-author-name">
                             Robin Rendle
                         </span>
@@ -242,7 +251,7 @@
                         <li class="popular-articles__card-tag">Repeating Gradient</li>
                     </ul>
                     <div class="popular-articles__card-author">
-                        <img src class="popular-articles__card-author-icon" alt="Author's icon">
+                        <img src="./img/chris.jpeg" class="popular-articles__card-author-icon" alt="Author's icon">
                         <span class="popular-articles__card-author-name">
                             Chris Coyier
                         </span>
@@ -261,7 +270,7 @@
                         <li class="popular-articles__card-tag">Enviroment</li>
                     </ul>
                     <div class="popular-articles__card-author">
-                        <img src class="popular-articles__card-author-icon" alt="Author's icon">
+                        <img src="./img/michelle.jpeg" class="popular-articles__card-author-icon" alt="Author's icon">
                         <span class="popular-articles__card-author-name">
                             Michelle Barker
                         </span>
@@ -271,7 +280,7 @@
         </div>
         <div class="articles">
             <div class="articles__item">
-                <img src="" class="arcticles__item-photo" alt="Article's photo">
+                <img src="./img/fonts.png" class="arcticles__item-photo" alt="Article's photo">
                 <div class="arcticles__item-tags">
                     <span class="arcticles__item-tag">Fonts</span>
                     <span class="arcticles__item-tag">TextDecoration</span>
@@ -284,7 +293,7 @@
                     it, so I did a little research and I think what I found (and learned) ...
                 </p>
                 <div class="articles__item-about">
-                    <img src="" class="articles__item-author-icon" alt="Author's icon">
+                    <img src="./img/silvester.jpg" class="articles__item-author-icon" alt="Author's icon">
                     <div class="articles__item-author">
                         Silvestar Bistrović <span class="articles__item-date">
                             on Jan 28, 2022 (Updated Jan 31, 2022)
@@ -293,7 +302,7 @@
                 </div>
             </div>
             <div class="articles__item">
-                <img src="" class="arcticles__item-photo" alt="Article's photo">
+                <img src="./img/git.png" class="arcticles__item-photo" alt="Article's photo">
                 <div class="arcticles__item-tags">
                     <span class="arcticles__item-tag">Git</span>
                     <span class="arcticles__item-tag">Git Tower</span>
@@ -305,7 +314,7 @@
                     branch I was working on and should have cut a new ... 
                 </p>
                 <div class="articles__item-about">
-                    <img src="" class="articles__item-author-icon" alt="Author's icon">
+                    <img src="./img/chris.jpeg" class="articles__item-author-icon" alt="Author's icon">
                     <div class="articles__item-author">
                         Chris Coyier <span class="articles__item-date">
                             on Jan 27, 2022
@@ -314,7 +323,7 @@
                 </div>
             </div>
             <div class="articles__item">
-                <img src="" class="arcticles__item-photo" alt="Article's photo">
+                <img src="./img/typescript.png" class="arcticles__item-photo" alt="Article's photo">
                 <div class="arcticles__item-tags">
                     <span class="arcticles__item-tag">Typescript</span>
                 </div>
@@ -326,7 +335,7 @@
                     <a class="arcticles__item-link">thicky pieces for the</a> ...
                 </p>
                 <div class="articles__item-about">
-                    <img src="" class="articles__item-author-icon" alt="Author's icon">
+                    <img src="./img/adam.jpeg" class="articles__item-author-icon" alt="Author's icon">
                     <div class="articles__item-author">
                         Adam Rackis <span class="articles__item-date">
                             on Jan 27, 2022
@@ -335,7 +344,7 @@
                 </div>
             </div>
             <div class="articles__item">
-                <img src="" class="arcticles__item-photo" alt="Article's photo">
+                <img src="./img/backlight.jpg" class="arcticles__item-photo" alt="Article's photo">
                 <div class="arcticles__item-tags">
                     <span class="arcticles__item-tag">Backlight</span>
                     <span class="arcticles__item-tag">Design Systems</span>
@@ -356,7 +365,7 @@
             <div class="articles__item _empty">
             </div>
             <div class="articles__item">
-                <img src="" class="arcticles__item-photo" alt="Article's photo">
+                <img src="./img/refresh.jpg" class="arcticles__item-photo" alt="Article's photo">
                 <div class="arcticles__item-tags">
                     <span class="arcticles__item-tag">Classes</span>
                     <span class="arcticles__item-tag">Classlist</span>
@@ -376,14 +385,17 @@
                     </pre>
                     Now your job is to rotate them. That is, cycle through classes ...
                 </p>
-                <div class="articles__item-author">
-                    Chris Coyier <span class="articles__item-date">
-                        on Jan 26, 2022
-                    </span>
+                <div class="articles__item-about">
+                    <img src="./img/chris.jpeg" class="articles__item-author-icon" alt="Author's icon">
+                    <div class="articles__item-author">
+                        Chris Coyier <span class="articles__item-date">
+                            on Jan 26, 2022
+                        </span>
+                    </div>
                 </div>
             </div>
             <div class="articles__item">
-                <img src="" class="arcticles__item-photo" alt="Article's photo">
+                <img src="./img/fancy-borders.png" class="arcticles__item-photo" alt="Article's photo">
                 <div class="arcticles__item-tags">
                     <span class="arcticles__item-tag">Borders</span>
                     <span class="arcticles__item-tag">Gradients</span>
@@ -397,7 +409,7 @@
                     rounded humps, ...
                 </p>
                 <div class="articles__item-about">
-                    <img src="" class="articles__item-author-icon" alt="Author's icon">
+                    <img src="./img/temani.png" class="articles__item-author-icon" alt="Author's icon">
                     <div class="articles__item-author">
                         Temani Afif <span class="articles__item-date">
                             on Jan 26, 2022
@@ -406,7 +418,7 @@
                 </div>
             </div>
             <div class="articles__item">
-                <img src="" class="arcticles__item-photo" alt="Article's photo">
+                <img src="./img/lorem.png" class="arcticles__item-photo" alt="Article's photo">
                 <div class="arcticles__item-tags">
                     <span class="arcticles__item-tag">Components</span>
                     <span class="arcticles__item-tag">Design Systems</span>
@@ -421,7 +433,7 @@
                     So, how do you handle component spacing in ...
                 </p>
                 <div class="articles__item-about">
-                    <img src="" class="articles__item-author-icon" alt="Author's icon">
+                    <img src="./img/chris.jpeg" class="articles__item-author-icon" alt="Author's icon">
                     <div class="articles__item-author">
                         Chris Coyier <span class="articles__item-date">
                             on Jan 25, 2022 (Updated on Jan 27, 2022)
@@ -430,7 +442,7 @@
                 </div>
             </div>
             <div class="articles__item">
-                <img src="" class="arcticles__item-photo" alt="Article's photo">
+                <img src="./img/scroll-position.png" class="arcticles__item-photo" alt="Article's photo">
                 <div class="arcticles__item-tags">
                     <span class="arcticles__item-tag">Intersectionobserver</span>
                     <span class="arcticles__item-tag">Scroll Linked</span>
@@ -445,7 +457,7 @@
                     are on the page, immediately when the page loads. But what if your ...
                 </p>
                 <div class="articles__item-about">
-                    <img src="" class="articles__item-author-icon" alt="Author's icon">
+                    <img src="./img/md.jpg" class="articles__item-author-icon" alt="Author's icon">
                     <div class="articles__item-author">
                         Md Shuvo <span class="articles__item-date">
                             on Jan 25, 2022
@@ -454,7 +466,7 @@
                 </div>
             </div>
             <div class="articles__item">
-                <img src="" class="arcticles__item-photo" alt="Article's photo">
+                <img src="./img/scott-rodgerson.jpg" class="arcticles__item-photo" alt="Article's photo">
                 <div class="arcticles__item-tags">
                     <span class="arcticles__item-tag">Accessibility</span>
                 </div>
@@ -470,7 +482,7 @@
                     in web design and development. Three ...
                 </p>
                 <div class="articles__item-about">
-                    <img src="" class="articles__item-author-icon" alt="Author's icon">
+                    <img src="./img/melanie.png" class="articles__item-author-icon" alt="Author's icon">
                     <div class="articles__item-author">
                         Melanie Sumner <span class="articles__item-date">
                             on Jan 24, 2022
@@ -479,7 +491,7 @@
                 </div>
             </div>
             <div class="articles__item">
-                <img src="" class="arcticles__item-photo" alt="Article's photo">
+                <img src="./img/using-svg-in-wordpress.png" class="arcticles__item-photo" alt="Article's photo">
                 <div class="arcticles__item-tags">
                     <span class="arcticles__item-tag">Security</span>
                     <span class="arcticles__item-tag">SVG</span>
@@ -494,7 +506,7 @@
                     we've got you covered here with all the best options.
                 </p>
                 <div class="articles__item-about">
-                    <img src="" class="articles__item-author-icon" alt="Author's icon">
+                    <img src="./img/chris.jpeg" class="articles__item-author-icon" alt="Author's icon">
                     <div class="articles__item-author">
                         Chris Coyier <span class="articles__item-date">
                             on Jan 21, 2022
@@ -503,7 +515,7 @@
                 </div>
             </div>
             <div class="articles__item">
-                <img src="" class="arcticles__item-photo" alt="Article's photo">
+                <img src="./img/human-zombie.jpg" class="arcticles__item-photo" alt="Article's photo">
                 <div class="arcticles__item-tags">
                     <span class="arcticles__item-tag">Lifecycle Callbacks</span>
                     <span class="arcticles__item-tag">Web Components</span>
@@ -518,7 +530,7 @@
                     things, including making ...
                 </p>
                 <div class="articles__item-about">
-                    <img src="" class="articles__item-author-icon" alt="Author's icon">
+                    <img src="./img/john-r.jpeg" class="articles__item-author-icon" alt="Author's icon">
                     <div class="articles__item-author">
                         John Rhea <span class="articles__item-date">
                             on Jan 21, 2022
@@ -545,7 +557,7 @@
                         <li class="popular-articles__card-tag">Buttons</li>
                     </ul>
                     <div class="popular-articles__card-author">
-                        <img src class="popular-articles__card-author-icon" alt="Author's icon">
+                        <img src="./img/chris.jpeg" class="popular-articles__card-author-icon" alt="Author's icon">
                         <span class="popular-articles__card-author-name">
                             Chris Coyier
                         </span>
@@ -560,7 +572,7 @@
                     </h2>
                     <p class="popular-articles__card-desc">▶ Running Time: 10:05</p>
                     <div class="popular-articles__card-author">
-                        <img src class="popular-articles__card-author-icon" alt="Author's icon">
+                        <img src="./img/chris.jpeg" class="popular-articles__card-author-icon" alt="Author's icon">
                         <span class="popular-articles__card-author-name">
                             Chris Coyier
                         </span>
@@ -574,7 +586,7 @@
                     <h2 class="popular-articles__card-title">scroll-snap-type
                     </h2>
                     <div class="popular-articles__card-author">
-                        <img src class="popular-articles__card-author-icon" alt="Author's icon">
+                        <img src="./img/andy.jpg" class="popular-articles__card-author-icon" alt="Author's icon">
                         <span class="popular-articles__card-author-name">
                             Andy Adams
                         </span>
@@ -591,7 +603,7 @@
                         <li class="popular-articles__card-tag">Neumorphism</li>
                     </ul>
                     <div class="popular-articles__card-author">
-                        <img src class="popular-articles__card-author-icon" alt="Author's icon">
+                        <img src="./img/adrian.jpeg" class="popular-articles__card-author-icon" alt="Author's icon">
                         <span class="popular-articles__card-author-name">
                             Adrian Bece
                         </span>
@@ -615,7 +627,7 @@
                         <li class="popular-articles__card-tag">Transform-origin</li>
                     </ul>
                     <div class="popular-articles__card-author">
-                        <img src class="popular-articles__card-author-icon" alt="Author's icon">
+                        <img src="./img/chris.jpeg" class="popular-articles__card-author-icon" alt="Author's icon">
                         <span class="popular-articles__card-author-name">
                             Chris Coyier
                         </span>
@@ -636,7 +648,7 @@
                         <li class="popular-articles__card-tag">Static Sites</li>
                     </ul>
                     <div class="popular-articles__card-author">
-                        <img src class="popular-articles__card-author-icon" alt="Author's icon">
+                        <img src="./img/john.jpeg" class="popular-articles__card-author-icon" alt="Author's icon">
                         <span class="popular-articles__card-author-name">
                             John Polacek
                         </span>
@@ -656,7 +668,7 @@
                         <li class="popular-articles__card-tag">Writing-mode</li>
                     </ul>
                     <div class="popular-articles__card-author">
-                        <img src class="popular-articles__card-author-icon" alt="Author's icon">
+                        <img src="./img/chris.jpeg" class="popular-articles__card-author-icon" alt="Author's icon">
                         <span class="popular-articles__card-author-name">
                             Chris Coyier
                         </span>
@@ -666,7 +678,9 @@
         </div>
     </main>
     <footer class="footer">
-        <svg class="footer__logo"></svg>
+        <svg class="footer__logo">
+            <use xlink:href="#big-logo-star"></use>
+        </svg>
         <div class="footer__form">
             <p class="footer__form-desc">
                 CSS-Tricks is created by
@@ -784,6 +798,9 @@
             </div>
         </div>
     </footer>
-    <svg class="top-of-site-link"></svg>
+    <svg class="top-of-site-link">
+        <use xlink:href="#top"></use>
+    </svg>
+    <!-- inject:svg --><!-- endinject -->
 </body>
 </html>
