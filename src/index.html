@@ -22,12 +22,12 @@
         <div class="header__wrapper">
             <nav class="navigation">
                 <ul class="navigation__list">
-                    <li class="navaigation__item">Articles</li>
-                    <li class="navaigation__item">Videos</li>
-                    <li class="navaigation__item">Almanac</li>
-                    <li class="navaigation__item">Newsletter</li>
-                    <li class="navaigation__item">Guides</li>
-                    <li class="navaigation__item">Books</li>
+                    <li class="navigation__item">Articles</li>
+                    <li class="navigation__item">Videos</li>
+                    <li class="navigation__item">Almanac</li>
+                    <li class="navigation__item">Newsletter</li>
+                    <li class="navigation__item">Guides</li>
+                    <li class="navigation__item">Books</li>
                 </ul>
             </nav>
             <div class="account">
@@ -42,26 +42,31 @@
     </header>
     <main class="main">
         <div class="main-news">
-            <div class="main-news__tags">
-                <a>TypeScript</a>
+            <div class="main-news__empty">
+                <img src="./img/typescript-logo.png" alt="TypeScript" class="main-news__image">
             </div>
-            <h1 class="main-news__title">The Relevance of TypeScript in 2022</h1>
-            <p class="main-news__desc">It’s 2022. And the current relevance of TypeScript is
-                undisputed. TypeScript has dominated the front-end developer experience by
-                many, many accounts. By now you likely already know that TypeScript is a
-                superset of JavaScript, building on JavaScript by adding syntax for type
-                declarations, classes, and other object-oriented features with type-checking.
-                And when I say dominated, [...]
-            </p>
-            <div class="main-news__author">
-                <svg class="main-news__author-icon"></svg>
-                <span class="main-news__author-name">Mamta Dalal</span>
-                <span class="main-news__date">on Jan 31, 2022</span>
-           </div>
+            <div class="main-news__wrapper">
+                <div class="main-news__tags">
+                    <a class="main-news__tag">TypeScript</a>
+                </div>
+                <h1 class="main-news__title">The Relevance of TypeScript in 2022</h1>
+                <p class="main-news__desc">It’s 2022. And the current relevance of TypeScript is
+                    undisputed. TypeScript has dominated the front-end developer experience by
+                    many, many accounts. By now you likely already know that TypeScript is a
+                    superset of JavaScript, building on JavaScript by adding syntax for type
+                    declarations, classes, and other object-oriented features with type-checking.
+                    And when I say dominated, [...]
+                </p>
+                <div class="main-news__author">
+                    <img src="./img/mamta.jpeg" class="main-news__author-icon" alt="Author's icon">
+                    <span class="main-news__author-name">Mamta Dalal</span>
+                    <span class="main-news__date">on Jan 31, 2022</span>
+                </div>
+            </div>
         </div>
         <div class="popular-articles">
             <div class="popular-articles__header">
-                <h2 class="popular-articles__header-title">Popular this month</h2>
+                <h2 class="popular-articles__header-title">Popular <br> this <br> month</h2>
                 <p class="popular-articles__header-desc">Sponsored by</p>
             </div>
             <div class="popular-articles__cards">
@@ -110,7 +115,7 @@
                         <span class="popular-articles__card-type">Article</span>
                         on Nov 22, 2021
                     </p>
-                    <h2 class="popular-articles__card-title">Responsive Layouts Fewe Madia
+                    <h2 class="popular-articles__card-title">Responsive Layouts Fewer Madia
                         Queries
                     </h2>
                     <ul class="popular-articles__card-tags">
@@ -278,271 +283,345 @@
                 </div>
             </div>
         </div>
-        <div class="articles">
-            <div class="articles__item">
-                <img src="./img/fonts.png" class="arcticles__item-photo" alt="Article's photo">
-                <div class="arcticles__item-tags">
-                    <span class="arcticles__item-tag">Fonts</span>
-                    <span class="arcticles__item-tag">TextDecoration</span>
-                </div>
-                <h2 class="arcticles__item-title">The CSS from-font Value Explained in 4 Demos</h2>
-                <p class="arcticles__item-desc">
-                    I was doing my <a class="arcticles__item-link">Advent of UI Components</a>,
-                    and I stumbled upon the <a class="arcticles__item-link">from-font</a>
-                    value for the text-decoration-thickness CSS property. I was curious about
-                    it, so I did a little research and I think what I found (and learned) ...
-                </p>
-                <div class="articles__item-about">
-                    <img src="./img/silvester.jpg" class="articles__item-author-icon" alt="Author's icon">
-                    <div class="articles__item-author">
-                        Silvestar Bistrović <span class="articles__item-date">
-                            on Jan 28, 2022 (Updated Jan 31, 2022)
-                        </span>
+        <div class="main__wrapper">
+            <div class="main__articles-wrapper">
+                <div class="articles">
+                    <div class="articles__item">
+                        <img src="./img/fonts.png" class="articles__item-photo" alt="Article's photo">
+                        <div class="articles__item-wrapper">
+                            <div class="articles__item-tags">
+                                <span class="articles__item-tag">Fonts</span>
+                                <span class="articles__item-tag">TextDecoration</span>
+                            </div>
+                            <h2 class="articles__item-title">The CSS from- font Value Explained in 4 Demos</h2>
+                            <p class="articles__item-desc">
+                                I was doing my <a class="articles__item-link">Advent of UI Components</a>,
+                                and I stumbled upon the <a class="articles__item-link">from-font</a>
+                                value for the text-decoration-thickness CSS property. I was curious about
+                                it, so I did a little research and I think what I found (and learned) ...
+                            </p>
+                            <div class="articles__item-about">
+                                <img src="./img/silvester.jpg" class="articles__item-author-icon" alt="Author's icon">
+                                <div class="articles__item-author">
+                                    <a>Silvestar Bistrović</a> <span class="articles__item-date">
+                                        on <time>Jan 28, 2022</time> (Updated <time>Jan 31, 2022</time>)
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="articles__item">
+                        <img src="./img/git.png" class="articles__item-photo" alt="Article's photo">
+                        <div class="articles__item-wrapper">
+                            <div class="articles__item-tags">
+                                <span class="articles__item-tag">Git</span>
+                                <span class="articles__item-tag">Git Tower</span>
+                            </div>
+                            <h2 class="articles__item-title">Git: Switching Unstaged Changes to a New Branch</h2>
+                            <p class="articles__item-desc">
+                                I’m always on the wrong branch. I’m either on master or main working on
+                                something that should be on a fix or feature branch. Or I’m on the last
+                                branch I was working on and should have cut a new ... 
+                            </p>
+                            <div class="articles__item-about">
+                                <img src="./img/chris.jpeg" class="articles__item-author-icon" alt="Author's icon">
+                                <div class="articles__item-author">
+                                    <a>Chris Coyier</a> <span class="articles__item-date">
+                                        on <time>Jan 27, 2022</time>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="articles__item">
+                        <img src="./img/typescript.png" class="articles__item-photo" alt="Article's photo">
+                        <div class="articles__item-wrapper">
+                            <div class="articles__item-tags">
+                                <span class="articles__item-tag">Typescript</span>
+                            </div>
+                            <h2 class="articles__item-title">Demystifying TypeScript Discriminated Unions</h2>
+                            <p class="articles__item-desc">
+                                TypeScript is a wonderful tool for writing JavaScript that scales.
+                                It’s more or less the de facto standard for the web when it comes to
+                                large JavaScript projects. As outstanding as it is, there are some
+                                <a class="articles__item-link">thicky pieces for the</a> ...
+                            </p>
+                            <div class="articles__item-about">
+                                <img src="./img/adam.jpeg" class="articles__item-author-icon" alt="Author's icon">
+                                <div class="articles__item-author">
+                                    <a>Adam Rackis</a> <span class="articles__item-date">
+                                        on <time>Jan 27, 2022</time>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="articles__item">
+                        <img src="./img/backlight.jpg" class="articles__item-photo" alt="Article's photo">
+                        <div class="articles__item-wrapper">
+                            <div class="articles__item-tags">
+                                <span class="articles__item-tag">Backlight</span>
+                                <span class="articles__item-tag">Design Systems</span>
+                            </div>
+                            <h2 class="articles__item-title">Build, Ship, & Maintain Design Systems
+                                with Backlight
+                            </h2>
+                            <p class="articles__item-desc">
+                                Design systems are an entire job these days. Agencies are hired to create
+                                them. In-house teams are formed to handle them, shipping them so that
+                                other teams can use them and helping ensure they do. Design systems
+                                aren’t a fad, ...
+                            </p>
+                            <div class="articles__item-about">
+                                <div class="articles__sponsor"><span class="articles__item-heart">❥</span> Sponsored (Written by Chris Coyier)</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="articles__item _empty"></div>
+                    <div class="articles__item">
+                        <img src="./img/refresh.jpg" class="articles__item-photo" alt="Article's photo">
+                        <div class="articles__item-wrapper">
+                            <div class="articles__item-tags">
+                                <span class="articles__item-tag">Classes</span>
+                                <span class="articles__item-tag">Classlist</span>
+                                <span class="articles__item-tag">JavaScript</span>
+                            </div>
+                            <h2 class="articles__item-title">How to Cycle Through Classes
+                                on an HTML Element
+                            </h2>
+                            <p class="articles__item-desc">
+                                Say you have three HTML classes, and a DOM element should only have
+                                one of them at a time:
+                            </p>
+                                <pre rel="HTML" class="code" data-line=""><code markup="tt">&lt;div class="state-1"&lt;/div&lt;div class="state-2"&lt;/div&lt;div class="state-3"&lt;/div</code></pre>
+                            <p class="articles__item-desc">
+                                Now your job is to rotate them. That is, cycle through classes ...
+                            </p>
+                            <div class="articles__item-about">
+                                <img src="./img/chris.jpeg" class="articles__item-author-icon" alt="Author's icon">
+                                <div class="articles__item-author">
+                                    <a>Chris Coyier</a> <span class="articles__item-date">
+                                        on <time>Jan 26, 2022</time>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="articles__item">
+                        <img src="./img/fancy-borders.png" class="articles__item-photo" alt="Article's photo">
+                        <div class="articles__item-wrapper">
+                            <div class="articles__item-tags">
+                                <span class="articles__item-tag">Borders</span>
+                                <span class="articles__item-tag">Gradients</span>
+                                <span class="articles__item-tag">Mask</span>
+                            </div>
+                            <h2 class="articles__item-title">Fancy CSS Borders Using Masks</h2>
+                            <p class="articles__item-desc">
+                                Have you ever tried to make CSS borders in a repeating zig-zag pattern?
+                                Like where a colored section of a website ends and another differently
+                                colored section begins — not with a straight line, but angled zig zags,
+                                rounded humps, ...
+                            </p>
+                            <div class="articles__item-about">
+                                <img src="./img/temani.png" class="articles__item-author-icon" alt="Author's icon">
+                                <div class="articles__item-author">
+                                    <a>Temani Afif</a> <span class="articles__item-date">
+                                        on <time>Jan 26, 2022</time>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="articles__item">
+                        <img src="./img/lorem.png" class="articles__item-photo" alt="Article's photo">
+                        <div class="articles__item-wrapper">
+                            <div class="articles__item-tags">
+                                <span class="articles__item-tag">Components</span>
+                                <span class="articles__item-tag">Design Systems</span>
+                                <span class="articles__item-tag">Layout</span>
+                            </div>
+                            <h2 class="articles__item-title">How Do You Handle Component Spacing
+                                in a Design System?</h2>
+                            <p class="articles__item-desc">
+                                Say you’ve got a <code>&lt;Card /></code> component. It’s highly likely it
+                                shouldn’t be butted right up against any other components with no
+                                spacing around it. That’s true for... pretty much every component.
+                                So, how do you handle component spacing in ...
+                            </p>
+                            <div class="articles__item-about">
+                                <img src="./img/chris.jpeg" class="articles__item-author-icon" alt="Author's icon">
+                                <div class="articles__item-author">
+                                    <a>Chris Coyier</a> <span class="articles__item-date">
+                                        on <time>Jan 25, 2022</time> (Updated on <time>Jan 27, 2022</time>)
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="articles__item">
+                        <img src="./img/scroll-position.png" class="articles__item-photo" alt="Article's photo">
+                        <div class="articles__item-wrapper">
+                            <div class="articles__item-tags">
+                                <span class="articles__item-tag">Intersectionobserver</span>
+                                <span class="articles__item-tag">Scroll Linked</span>
+                                <span class="articles__item-tag">Animation</span>
+                            </div>
+                            <h2 class="articles__item-title">How to Make a Scroll-Triggered Animation
+                                With Basic JavaScript
+                            </h2>
+                            <p class="articles__item-desc">
+                                A little bit of animation on a site can add some flair, impress users,
+                                and get their attention. You could have them run, no matter where they
+                                are on the page, immediately when the page loads. But what if your ...
+                            </p>
+                            <div class="articles__item-about">
+                                <img src="./img/md.jpg" class="articles__item-author-icon" alt="Author's icon">
+                                <div class="articles__item-author">
+                                    <a>Md Shuvo</a> <span class="articles__item-date">
+                                        on <time>25, 2022</time>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="articles__item">
+                        <img src="./img/scott-rodgerson.jpg" class="articles__item-photo" alt="Article's photo">
+                        <div class="articles__item-wrapper">
+                            <div class="articles__item-tags">
+                                <span class="articles__item-tag">Accessibility</span>
+                            </div>
+                            <h2 class="articles__item-title">Why Don't Developers Take Accessibility
+                                Seriously?
+                            </h2>
+                            <p class="articles__item-desc">
+                                You know that joke, “Two front-end developers walk into a bar and find
+                                they have nothing in common”? It’s funny, yet frustrating, because it’s
+                                true.
+                            </p>
+                            <p class="articles__item-desc">
+                                This article will present three different perspectives on accessibility
+                                in web design and development. Three ...
+                            </p>
+                            <div class="articles__item-about">
+                                <img src="./img/melanie.png" class="articles__item-author-icon" alt="Author's icon">
+                                <div class="articles__item-author">
+                                    <a>Melanie Sumner</a> <span class="articles__item-date">
+                                        on <time>Jan 24, 2022</time>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="articles__item">
+                        <img src="./img/using-svg-in-wordpress.png" class="articles__item-photo" alt="Article's photo">
+                        <div class="articles__item-wrapper">
+                            <div class="articles__item-tags">
+                                <span class="articles__item-tag">Security</span>
+                                <span class="articles__item-tag">SVG</span>
+                                <span class="articles__item-tag">WordPress</span>
+                            </div>
+                            <h2 class="articles__item-title">Using SVG in WordPress (2 Helpful Plugin
+                                Recommendations)
+                            </h2>
+                            <p class="articles__item-desc">
+                                SVG is a great image format, so it's nice to able to use it in WordPress.
+                                If you're looking to be using SVG in WordPress. ,
+                                we've got you covered here with all the best options.
+                            </p>
+                            <div class="articles__item-about">
+                                <img src="./img/chris.jpeg" class="articles__item-author-icon" alt="Author's icon">
+                                <div class="articles__item-author">
+                                    <a>Chris Coyier</a> <span class="articles__item-date">
+                                        on <time>Jan 21, 2022</time>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="articles__item">
+                        <img src="./img/human-zombie.jpg" class="articles__item-photo" alt="Article's photo">
+                        <div class="articles__item-wrapper">
+                            <div class="articles__item-tags">
+                                <span class="articles__item-tag">Lifecycle Callbacks</span>
+                                <span class="articles__item-tag">Web Components</span>
+                            </div>
+                            <h2 class="articles__item-title">Context-Aware Web Components Are Easier Than
+                                You Think
+                            </h2>
+                            <p class="articles__item-desc">
+                                Another aspect of web components that we haven’t talked about yet is
+                                that a JavaScript function is called whenever a web component is added
+                                or removed from a page. These lifecycle callbacks can be used for many
+                                things, including making ...
+                            </p>
+                            <div class="articles__item-about">
+                                <img src="./img/john-r.jpeg" class="articles__item-author-icon" alt="Author's icon">
+                                <div class="articles__item-author">
+                                    <a>John Rhea</a> <span class="articles__item-date">
+                                        on <time>Jan 21, 2022</time>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <button class="archive-button">Keep browsing in the archives</button>
             </div>
-            <div class="articles__item">
-                <img src="./img/git.png" class="arcticles__item-photo" alt="Article's photo">
-                <div class="arcticles__item-tags">
-                    <span class="arcticles__item-tag">Git</span>
-                    <span class="arcticles__item-tag">Git Tower</span>
-                </div>
-                <h2 class="arcticles__item-title">Git: Switching Unstaged Changes to a New Branch</h2>
-                <p class="arcticles__item-desc">
-                    I’m always on the wrong branch. I’m either on master or main working on
-                    something that should be on a fix or feature branch. Or I’m on the last
-                    branch I was working on and should have cut a new ... 
-                </p>
-                <div class="articles__item-about">
-                    <img src="./img/chris.jpeg" class="articles__item-author-icon" alt="Author's icon">
-                    <div class="articles__item-author">
-                        Chris Coyier <span class="articles__item-date">
-                            on Jan 27, 2022
-                        </span>
+            <div class="advertisement">
+                <div class="advertisement__item">
+                    <img src="./img/advertisement-1.avif" class="advertisement__image" alt="Advertisement's photo">
+                    <div class="advertisement__wrapper">
+                        <a class="advertisement__sponsor">Sponsored</a>
+                        <p class="advertisement__desc">
+                            Create powerful AI-powered automated tests. Get started for free
+                        </p>
                     </div>
                 </div>
-            </div>
-            <div class="articles__item">
-                <img src="./img/typescript.png" class="arcticles__item-photo" alt="Article's photo">
-                <div class="arcticles__item-tags">
-                    <span class="arcticles__item-tag">Typescript</span>
-                </div>
-                <h2 class="arcticles__item-title">Demystifying TypeScript Discriminated Unions</h2>
-                <p class="arcticles__item-desc">
-                    TypeScript is a wonderful tool for writing JavaScript that scales.
-                    It’s more or less the de facto standard for the web when it comes to
-                    large JavaScript projects. As outstanding as it is, there are some
-                    <a class="arcticles__item-link">thicky pieces for the</a> ...
-                </p>
-                <div class="articles__item-about">
-                    <img src="./img/adam.jpeg" class="articles__item-author-icon" alt="Author's icon">
-                    <div class="articles__item-author">
-                        Adam Rackis <span class="articles__item-date">
-                            on Jan 27, 2022
-                        </span>
+                <div class="advertisement__item">
+                    <img src="./img/advertisement-2.avif" class="advertisement__image" alt="Advertisement's photo">
+                    <div class="advertisement__wrapper">
+                    <a class="advertisement__sponsor">Sponsored</a>
+                        <p class="advertisement__desc">
+                            DigitalOcean App Platform, a fully managed PaaS solution to build
+                            modern, cloud native apps. Try now with $100 credit.
+                        </p>
                     </div>
                 </div>
-            </div>
-            <div class="articles__item">
-                <img src="./img/backlight.jpg" class="arcticles__item-photo" alt="Article's photo">
-                <div class="arcticles__item-tags">
-                    <span class="arcticles__item-tag">Backlight</span>
-                    <span class="arcticles__item-tag">Design Systems</span>
-                </div>
-                <h2 class="arcticles__item-title">Build, Ship, & Maintain Design Systems
-                    with Backlight
-                </h2>
-                <p class="arcticles__item-desc">
-                    Design systems are an entire job these days. Agencies are hired to create
-                    them. In-house teams are formed to handle them, shipping them so that
-                    other teams can use them and helping ensure they do. Design systems
-                    aren’t a fad, ...
-                </p>
-                <div class="articles__item-sponsor">
-                    ❥ Sponsored (Written by Chris Coyier)
-                </div>
-            </div>
-            <div class="articles__item _empty">
-            </div>
-            <div class="articles__item">
-                <img src="./img/refresh.jpg" class="arcticles__item-photo" alt="Article's photo">
-                <div class="arcticles__item-tags">
-                    <span class="arcticles__item-tag">Classes</span>
-                    <span class="arcticles__item-tag">Classlist</span>
-                    <span class="arcticles__item-tag">JavaScript</span>
-                </div>
-                <h2 class="arcticles__item-title">How to Cycle Through Clacsses
-                    on an HTML Element
-                </h2>
-                <p class="arcticles__item-desc">
-                    Say you have three HTML classes, and a DOM element should only have
-                    one of them at a time:
-                    <pre rel="HTML" class="arcticles__item-code-example" data-line="">
-                        <code markup="tt">
-                            &lt;div class="state-1"&lt;/div&lt;div 
-                            class="state-2"&lt;/div&lt;div class="state-3"&lt;/div
-                        </code>
-                    </pre>
-                    Now your job is to rotate them. That is, cycle through classes ...
-                </p>
-                <div class="articles__item-about">
-                    <img src="./img/chris.jpeg" class="articles__item-author-icon" alt="Author's icon">
-                    <div class="articles__item-author">
-                        Chris Coyier <span class="articles__item-date">
-                            on Jan 26, 2022
-                        </span>
+                <div class="advertisement__item">
+                    <img src="./img/advertisement-3.avif" class="advertisement__image" alt="Advertisement's photo">
+                    <div class="advertisement__wrapper">
+                        <a class="advertisement__sponsor">Sponsored</a>
+                        <p class="advertisement__desc">
+                            Vultr's Cloud Compute starts as low as $2.50/mo in select locations.
+                            Claim your $100 credit!
+                        </p>
                     </div>
                 </div>
-            </div>
-            <div class="articles__item">
-                <img src="./img/fancy-borders.png" class="arcticles__item-photo" alt="Article's photo">
-                <div class="arcticles__item-tags">
-                    <span class="arcticles__item-tag">Borders</span>
-                    <span class="arcticles__item-tag">Gradients</span>
-                    <span class="arcticles__item-tag">Mask</span>
-                </div>
-                <h2 class="arcticles__item-title">Fancy CSS Borders Using Masks</h2>
-                <p class="arcticles__item-desc">
-                    Have you ever tried to make CSS borders in a repeating zig-zag pattern?
-                    Like where a colored section of a website ends and another differently
-                    colored section begins — not with a straight line, but angled zig zags,
-                    rounded humps, ...
-                </p>
-                <div class="articles__item-about">
-                    <img src="./img/temani.png" class="articles__item-author-icon" alt="Author's icon">
-                    <div class="articles__item-author">
-                        Temani Afif <span class="articles__item-date">
-                            on Jan 26, 2022
-                        </span>
+                <div class="advertisement__item">
+                    <img src="./img/advertisement-4.png" class="advertisement__image" alt="Advertisement's photo">
+                    <div class="advertisement__wrapper">
+                        <a class="advertisement__sponsor">Sponsored</a>
+                        <p class="advertisement__desc">
+                            Build video for your app that Just Works™. Mux's Video API makes it
+                            super easy to build video or live streaming.
+                        </p>
                     </div>
                 </div>
-            </div>
-            <div class="articles__item">
-                <img src="./img/lorem.png" class="arcticles__item-photo" alt="Article's photo">
-                <div class="arcticles__item-tags">
-                    <span class="arcticles__item-tag">Components</span>
-                    <span class="arcticles__item-tag">Design Systems</span>
-                    <span class="arcticles__item-tag">Layout</span>
-                </div>
-                <h2 class="arcticles__item-title">How Do You Handle Component Spacing
-                    in a Design System?</h2>
-                <p class="arcticles__item-desc">
-                    Say you’ve got a <code><Card /></code> component. It’s highly likely it
-                    shouldn’t be butted right up against any other components with no
-                    spacing around it. That’s true for... pretty much every component.
-                    So, how do you handle component spacing in ...
-                </p>
-                <div class="articles__item-about">
-                    <img src="./img/chris.jpeg" class="articles__item-author-icon" alt="Author's icon">
-                    <div class="articles__item-author">
-                        Chris Coyier <span class="articles__item-date">
-                            on Jan 25, 2022 (Updated on Jan 27, 2022)
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <div class="articles__item">
-                <img src="./img/scroll-position.png" class="arcticles__item-photo" alt="Article's photo">
-                <div class="arcticles__item-tags">
-                    <span class="arcticles__item-tag">Intersectionobserver</span>
-                    <span class="arcticles__item-tag">Scroll Linked</span>
-                    <span class="arcticles__item-tag">Animation</span>
-                </div>
-                <h2 class="arcticles__item-title">How to Make a Scroll-Triggered Animation
-                    With Basic JavaScript
-                </h2>
-                <p class="arcticles__item-desc">
-                    A little bit of animation on a site can add some flair, impress users,
-                    and get their attention. You could have them run, no matter where they
-                    are on the page, immediately when the page loads. But what if your ...
-                </p>
-                <div class="articles__item-about">
-                    <img src="./img/md.jpg" class="articles__item-author-icon" alt="Author's icon">
-                    <div class="articles__item-author">
-                        Md Shuvo <span class="articles__item-date">
-                            on Jan 25, 2022
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <div class="articles__item">
-                <img src="./img/scott-rodgerson.jpg" class="arcticles__item-photo" alt="Article's photo">
-                <div class="arcticles__item-tags">
-                    <span class="arcticles__item-tag">Accessibility</span>
-                </div>
-                <h2 class="arcticles__item-title">Why Don't Developers Take Accessibility
-                    Seriously?
-                </h2>
-                <p class="arcticles__item-desc">
-                    You know that joke, “Two front-end developers walk into a bar and find
-                    they have nothing in common”? It’s funny, yet frustrating, because it’s
-                    true.
-
-                    This article will present three different perspectives on accessibility
-                    in web design and development. Three ...
-                </p>
-                <div class="articles__item-about">
-                    <img src="./img/melanie.png" class="articles__item-author-icon" alt="Author's icon">
-                    <div class="articles__item-author">
-                        Melanie Sumner <span class="articles__item-date">
-                            on Jan 24, 2022
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <div class="articles__item">
-                <img src="./img/using-svg-in-wordpress.png" class="arcticles__item-photo" alt="Article's photo">
-                <div class="arcticles__item-tags">
-                    <span class="arcticles__item-tag">Security</span>
-                    <span class="arcticles__item-tag">SVG</span>
-                    <span class="arcticles__item-tag">WordPress</span>
-                </div>
-                <h2 class="arcticles__item-title">Using SVG in WordPress (2 Helpful Plugin
-                    Recommendations)
-                </h2>
-                <p class="arcticles__item-desc">
-                    SVG is a great image format, so it's nice to able to use it in WordPress.
-                    If you're looking to be using SVG in WordPress. ,
-                    we've got you covered here with all the best options.
-                </p>
-                <div class="articles__item-about">
-                    <img src="./img/chris.jpeg" class="articles__item-author-icon" alt="Author's icon">
-                    <div class="articles__item-author">
-                        Chris Coyier <span class="articles__item-date">
-                            on Jan 21, 2022
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <div class="articles__item">
-                <img src="./img/human-zombie.jpg" class="arcticles__item-photo" alt="Article's photo">
-                <div class="arcticles__item-tags">
-                    <span class="arcticles__item-tag">Lifecycle Callbacks</span>
-                    <span class="arcticles__item-tag">Web Components</span>
-                </div>
-                <h2 class="arcticles__item-title">Context-Aware Web Components Are Easier Than
-                    You Think
-                </h2>
-                <p class="arcticles__item-desc">
-                    Another aspect of web components that we haven’t talked about yet is
-                    that a JavaScript function is called whenever a web component is added
-                    or removed from a page. These lifecycle callbacks can be used for many
-                    things, including making ...
-                </p>
-                <div class="articles__item-about">
-                    <img src="./img/john-r.jpeg" class="articles__item-author-icon" alt="Author's icon">
-                    <div class="articles__item-author">
-                        John Rhea <span class="articles__item-date">
-                            on Jan 21, 2022
-                        </span>
+                <div class="advertisement__item">
+                    <img src="./img/advertisement-5.avif" class="advertisement__image" alt="Advertisement's photo">
+                    <div class="advertisement__wrapper">
+                        <a class="advertisement__sponsor">Sponsored</a>
+                        <p class="advertisement__desc">
+                            Do more with Astra DB, the only DBaaS that helps developers build
+                            Apache Cassandra™ apps faster.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
-        <button class="archive-button">Keep browsing in the archives</button>
         <div class="popular-articles">
             <div class="popular-articles__header">
-                <h2 class="popular-articles__header-title">The Monthly Mixup</h2>
+                <h2 class="popular-articles__header-title">The <br> Monthly <br> Mixup</h2>
                 <p class="popular-articles__header-desc">Sponsored by</p>
             </div>
             <div class="popular-articles__cards">

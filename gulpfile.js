@@ -8,20 +8,23 @@ let path = {
     img: project_folder + '/img/',
     svg: project_folder + '/img/svg/',
     normalize: project_folder + '/',
+    fonts: project_folder + '/fonts/',
   },
   src: {
     html: sourse_folder + '/*.html',
     css: sourse_folder + '/style/index.less',
-    img: sourse_folder + '/img/**/*.+(png|jpg|jpeg|gif|ico|webp)',
+    img: sourse_folder + '/img/**/*.+(png|jpg|jpeg|gif|ico|webp|avif)',
     svg: sourse_folder + '/img/svg/*.svg',
     normalize: sourse_folder + '/normalize.css',
+    fonts: sourse_folder + '/fonts/*.+(ttf|otf|woff|woff2)',
   },
   watch: {
     html: sourse_folder + '/**/*.html',
     css: sourse_folder + '/style/**/*.less',
-    img: sourse_folder + '/img/**/*.+(png|jpg|jpeg|gif|ico|webp)',
+    img: sourse_folder + '/img/**/*.+(png|jpg|jpeg|gif|ico|webp|avif)',
     svg: sourse_folder + '/img/svg/*.svg',
     normalize: sourse_folder + '/normalize.css',
+    fonts: sourse_folder + '/fonts/*.+(ttf|otf|woff|woff2)'
   },
   clean: "./" + project_folder + "/",
 }
@@ -84,6 +87,12 @@ function svg() {
   .pipe(browsersync.stream())
 }
 
+function fonts() {
+  return src(path.src.fonts)
+  .pipe(dest(path.build.fonts))
+  .pipe(browsersync.stream())
+}
+
 function watchFiles(params) {
   gulp.watch([path.watch.html], html);
   gulp.watch([path.watch.html], svg);
@@ -91,15 +100,17 @@ function watchFiles(params) {
   gulp.watch([path.watch.img], images);
   gulp.watch([path.watch.svg], svg);
   gulp.watch([path.watch.normalize], normalize);
+  gulp.watch([path.watch.fonts], fonts)
 }
 
 function clean(params) {
   return del(path.clean);
 }
 
-let build = gulp.series(clean, gulp.parallel(normalize, css, html, images, svg));
+let build = gulp.series(clean, gulp.parallel(normalize, css, html, images, svg, fonts));
 let watch = gulp.parallel(build, watchFiles, browserSync);
 
+exports.fonts = fonts;
 exports.normalize = normalize;
 exports.svg = svg;
 exports.images = images;

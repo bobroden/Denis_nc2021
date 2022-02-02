@@ -1,0 +1,126 @@
+@import "../variables";
+
+.main-news {
+    display: flex;
+    background: @color-white;
+    color: #474747;
+    border-radius: 8px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    filter: drop-shadow(0 5px 15px rgba(0, 0, 0, .24));
+
+    &__empty {
+        width: 50%;
+        position: relative;
+
+        &::before {
+            pointer-events: none;
+            content: "";
+            background: linear-gradient(130deg, #ff7a18, #af002d 41.07%, #319197 76.05%);
+            position: absolute;
+            mix-blend-mode: screen;
+            opacity: .75;
+            width: 120%;
+            min-height: 500px;
+            height: 100%;
+            z-index: 2;
+        }
+
+        &::after {
+            pointer-events: none;
+            content: "";
+            position: absolute;
+            z-index: 3;
+            left: 75%;
+            height: 100%;
+            top: 0;
+            width: 50%;
+            background: linear-gradient(90deg,hsla(0,0%,100%,0) 0,hsla(0,0%,100%,.013) 8.1%,hsla(0,0%,100%,.049) 15.5%,hsla(0,0%,100%,.104) 22.5%,hsla(0,0%,100%,.175) 29%,hsla(0,0%,100%,.259) 35.3%,hsla(0,0%,100%,.352) 41.2%,hsla(0,0%,100%,.45) 47.1%,hsla(0,0%,100%,.55) 52.9%,hsla(0,0%,100%,.648) 58.8%,hsla(0,0%,100%,.741) 64.7%,hsla(0,0%,100%,.825) 71%,hsla(0,0%,100%,.896) 77.5%,hsla(0,0%,100%,.951) 84.5%,hsla(0,0%,100%,.987) 91.9%,#fff);
+        }
+    }
+
+    &__image {
+        position: absolute;
+        max-width: none;
+        width: 120%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        border: 0;
+    }
+
+    &__wrapper {
+        padding: 3rem;
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        width: 50%;
+        z-index: 5;
+    }
+
+    &__tags {
+        line-height: 1;
+        margin: 0 0 0.5rem;
+    }
+
+    &__tag {
+        .heading-font;
+        font-style: normal;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #ff7a18;
+        font-size: .66rem;
+        margin-inline-end: 0.66rem;
+    }
+
+    &__title {
+        color: #111;
+        font-size: 3rem;
+        .heading-font;
+        font-style: normal;
+        font-weight: 700;
+        margin: 0 0 1.5rem;
+        line-height: 1.1;
+    }
+
+    &__desc {
+        margin: 0 0 1.5rem;
+        font-size: 1.2rem;
+        color: #474747;
+        overflow: hidden;
+    }
+
+    &__author {
+        color: #565656;
+        line-height: 1.3;
+        padding-top: 0.5rem;
+
+        span {
+            vertical-align: top;
+            display: inline-block;
+            padding-top: 11px;
+            margin-left: 2px;
+        }
+    }
+
+    &__author-icon {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-right: 0.5rem;
+        max-width: 100%;
+        border: 0;
+    }
+
+    &__author-name {
+        white-space: nowrap;
+        font-weight: 700;
+        color: #000;
+        text-decoration: none;
+    }
+
+    &__date {
+        white-space: nowrap;
+    }
+}

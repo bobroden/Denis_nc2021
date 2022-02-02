@@ -1,0 +1,51 @@
+@import "../variables";
+
+.advertisement {
+
+    height: 100%;
+
+    &__item {
+        width: 300px;
+        margin: 0 0 3rem;
+        position: relative;
+        padding: 0.5rem;
+        border-radius: 8px;
+        background: #fff;
+    }
+
+    &__image {
+        width: 100%;
+        margin-bottom: 0;
+        height: auto;
+        display: block;
+        border-radius: 4px;
+        transition: .15s;
+        box-shadow: 0 0 1.5rem rgb(17 17 17 / 70%);
+
+        &:hover {
+            box-shadow: 0 0 50px rgb(17 17 17 / 50%);
+            transform: rotate(-2deg) translateY(-5px) scale(1.025);
+        }
+    }
+
+    &__wrapper {
+        .main-font;
+        font-size: .75rem;
+        font-weight: 400;
+        padding: 1rem;
+        white-space: normal;
+        text-align: left;
+    }
+
+    &__sponsor {
+        color: #0089c7;
+        text-transform: uppercase;
+        font-size: .5rem;
+        letter-spacing: .05rem;
+        display: block;
+    }
+
+    &__desc {
+        color: #434343;
+    }
+}
