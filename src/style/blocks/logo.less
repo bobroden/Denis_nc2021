@@ -7,6 +7,17 @@
     align-self: stretch;
     display: flex;
     align-items: center;
+    cursor: pointer;
+
+    @keyframes spinMe {
+        to {
+            transform: rotate(2turn)
+        }
+    }
+
+    &:hover .logo__icon {
+        animation: spinMe 1s forwards;
+    }
 
     &__icon {
         pointer-events: none;

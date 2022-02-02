@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="top-of-site">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -67,7 +67,10 @@
         <div class="popular-articles">
             <div class="popular-articles__header">
                 <h2 class="popular-articles__header-title">Popular <br> this <br> month</h2>
-                <p class="popular-articles__header-desc">Sponsored by</p>
+                <p class="popular-articles__header-desc">
+                    Sponsored by <br>
+                    <a class="popular-articles__header-sponsor">Frontend Masters</a>
+                </p>
             </div>
             <div class="popular-articles__cards">
                 <div class="popular-articles__card">
@@ -622,7 +625,10 @@
         <div class="popular-articles">
             <div class="popular-articles__header">
                 <h2 class="popular-articles__header-title">The <br> Monthly <br> Mixup</h2>
-                <p class="popular-articles__header-desc">Sponsored by</p>
+                <p class="popular-articles__header-desc">
+                    Sponsored by <br>
+                    <a class="popular-articles__header-sponsor">Frontend Masters</a>
+                </p>
             </div>
             <div class="popular-articles__cards">
                 <div class="popular-articles__card">
@@ -884,9 +890,11 @@
             </div>
         </div>
     </footer>
-    <svg class="top-of-site-link">
-        <use xlink:href="#top"></use>
-    </svg>
+    <a class="top-of-site-link" href="#top-of-site">
+        <svg class="top-of-site-link__icon">
+            <use xlink:href="#top"></use>
+        </svg>
+    </a>
     <div class="svg-store">
         <!-- inject:svg --><!-- endinject -->
     </div>
