@@ -19,7 +19,7 @@
 
         &::before {
             content: "";
-            background: linear-gradient(130deg, #ff7a18, #af002d 41.07%, #319197 76.05%);
+            background: @main-gradient;
             position: absolute;
             top: -5px;
             left: -5px;
@@ -36,7 +36,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: #000;
+            background: @color-block-background;
             z-index: 2;
             border-radius: 8px;
         }
@@ -60,7 +60,7 @@
     }
 
     &__header-sponsor {
-        color: #0089c7;
+        color: @color-link;
         cursor: pointer;
 
         &:hover {
@@ -83,8 +83,8 @@
             bottom: 3.6rem;
             width: 5px;
             border-radius: 5px;
-            background: linear-gradient(130deg, #ff7a18, #af002d 41.07%, #319197 76.05%);
-            box-shadow: -10px 0 20px 3px #000;
+            background: @main-gradient;
+            box-shadow: -10px 0 20px 3px @color-block-background;
         }
 
         &::-webkit-scrollbar {
@@ -93,20 +93,20 @@
         }
 
         &::-webkit-scrollbar-thumb {
-            background: #434343;
+            background: @color-scrollbar-background;
             border-radius: 10px;
             box-shadow: inset 2px 2px 2px hsl(0deg 0% 100% / 25%), inset -2px -2px 2px rgb(0 0 0 / 25%);
         }
 
         &::-webkit-scrollbar-track {
-            background: linear-gradient(90deg, #434343, #434343 1px, #262626 0, #262626);
+            background: @scrollbar-gradient;
         }
     }
 
     &__card {
         min-width: 300px;
         min-height: 350px;
-        box-shadow: -2rem 0 3rem -2rem #000;
+        box-shadow: -2rem 0 3rem -2rem @color-block-background;
         padding: 1.5rem;
         border-radius: 16px;
         background: linear-gradient(85deg, #434343, #262626);
@@ -120,7 +120,7 @@
 
         &:not(:first-child) {
             margin-left: -130px;
-            box-shadow: -3rem 0 3rem -2rem #000;
+            box-shadow: -3rem 0 3rem -2rem @color-block-background;
         }
 
         &:first-child:hover {
@@ -139,12 +139,12 @@
     &__card-date {
         display: block;
         margin: 0 0 0.25rem;
-        color: #777;
+        color: @color-card-date;
         padding-left: 4px;
     }
 
     &__card-type {
-        color: #d4d4d4;
+        color: @color-card-type;
         font-weight: 700;
     }
 
@@ -176,7 +176,7 @@
         font-style: normal;
         font-weight: 700;
         text-transform: uppercase;
-        color: #ff7a18;
+        color: @color-tag;
         font-size: .66rem;
         margin-inline-end: 0.85rem;
         text-decoration: none;
@@ -191,7 +191,7 @@
     &__card-author {
         margin-bottom: 0;
         margin-block-start: auto;
-        color: #565656;
+        color: @color-text-about;
         line-height: 1.3;
         padding-top: 0.5rem;
     }
@@ -212,7 +212,7 @@
 
     &__card-author-name {
         margin-bottom: 0;
-        color: #fff;
+        color: @color-text;
         text-decoration: none;
         font-weight: 700;
         vertical-align: top;
@@ -229,6 +229,6 @@
     &__card-desc {
         display: block;
         margin: 0 0 0.25rem;
-        color: #777;
+        color: @color-card-date;
     }
 }

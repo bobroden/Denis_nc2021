@@ -7,8 +7,8 @@
     margin: 0 0 3rem;
 
     &__item {
-        background: #fff;
-        color: #474747;
+        background: @color-article-background;
+        color: @color-article-text;
         border-radius: 8px;
         position: relative;
         z-index: 1;
@@ -24,7 +24,7 @@
             object-fit: cover;
             width: 100%;
             display: block;
-            background: linear-gradient(130deg, #ff7a18, #af002d 41.07%, #319197 76.05%);
+            background: @main-gradient;
             mix-blend-mode: screen;
             position: absolute;
             top: 0;
@@ -61,7 +61,7 @@
         font-style: normal;
         font-weight: 700;
         text-transform: uppercase;
-        color: #ff7a18;
+        color: @color-tag;
         font-size: .66rem;
         margin-inline-end: 0.66rem;
         cursor: pointer;
@@ -72,7 +72,7 @@
     }
 
     &__item-title {
-        color: #111;
+        color: @color-article-title;
         .heading-font;
         font-style: normal;
         font-size: clamp(1.8rem, 1.8rem + .2vw, 3rem);
@@ -91,7 +91,7 @@
     }
 
     &__item-link {
-        color: #0089c7;
+        color: @color-link;
         text-decoration: none;
         cursor: pointer;
 
@@ -102,7 +102,7 @@
 
     &__item-about {
         margin-block-start: auto;
-        color: #565656;
+        color: @color-text-about;
         line-height: 1.3;
         padding-top: 0.5rem;
         display: grid;
@@ -127,7 +127,7 @@
 
     &__item-author {
         font-weight: 700;
-        color: #000;
+        color: @color-author-name;
         
         a, time {
             white-space: nowrap;
@@ -143,7 +143,7 @@
     }
 
     &__item-date {
-        color: #565656;
+        color: @color-text-about;
         font-weight: 400;
     }
 

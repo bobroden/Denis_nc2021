@@ -3,7 +3,7 @@
 .main-news {
     display: flex;
     background: @color-white;
-    color: #474747;
+    color: @color-article-text;
     border-radius: 8px;
     position: relative;
     z-index: 1;
@@ -18,7 +18,7 @@
         &::before {
             pointer-events: none;
             content: "";
-            background: linear-gradient(130deg, #ff7a18, #af002d 41.07%, #319197 76.05%);
+            background: @main-gradient;
             position: absolute;
             mix-blend-mode: screen;
             opacity: .75;
@@ -70,7 +70,7 @@
         font-style: normal;
         font-weight: 700;
         text-transform: uppercase;
-        color: #ff7a18;
+        color: @color-tag;
         font-size: .66rem;
         margin-inline-end: 0.66rem;
         cursor: pointer;
@@ -81,7 +81,7 @@
     }
 
     &__title {
-        color: #111;
+        color: @color-article-title;
         font-size: 3rem;
         .heading-font;
         font-style: normal;
@@ -98,12 +98,12 @@
     &__desc {
         margin: 0 0 1.5rem;
         font-size: 1.2rem;
-        color: #474747;
+        color: @color-article-text;
         overflow: hidden;
     }
 
     &__author {
-        color: #565656;
+        color: @color-text-about;
         line-height: 1.3;
         padding-top: 0.5rem;
 
@@ -132,7 +132,7 @@
     &__author-name {
         white-space: nowrap;
         font-weight: 700;
-        color: #000;
+        color: @color-author-name;
         text-decoration: none;
         cursor: pointer;
 

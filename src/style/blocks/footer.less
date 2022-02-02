@@ -4,7 +4,7 @@
     margin: 15rem 0 0 0;
     padding: 0 0 3rem;
     position: relative;
-    background: #111;
+    background: @color-block-background;
     display: block;
 
     &__logo {
@@ -37,7 +37,7 @@
     }
 
     &__form-link {
-        color: #0089c7;
+        color: @color-link;
         cursor: pointer;
 
         &:hover {
@@ -59,7 +59,7 @@
         font-weight: 700;
         letter-spacing: .1rem;
         text-transform: uppercase;
-        color: #ff7a18;
+        color: @color-tag;
         margin: 2rem 0 0.25rem;
         line-height: 1.05;
         font-size: 1rem;
@@ -75,7 +75,7 @@
     }
 
     &__menu-link {
-        color: #a9a39f;
+        color: @color-menu-link;
         position: relative;
         display: inline-block;
         overflow: hidden;
@@ -85,7 +85,7 @@
         cursor: pointer;
 
         &:hover {
-            color: #fff;
+            color: @color-text;
             opacity: 1;
         }
     }
