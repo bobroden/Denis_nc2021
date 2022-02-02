@@ -758,128 +758,137 @@
     </main>
     <footer class="footer">
         <svg class="footer__logo">
+            <linearGradient id="footer__logo-gradient" x2="1" y2="1">
+                <stop offset="0%" stop-color="#ff7a18"/>
+                <stop offset="41.07%" stop-color="#af002d"/>
+                <stop offset="76.05%" stop-color="#319197"/>
+            </linearGradient>
             <use xlink:href="#big-logo-star"></use>
         </svg>
-        <div class="footer__form">
-            <p class="footer__form-desc">
-                CSS-Tricks is created by
-                <a class="footer__form-link">Chris</a> and a
-                <a class="footer__form-link">team</a> of swell people
-            </p>
-            <form class="subscribe-form">
-                <h4 class="subscribe-form__title">Keep up to date on web dev</h4>
-                <p class="subscribe-form__desc">with our hand-crafted weekly newsletter</p>
-                <div class="subscribe-form__input-wrapper">
-                    <input type="email" placeholder="smart@cookie.com" class="subscribe-form__email-input">
-                    <button class="subscribe-form__button">SUBSCRIBE</button>
+        <div class="footer__wrapper">
+            <div class="footer__form">
+                <p class="footer__form-desc">
+                    CSS-Tricks is created by
+                    <a class="footer__form-link">Chris</a> and a
+                    <a class="footer__form-link">team</a> of swell people
+                </p>
+                <form class="subscribe-form">
+                    <h4 class="subscribe-form__title">Keep up to date on web dev</h4>
+                    <p class="subscribe-form__desc">with our hand-crafted weekly newsletter</p>
+                    <div class="subscribe-form__input-wrapper">
+                        <input type="email" placeholder="smart@cookie.com" class="subscribe-form__email-input">
+                        <button class="subscribe-form__button">SUBSCRIBE</button>
+                    </div>
+                </form>
+            </div>
+            <div class="footer__menu">
+                <div class="footer__menu-column">
+                    <h5 class="footer__menu-title">Tech</h5>
+                    <ul class="footer__menu-links">
+                        <li class="footer__menu-links-item">
+                            <a class="footer__menu-link">WordPress</a>
+                            <span class="footer__menu-adition">(CMS)</span>
+                        </li>
+                        <li class="footer__menu-links-item">
+                            <a class="footer__menu-link">Jetpack</a>
+                            <span class="footer__menu-adition">(Search, Backup)</span>
+                        </li>
+                        <li class="footer__menu-links-item">
+                            <a class="footer__menu-link">WooCommerce</a>
+                            <span class="footer__menu-adition">(eCommerce)</span>
+                        </li>
+                        <li class="footer__menu-links-item">
+                            <a class="footer__menu-link">Local</a>
+                            <span class="footer__menu-adition">(Development)</span>
+                        </li>
+                    </ul>
+                    <h5 class="footer__menu-title">Hosting</h5>
+                    <ul class="footer__menu-links">
+                        <li class="footer__menu-links-item">
+                            <a class="footer__menu-link">Flywheel</a>
+                        </li>
+                    </ul>
                 </div>
-            </form>
-        </div>
-        <div class="footer__menu">
-            <div class="footer__menu-column">
-                <h5 class="footer__menu-title">Tech</h5>
-                <ul class="footer__menu-links">
-                    <li class="footer__menu-links-item">
-                        <a class="footer__menu-link">WordPress</a>
-                        <span class="footer__menu-adition">(CMS)</span>
-                    </li>
-                    <li class="footer__menu-links-item">
-                        <a class="footer__menu-link">Jetpack</a>
-                        <span class="footer__menu-adition">(Search, Backup)</span>
-                    </li>
-                    <li class="footer__menu-links-item">
-                        <a class="footer__menu-link">WooCommerce</a>
-                        <span class="footer__menu-adition">(eCommerce)</span>
-                    </li>
-                    <li class="footer__menu-links-item">
-                        <a class="footer__menu-link">Local</a>
-                        <span class="footer__menu-adition">(Development)</span>
-                    </li>
-                </ul>
-                <h5 class="footer__menu-title">Hosting</h5>
-                <ul class="footer__menu-links">
-                    <li class="footer__menu-links-item">
-                        <a class="footer__menu-link">Flywheel</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="footer__menu-column">
-                <h5 class="footer__menu-title">Family</h5>
-                <ul class="footer__menu-links">
-                    <li class="footer__menu-links-item">
-                        <a class="footer__menu-link">CodePen</a>
-                    </li>
-                    <li class="footer__menu-links-item">
-                        <a class="footer__menu-link">ShopTalk Show</a>
-                    </li>
-                </ul>
-                <h5 class="footer__menu-title">Minisites</h5>
-                <ul class="footer__menu-links">
-                    <li class="footer__menu-links-item">
-                        <a class="footer__menu-link">The Power of Serverless</a>
-                    </li>
-                    <li class="footer__menu-links-item">
-                        <a class="footer__menu-link">Upcoming Conferences</a>
-                    </li>
-                    <li class="footer__menu-links-item">
-                        <a class="footer__menu-link">Coding Fonts</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="footer__menu-column">
-                <h5 class="footer__menu-title">Contact</h5>
-                <ul class="footer__menu-links">
-                    <li class="footer__menu-links-item">
-                        <a class="footer__menu-link">Email</a>
-                    </li>
-                    <li class="footer__menu-links-item">
-                        <a class="footer__menu-link">Sponsorship Info</a>
-                    </li>
-                    <li class="footer__menu-links-item">
-                        <a class="footer__menu-link">Guest Writing</a>
-                    </li>
-                </ul>
-                <h5 class="footer__menu-title">Buy</h5>
-                <ul class="footer__menu-links">
-                    <li class="footer__menu-links-item">
-                        <a class="footer__menu-link">Posters & Swag</a>
-                    </li>
-                    <li class="footer__menu-links-item">
-                        <a class="footer__menu-link">Mambership</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="footer__menu-column">
-                <h5 class="footer__menu-title">Follow</h5>
-                <ul class="footer__menu-links">
-                    <li class="footer__menu-links-item">
-                        <a class="footer__menu-link">Twitter</a>
-                    </li>
-                    <li class="footer__menu-links-item">
-                        <a class="footer__menu-link">Instagram</a>
-                    </li>
-                    <li class="footer__menu-links-item">
-                        <a class="footer__menu-link">YouTube</a>
-                    </li>
-                    <li class="footer__menu-links-item">
-                        <a class="footer__menu-link">CodePen</a>
-                    </li>
-                    <li class="footer__menu-links-item">
-                        <a class="footer__menu-link">GitHub</a>
-                    </li>
-                    <li class="footer__menu-links-item">
-                        <a class="footer__menu-link">iTunes</a>
-                    </li>
-                    <li class="footer__menu-links-item">
-                        <a class="footer__menu-link">RSS</a>
-                    </li>
-                </ul>
+                <div class="footer__menu-column">
+                    <h5 class="footer__menu-title">Family</h5>
+                    <ul class="footer__menu-links">
+                        <li class="footer__menu-links-item">
+                            <a class="footer__menu-link">CodePen</a>
+                        </li>
+                        <li class="footer__menu-links-item">
+                            <a class="footer__menu-link">ShopTalk Show</a>
+                        </li>
+                    </ul>
+                    <h5 class="footer__menu-title">Minisites</h5>
+                    <ul class="footer__menu-links">
+                        <li class="footer__menu-links-item">
+                            <a class="footer__menu-link">The Power of Serverless</a>
+                        </li>
+                        <li class="footer__menu-links-item">
+                            <a class="footer__menu-link">Upcoming Conferences</a>
+                        </li>
+                        <li class="footer__menu-links-item">
+                            <a class="footer__menu-link">Coding Fonts</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__menu-column">
+                    <h5 class="footer__menu-title">Contact</h5>
+                    <ul class="footer__menu-links">
+                        <li class="footer__menu-links-item">
+                            <a class="footer__menu-link">Email</a>
+                        </li>
+                        <li class="footer__menu-links-item">
+                            <a class="footer__menu-link">Sponsorship Info</a>
+                        </li>
+                        <li class="footer__menu-links-item">
+                            <a class="footer__menu-link">Guest Writing</a>
+                        </li>
+                    </ul>
+                    <h5 class="footer__menu-title">Buy</h5>
+                    <ul class="footer__menu-links">
+                        <li class="footer__menu-links-item">
+                            <a class="footer__menu-link">Posters & Swag</a>
+                        </li>
+                        <li class="footer__menu-links-item">
+                            <a class="footer__menu-link">Mambership</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__menu-column">
+                    <h5 class="footer__menu-title">Follow</h5>
+                    <ul class="footer__menu-links">
+                        <li class="footer__menu-links-item">
+                            <a class="footer__menu-link">Twitter</a>
+                        </li>
+                        <li class="footer__menu-links-item">
+                            <a class="footer__menu-link">Instagram</a>
+                        </li>
+                        <li class="footer__menu-links-item">
+                            <a class="footer__menu-link">YouTube</a>
+                        </li>
+                        <li class="footer__menu-links-item">
+                            <a class="footer__menu-link">CodePen</a>
+                        </li>
+                        <li class="footer__menu-links-item">
+                            <a class="footer__menu-link">GitHub</a>
+                        </li>
+                        <li class="footer__menu-links-item">
+                            <a class="footer__menu-link">iTunes</a>
+                        </li>
+                        <li class="footer__menu-links-item">
+                            <a class="footer__menu-link">RSS</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </footer>
     <svg class="top-of-site-link">
         <use xlink:href="#top"></use>
     </svg>
-    <!-- inject:svg --><!-- endinject -->
+    <div class="svg-store">
+        <!-- inject:svg --><!-- endinject -->
+    </div>
 </body>
 </html>
