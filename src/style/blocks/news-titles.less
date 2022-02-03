@@ -1,0 +1,42 @@
+.news-titles {
+    padding: 4px 18px 3px 0;
+
+    &__icon {
+        width: 36px;
+        height: 36px;
+        padding-top: 1px;
+    }
+
+    &__item {
+        display: inline-block;
+        vertical-align: top;
+        font-weight: 500;
+        color: rgba(0, 0, 0, 0.4);
+        padding-top: 10px;
+        margin-left: -5px;
+        margin-right: 14px;
+        font-size: 15px;
+        transition: color .15s ease-out;
+        cursor: pointer;
+
+        &:hover {
+            color: #c00;
+        }
+    }
+
+    ._first {
+        color: #000;
+
+        &:hover {
+            color: #c00;
+        }
+    }
+
+    ._last {
+        color: #ee7b00;
+
+        &:hover {
+            color: #c00;
+        }
+    }
+}

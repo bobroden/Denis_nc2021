@@ -4,9 +4,364 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="shortcut icon" href="./img/site-icon.png">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="index.css">
+    <title>Яндекс</title>
 </head>
 <body>
-    
+    <div class="desk-notif">
+        <div class="desk-notif__card">
+            <div class="about-user">
+                <div class="about-user__email-block">
+                    <span class="about-user__email-name"><span class="_first-letter">b</span>obrow.bobro2015@yandex.ru</span>
+                    <img src="./img/avatar.png" class="about-user__email-avatar" alt="avatar">
+                </div>
+                <div class="about-user__counter-block">
+                    <span class="about-user__counter-name">Почта</span>
+                    <span class="about-user__counter-count">13037</span>
+                </div>
+                <div class="about-user__disk">Диск</div>
+            </div>
+        </div>
+        <div class="desk-notif__card">
+            <div class="new-year">
+                <p class="new-year__desc">Новогодние <br> чудеса с Алисой</p>
+            </div>
+        </div>
+        <div class="desk-notif__card">
+            <div class="plus">
+                <svg class="plus__icon">
+                    <use xlink:href="#plus"></use>
+                </svg>
+                <span class="plus__desc">Попробовать Плюс</span>
+            </div>
+        </div>
+        <div class="desk-notif__card">
+            <div class="covid-statistics">
+                <div class="covid-statistics__location">Москва</div>
+                <div class="covid-statistics__counter">
+                    <span><span class="covid-statistics__count">+3322</span> выявлено</span>
+                    <svg>
+                        <use xlink:href="#covid"></use>
+                    </svg>
+                </div>
+                <div class="covid-statistics__about">
+                    <svg>
+                        <use xlink:href="#info"></use>
+                    </svg>
+                    О вакцинации
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="header__content-wrapper">
+            <div class="geolocation">
+                <svg class="geolocation__icon">
+                    <use xlink:href="#geolink"></use>
+                </svg>
+                <span class="geolocation__city">Москва</span>
+            </div>
+            <div class="date">
+                17 декабря, пятница <span class="date__time">02:55</span>
+            </div>
+            <div class="default">
+                Сделать стартовой
+            </div>
+        </div>
+        <div class="header__content-wrapper">
+            <div class="icons">
+                <svg class="icons__market-cart">
+                    <use xlink:href="#market-cart" x="4" y="8"></use>
+                </svg>
+                <svg class="icons__notifier">
+                    <use xlink:href="#notifier"></use>
+                </svg>
+            </div>
+        </div>
+    </header>
+
+    <nav class="yandex-services-navigation">
+        <ul class="yandex-services-navigation__items-list">
+            <li class="yandex-services-navigation__item _first">
+                <svg>
+                    <use xlink:href="#services"></use>
+                </svg>
+                <div>Маркет</div>
+            </li>
+            <li class="yandex-services-navigation__item">
+                <svg>
+                    <use xlink:href="#video"></use>
+                </svg>
+                <div>Видео</div>
+            </li>
+            <li class="yandex-services-navigation__item">
+                <svg>
+                    <use xlink:href="#images"></use>
+                </svg>
+                <div>Картинки</div>
+            </li>
+            <li class="yandex-services-navigation__item">
+                <svg>
+                    <use xlink:href="#news"></use>
+                </svg>
+                <div>Новости</div>
+            </li>
+            <li class="yandex-services-navigation__item">
+                <svg>
+                    <use xlink:href="#autoru"></use>
+                </svg>
+                <div>Карты</div>
+            </li>
+            <li class="yandex-services-navigation__item">
+                <svg>
+                    <use xlink:href="#translate"></use>
+                </svg>
+                <div>Переводчик</div>
+            </li>
+            <li class="yandex-services-navigation__item">
+                <svg>
+                    <use xlink:href="#music"></use>
+                </svg>
+                <div>Музыка</div>
+            </li>
+            <li class="yandex-services-navigation__item">
+                <svg>
+                    <use xlink:href="#tv"></use>
+                </svg>
+                <div>Программа</div>
+            </li>
+            <li class="yandex-services-navigation__item">
+                <svg>
+                    <use xlink:href="#autoru"></use>
+                </svg>
+                <div>Авто.ру</div>
+            </li>
+            <li class="yandex-services-navigation__item _last">
+                <div class="yandex-services-navigation__container">
+                    <svg viewBox="0 0 44 44">
+                        <use xlink:href="#mail"></use>
+                    </svg>
+                    <svg viewBox="0 0 44 44">
+                        <use xlink:href="#tv"></use>
+                    </svg>
+                    <svg viewBox="0 0 44 44">
+                        <use xlink:href="#services"></use>
+                    </svg>
+                    <svg viewBox="0 0 44 44">
+                        <use xlink:href="#realty"></use>
+                    </svg>
+                </div>
+                <div>ещё</div>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="search">
+        <div class="search__logo">
+            Яндекс
+        </div>
+        <div class="input">
+            <div class="input__container">
+            <input class="input__bar" type="text" placeholder="Найдётся всё">
+                <svg class="input__micro">
+                    <use xlink:href="#micro"></use>
+                </svg>
+                <svg class="input__keyboard">
+                    <use xlink:href="#keyboard"></use>
+                </svg>
+            </div>
+        </div>
+        <button class="search__button">Найти</button>
+    </div>
+
+    <div class="download-yandex-browser">
+        <img src="./img/yandex.png" class="download-yandex-browser__icon" alt="Yandex browser">
+        <span class="download-yandex-browser__desc">Скачайте Яндекс.Браузер</span>
+    </div>
+
+    <div class="advertisement">
+        <img src="./img/advertisement.jpg" class="advertisement__photo" alt="advertisement">
+    </div>
+
+    <main class="main">
+        <div class="main__blog-wrapper">
+            <div class="news">
+                <div class="news-titles">
+                    <svg class="news-titles__icon" viewBox="0 0 50 50">
+                        <use xlink:href="#news"></use>
+                    </svg>
+                    <a class="news-titles__item _first">Сейчас в СМИ</a>
+                    <a class="news-titles__item">в Москве</a>
+                    <a class="news-titles__item">Интересное</a>
+                    <a class="news-titles__item _last">Коронавирус</a>
+                </div>
+                <div class="news__item">
+                    <img src="./img/news-1.webp" alt="logo">
+                    <span>Госдума приняла в 1 чтении законопроект о введении QR-кодов в общественных местах</span>
+                </div>
+                <div class="news__item">
+                    <img src="./img/news-2.webp" alt="logo">
+                    <span>Bloomberg: новые санкции ЕС и США против России могут повлиять на оборонные компании</span>
+                </div>
+                <div class="news__item">
+                    <img src="./img/news-3.webp" alt="logo">
+                    <span>Сокуров извинился перед членами СПЧ за свой спор с Путиным</span>
+                </div>
+                <div class="news__item">
+                    <img src="./img/news-1.webp" alt="logo">
+                    <span>НАТО заявило о готовности к диалогу с Россией при условии деэскалации с Украиной</span>
+                </div>
+                <div class="news__item">
+                    <img src="./img/news-2.webp" alt="logo">
+                    <span>РВСН планирует выпустить около 10 континентальных ракет</span>
+                </div>
+            </div>
+            <div class="blog">
+                <div class="blog__header">
+                    <div class="blog__header-wrapper">
+                        <div class="blog__icon"></div>
+                        <div class="blog__author-block">
+                            <div class="blog__author-chanel">
+                                <span class="blog__author-name">Кулинарный MIX • </span>
+                                <span class="blog__subscribe">Подписаться</span>
+                            </div>
+                            <div class="blog__author-subscribers">22 тыс. подписчиков</div>
+                        </div>
+                    </div>
+                    <div class="blog__header-wrapper">
+                        <svg class="blog__menu">
+                            <use xlink:href="#control-menu"></use>
+                        </svg>
+                    </div>
+                </div>
+                <iframe class="blog__video" src="https://www.youtube.com/embed/RYQUbRtbE3A?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="blog__about">
+                    <div class="blog__desc">
+                        Ну до чего же вкусный салат с шампиньонами и маринованными огурчиками,
+                        обязательно буду готовить его на Новогодний стол
+                    </div>
+                    <div class="blog__about-video">3 дня назад • 38 516 просмотров</div>
+                    <div class="blog__footer">
+                        <div class="video-buttons">
+                            <div class="video-buttons__like">
+                                <img src="./img/like.png" class="video-buttons__like-icon" alt="like">
+                                <span class="video-buttons__like-count">315</span>
+                            </div>
+                            <div class="video-buttons__dislike">
+                                <img src="./img/dislike.png" class="video-buttons__dislike-icon" alt="dislike">
+                            </div>
+                            <div class="video-buttons__comment">
+                                <img src="./img/comment.png" class="video-buttons__comment-icon" alt="comment">
+                                <span class="video-buttons__comment-count">3</span>
+                            </div>
+                        </div>
+                        <div class="share-button">
+                            <img src="./img/share.png" class="share-button__icon" alt="share">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main__aside-wrapper">
+            <div class="main__info-block">
+                <div class="weather">
+                    <div class="weather__titles">
+                        <span class="weather__titles-item _first">Погода</span>
+                        <span class="weather__titles-item">Карта осадков</span>
+                    </div>
+                    <div class="weather__wrapper">
+                        <svg class="weather__icon" width="48" height="48" viewBox="0 0 36 36">
+                            <use xlink:href="#weather"></use>
+                        </svg>
+                        <div class="weather__temperature">−11°</div>
+                        <div class="weather__details">утром −12° <br> днём -7°</div>
+                    </div>
+                </div>
+                <div class="traffic-jams">
+                    <div class="traffic-jams__titles">
+                        <span class="traffic-jams__titles-item _first">Пробки</span>
+                        <span class="traffic-jams__titles-item">Метро</span>
+                        <span class="traffic-jams__titles-item">Расписания</span>
+                    </div>
+                    <div class="traffic-jams__wrapper">
+                        <svg class="traffic-jams__icon">
+                            <use xlink:href="#traffic"></use>
+                        </svg>
+                        <div class="traffic-jams__mark">1</div>
+                        <div class="traffic-jams__desc">До 7 ч. дороги <br> свободны</div>
+                    </div>
+                </div>
+            </div>
+            <div class="quotes">
+                <div class="quotes__title">Котировки</div>
+                <div class="quotes__wrapper">
+                    <div class="quotes__item">
+                        <div class="quotes__main-info">
+                            <div class="quotes__name">USD ЦБ</div>
+                            <div class="quotes__date">25 декабря</div>
+                        </div>
+                        <img src="./img/graf-1.png" class="quotes__graf" alt="graf">
+                        <div class="quotes__price">
+                            <div class="quotes__present-price">73,19 ₽</div>
+                        </div>
+                    </div>
+                    <div class="quotes__item">
+                        <div class="quotes__main-info">
+                            <div class="quotes__name">EUR ЦБ</div>
+                            <div class="quotes__date">25 декабря</div>
+                        </div>
+                        <img src="./img/graf-2.png" class="quotes__graf" alt="graf">
+                        <div class="quotes__price">
+                            <div class="quotes__present-price">82,93 ₽</div>
+                        </div>
+                    </div>
+                    <div class="quotes__item">
+                        <div class="quotes__main-info">
+                            <div class="quotes__name">USD MOEX</div>
+                            <div class="quotes__date">24 декабря</div>
+                        </div>
+                        <img src="./img/graf-3.png" class="quotes__graf" alt="graf">
+                        <div class="quotes__price">
+                            <div class="quotes__present-price">73,65 ₽</div>
+                            <div class="quotes__difference-price">+0,33</div>
+                        </div>
+                    </div>
+                    <div class="quotes__item">
+                        <div class="quotes__main-info">
+                            <div class="quotes__name">EUR MOEX</div>
+                            <div class="quotes__date">24 декабря</div>
+                        </div>
+                        <img src="./img/graf-4.png" class="quotes__graf" alt="graf">
+                        <div class="quotes__price">
+                            <div class="quotes__present-price">83,27 ₽</div>
+                            <div class="quotes__difference-price">+0,17</div>
+                        </div>
+                    </div>
+                    <div class="quotes__item">
+                        <div class="quotes__main-info">
+                            <div class="quotes__name">Нефть</div>
+                            <div class="quotes__date">24 декабря</div>
+                        </div>
+                        <img src="./img/graf-5.png" class="quotes__graf" alt="graf">
+                        <div class="quotes__price">
+                            <div class="quotes__present-price">75,75 $</div>
+                            <div class="quotes__difference-price">-1.55%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="aside">
+        <img src="./img/aside.png" class="aside__image" alt="aside image">
+        <div class="aside__title">Стендап <br> Дмитрия Романова</div>
+        <div class="aside__desc">Билеты на Яндекс.Афише <span class="aside__age">16+</span></div>
+    </div>
+    <div class="svg-store">
+        <!-- inject:svg --><!-- endinject -->
+    </div>
 </body>
 </html>
