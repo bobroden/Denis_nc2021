@@ -3,13 +3,29 @@
 .header {
     position: relative;
     display: flex;
-    padding: 0 3rem;
-    margin-bottom: 3rem;
+    padding: 0 var(--gap);
+	margin: 0 0 var(--gap);
     background: @color-block-background;
     border-bottom: 1px solid @color-header-border;
 
     &__wrapper {
         flex: 1;
         width: 100%;
+    }
+}
+
+@media(max-width:1000px) {
+	.header {
+		padding: 20px 20px 0;
+		flex-wrap: wrap;
+    }
+	.header__wrapper {
+		flex: 0 0 100%;
+    }
+}
+
+@media(max-width:620px) {
+	.header {
+		padding-top: 15px;
     }
 }

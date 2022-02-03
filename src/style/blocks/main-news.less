@@ -1,7 +1,8 @@
 @import "../variables";
 
 .main-news {
-    display: flex;
+    display: grid;
+    grid-template-columns: 50% 50%;
     background: @color-white;
     color: @color-article-text;
     border-radius: 8px;
@@ -10,8 +11,11 @@
     overflow: hidden;
     filter: drop-shadow(0 5px 15px rgba(0, 0, 0, .24));
 
+    @media(max-width:800px) {
+        grid-template-columns: 1fr;
+    }
+
     &__empty {
-        width: 50%;
         position: relative;
         cursor: pointer;
 
@@ -38,6 +42,10 @@
             top: 0;
             width: 50%;
             background: linear-gradient(90deg,hsla(0,0%,100%,0) 0,hsla(0,0%,100%,.013) 8.1%,hsla(0,0%,100%,.049) 15.5%,hsla(0,0%,100%,.104) 22.5%,hsla(0,0%,100%,.175) 29%,hsla(0,0%,100%,.259) 35.3%,hsla(0,0%,100%,.352) 41.2%,hsla(0,0%,100%,.45) 47.1%,hsla(0,0%,100%,.55) 52.9%,hsla(0,0%,100%,.648) 58.8%,hsla(0,0%,100%,.741) 64.7%,hsla(0,0%,100%,.825) 71%,hsla(0,0%,100%,.896) 77.5%,hsla(0,0%,100%,.951) 84.5%,hsla(0,0%,100%,.987) 91.9%,#fff);
+            
+            @media(max-width:800px) {
+                display: none;
+            }
         }
     }
 
@@ -49,6 +57,18 @@
         object-fit: cover;
         display: block;
         border: 0;
+
+        @media(max-width:800px) {
+            position: relative;
+            width: 100%;
+            height: auto;
+            min-height: 200px;
+            max-height: 200px;
+        }
+        
+        @media(max-height:700px) {
+            height: 150px;
+        }
     }
 
     &__wrapper {
@@ -56,8 +76,11 @@
         display: flex;
         position: relative;
         flex-direction: column;
-        width: 50%;
         z-index: 5;
+
+        @media(max-width:800px) {
+            padding: 1.5rem;
+        }
     }
 
     &__tags {

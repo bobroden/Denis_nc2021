@@ -25,6 +25,7 @@ body, html, ul {
 }
 
 html {
+    --gap: 3rem;
     color: @color-white;
     overflow-x: hidden;
     background-color: @color-button-border;
@@ -52,4 +53,22 @@ html::-webkit-scrollbar-thumb {
 
 html::-webkit-scrollbar-track {
     background: @main-scrollbar-gradient;
+}
+
+@media(max-width:1200px) {
+	html {
+		--gap: 2rem;
+    }
+}
+
+@media(max-width:800px) {
+	html {
+		--gap: 1rem;
+    }
+}
+
+@media screen and (max-width:400px) {
+	@-ms-viewport {
+		width: 320px;
+    }
 }

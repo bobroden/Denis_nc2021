@@ -1,11 +1,15 @@
 @import "../variables";
 
 .footer {
-    margin: 15rem 0 0 0;
-    padding: 0 0 3rem;
+    margin: calc(var(--gap) * 5) 0 0 0;
+	padding: 0 0 var(--gap);
     position: relative;
     background: @color-block-background;
     display: block;
+
+    @media(max-width:800px) {
+        margin-top: 20rem;
+    }
 
     &__logo {
         position: absolute;
@@ -14,20 +18,30 @@
         height: 120px;
         z-index: -1;
         top: -90px;
-        left: 3rem;
+        left: var(--gap);
+
+        @media(max-width:830px) {
+            top: -130px;
+            left: auto;
+            right: 40px;
+        }
     }
 
     &__wrapper {
         max-width: 1600px;
         margin: 0 auto;
-        padding: 0 3rem;
+        padding: 0 var(--gap);
     }
 
     &__form {
         display: grid;
         grid-template-columns: 1fr 1.4fr;
-        gap: 3rem;
+        gap: var(--gap);
         align-items: end;
+
+        @media(max-width:830px) {
+            grid-template-columns: 1fr;
+        }
     }
 
     &__form-desc {
@@ -51,6 +65,14 @@
         grid-template-columns: repeat(4, 1fr);
         gap: 1rem;
         line-height: 1.5;
+
+        @media(max-width:950px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media(max-width:374px) {
+            grid-template-columns: 1fr;
+        }
     }
 
     &__menu-title {

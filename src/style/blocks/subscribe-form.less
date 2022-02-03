@@ -3,10 +3,14 @@
 .subscribe-form {
     background: @color-desc;
     padding: 1.5rem;
-    margin: -3rem 0 0;
+    margin: -3rem 0 var(--gap);
     position: relative;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
+
+    @media(max-width:830px) {
+        order: -1;
+    }
 
     &::after {
         content: "";
@@ -39,6 +43,10 @@
 
     &__input-wrapper {
         display: flex;
+
+        @media(max-width:830px) {
+            flex-wrap: wrap;
+        }
     }
 
     &__email-input {

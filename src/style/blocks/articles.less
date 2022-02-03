@@ -3,8 +3,8 @@
 .articles {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 3rem;
-    margin: 0 0 3rem;
+    gap: var(--gap);
+	margin: 0 0 var(--gap);
 
     &__item {
         background: @color-article-background;
@@ -49,6 +49,10 @@
         padding: 1.5rem;
         display: flex;
         flex-direction: column;
+
+        @media(max-width:800px) {
+            padding: 1.5rem;
+        }
     }
 
     &__item-tags {

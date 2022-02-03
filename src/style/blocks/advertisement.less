@@ -4,9 +4,13 @@
 
     height: 100%;
 
+    @media(max-width:800px) {
+        display: none;
+    }
+
     &__item {
         width: 300px;
-        margin: 0 0 3rem;
+        margin: 0 0 var(--gap);
         position: relative;
         padding: 0.5rem;
         border-radius: 8px;
