@@ -1,0 +1,29 @@
+@import "../variables";
+
+.account {
+    position: fixed;
+    top: 0.9rem;
+    right: var(--gap);
+    z-index: 10;
+
+    @media(max-width:620px) {
+        top: .95rem;
+    }
+
+    svg {
+        margin-left: 0.5rem;
+        filter: drop-shadow(0 2px 5px rgba(0, 0, 0, .3));
+        width: 32px;
+        height: 32px;
+        cursor: pointer;
+
+        @media(max-width:620px) {
+            width: 28px;
+            height: 28px;
+        }
+
+        &:hover {
+            opacity: .66;
+        }
+    }
+}

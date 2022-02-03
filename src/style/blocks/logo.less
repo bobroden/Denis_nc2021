@@ -1,0 +1,47 @@
+@import "../variables";
+
+.logo {
+    transition: 0s;
+    flex: 0;
+    position: relative;
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    @keyframes spinMe {
+        to {
+            transform: rotate(2turn)
+        }
+    }
+
+    &:hover .logo__icon {
+        animation: spinMe 1s forwards;
+    }
+
+    &__icon {
+        pointer-events: none;
+        fill: @color-white;
+        width: 25px;
+        height: 25px;
+        margin: 0 0.5rem 0 0;
+    }
+
+    &__text {
+        fill: @color-white;
+        height: 25px;
+        width: 170px;
+        margin-right: var(--gap);
+    }
+}
+
+@media(max-width:1000px) {
+    .logo__icon {
+		width: 18px;
+		height: 18px;
+    }
+	.logo__text {
+		height: 15px;
+		width: 116px;
+    }
+}

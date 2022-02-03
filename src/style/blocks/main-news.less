@@ -1,0 +1,170 @@
+@import "../variables";
+
+.main-news {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background: @color-white;
+    color: @color-article-text;
+    border-radius: 8px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    filter: drop-shadow(0 5px 15px rgba(0, 0, 0, .24));
+
+    @media(max-width:800px) {
+        grid-template-columns: 1fr;
+    }
+
+    &__empty {
+        position: relative;
+        cursor: pointer;
+
+        &::before {
+            pointer-events: none;
+            content: "";
+            background: @main-gradient;
+            position: absolute;
+            mix-blend-mode: screen;
+            opacity: .75;
+            width: 120%;
+            min-height: 500px;
+            height: 100%;
+            z-index: 2;
+        }
+
+        &::after {
+            pointer-events: none;
+            content: "";
+            position: absolute;
+            z-index: 3;
+            left: 75%;
+            height: 100%;
+            top: 0;
+            width: 50%;
+            background: linear-gradient(90deg,hsla(0,0%,100%,0) 0,hsla(0,0%,100%,.013) 8.1%,hsla(0,0%,100%,.049) 15.5%,hsla(0,0%,100%,.104) 22.5%,hsla(0,0%,100%,.175) 29%,hsla(0,0%,100%,.259) 35.3%,hsla(0,0%,100%,.352) 41.2%,hsla(0,0%,100%,.45) 47.1%,hsla(0,0%,100%,.55) 52.9%,hsla(0,0%,100%,.648) 58.8%,hsla(0,0%,100%,.741) 64.7%,hsla(0,0%,100%,.825) 71%,hsla(0,0%,100%,.896) 77.5%,hsla(0,0%,100%,.951) 84.5%,hsla(0,0%,100%,.987) 91.9%,#fff);
+            
+            @media(max-width:800px) {
+                display: none;
+            }
+        }
+    }
+
+    &__image {
+        position: absolute;
+        max-width: none;
+        width: 120%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        border: 0;
+
+        @media(max-width:800px) {
+            position: relative;
+            width: 100%;
+            height: auto;
+            min-height: 200px;
+            max-height: 200px;
+        }
+        
+        @media(max-height:700px) {
+            height: 150px;
+        }
+    }
+
+    &__wrapper {
+        padding: 3rem;
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        z-index: 5;
+
+        @media(max-width:800px) {
+            padding: 1.5rem;
+        }
+    }
+
+    &__tags {
+        line-height: 1;
+        margin: 0 0 0.5rem;
+    }
+
+    &__tag {
+        .heading-font;
+        font-style: normal;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: @color-tag;
+        font-size: .66rem;
+        margin-inline-end: 0.66rem;
+        cursor: pointer;
+
+        &:hover {
+            opacity: .66;
+        }
+    }
+
+    &__title {
+        color: @color-article-title;
+        font-size: 3rem;
+        .heading-font;
+        font-style: normal;
+        font-weight: 700;
+        margin: 0 0 1.5rem;
+        line-height: 1.1;
+        cursor: pointer;
+
+        &:hover {
+            opacity: .66;
+        }
+    }
+
+    &__desc {
+        margin: 0 0 1.5rem;
+        font-size: 1.2rem;
+        color: @color-article-text;
+        overflow: hidden;
+    }
+
+    &__author {
+        color: @color-text-about;
+        line-height: 1.3;
+        padding-top: 0.5rem;
+
+        span {
+            vertical-align: top;
+            display: inline-block;
+            padding-top: 11px;
+            margin-left: 2px;
+        }
+    }
+
+    &__author-icon {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-right: 0.5rem;
+        max-width: 100%;
+        border: 0;
+        cursor: pointer;
+
+        &:hover {
+            opacity: .66;
+        }
+    }
+
+    &__author-name {
+        white-space: nowrap;
+        font-weight: 700;
+        color: @color-author-name;
+        text-decoration: none;
+        cursor: pointer;
+
+        &:hover {
+            opacity: .66;
+        }
+    }
+
+    &__date {
+        white-space: nowrap;
+    }
+}
