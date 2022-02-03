@@ -1,0 +1,29 @@
+@import "../variables";
+
+.archive-button {
+    display: block;
+    width: 100%;
+    text-align: center;
+    .heading-font;
+    font-style: normal;
+    background: @color-button-background;
+    color: @color-text;
+    border: 0;
+    border-bottom: 1px solid @color-button-border;
+    border-right: 1px solid @color-button-border;
+    box-shadow: inset 1px 1px 0 #777, 0 2px 3px rgb(0 0 0 / 40%);
+    font-weight: 700;
+    line-height: 1.4;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 4px;
+    white-space: nowrap;
+    padding: 1rem 1.5rem;
+    transition: .07s;
+    position: relative;
+    cursor: pointer;
+
+    &:hover {
+        opacity: .66;
+    }
+}

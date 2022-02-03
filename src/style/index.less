@@ -1,1 +1,74 @@
 @import "./variables";
+@import "./blocks/header";
+@import "./blocks/logo";
+@import "./blocks/navigation";
+@import "./blocks/account";
+@import "./blocks/main";
+@import "./blocks/main-news";
+@import "./blocks/popular-articles";
+@import "./blocks/articles";
+@import "./blocks/advertisement";
+@import "./blocks/code";
+@import "./blocks/archive-button";
+@import "./blocks/css-code-example";
+@import "./blocks/footer";
+@import "./blocks/subscribe-form";
+@import "./blocks/top-of-site-link";
+@import "./blocks/svg-store";
+
+body, html, ul {
+    margin: 0;
+}
+
+*, :after, :before {
+    box-sizing: border-box;
+}
+
+html {
+    --gap: 3rem;
+    color: @color-white;
+    overflow-x: hidden;
+    background-color: @color-button-border;
+    background-position: top 58px center;
+    background-repeat: no-repeat;
+    background-image: radial-gradient(50% 50% at top center,rgba(0,0,0,.66),#262626), linear-gradient(180deg,#fff,#262626);
+    background-size: 120% 2000px, 100% 2000px;
+    .main-font;
+    font-size: clamp(12px, .8rem + .30vw, 20px);
+    font-weight: 400;
+    line-height: 1.7;
+    padding: 0;
+}
+
+html::-webkit-scrollbar {
+    width: 16px;
+    height: 16px;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: @color-main-scrollbar-background;
+    border-radius: 16px;
+    box-shadow: inset 2px 2px 2px hsl(0deg 0% 100% / 25%), inset -2px -2px 2px rgb(0 0 0 / 25%);
+}
+
+html::-webkit-scrollbar-track {
+    background: @main-scrollbar-gradient;
+}
+
+@media(max-width:1200px) {
+	html {
+		--gap: 2rem;
+    }
+}
+
+@media(max-width:800px) {
+	html {
+		--gap: 1rem;
+    }
+}
+
+@media screen and (max-width:400px) {
+	@-ms-viewport {
+		width: 320px;
+    }
+}

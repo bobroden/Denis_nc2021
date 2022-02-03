@@ -1,0 +1,65 @@
+@import "../variables";
+
+.advertisement {
+
+    height: 100%;
+
+    @media(max-width:800px) {
+        display: none;
+    }
+
+    &__item {
+        width: 300px;
+        margin: 0 0 var(--gap);
+        position: relative;
+        padding: 0.5rem;
+        border-radius: 8px;
+        background: @color-article-background;
+    }
+
+    &__image {
+        width: 100%;
+        margin-bottom: 0;
+        height: auto;
+        display: block;
+        border-radius: 4px;
+        transition: .15s;
+        box-shadow: 0 0 1.5rem rgb(17 17 17 / 70%);
+
+        &:hover {
+            box-shadow: 0 0 50px rgb(17 17 17 / 50%);
+            transform: rotate(-2deg) translateY(-5px) scale(1.025);
+        }
+    }
+
+    &__wrapper {
+        .main-font;
+        font-size: .75rem;
+        font-weight: 400;
+        padding: 1rem;
+        white-space: normal;
+        text-align: left;
+    }
+
+    &__sponsor {
+        color: @color-link;
+        text-transform: uppercase;
+        font-size: .5rem;
+        letter-spacing: .05rem;
+        display: block;
+        cursor: pointer;
+
+        &:hover {
+            opacity: .66;
+        }
+    }
+
+    &__desc {
+        color: @color-desc;
+        cursor: pointer;
+
+        &:hover {
+            opacity: .66;
+        }
+    }
+}
