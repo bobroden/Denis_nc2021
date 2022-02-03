@@ -1,0 +1,25 @@
+@import "../variables";
+
+.main-links {
+    margin-bottom: 8px;
+    height: 20px;
+    line-height: 20px;
+
+    &__item {
+        display: inline-block;
+        margin-left: 20px;
+        font-size: 15px;
+        color: @color-text-link;
+        text-decoration: none;
+        cursor: pointer;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    ._first {
+        margin-left: 0;
+        font-weight: 700;
+    }
+}

@@ -1,0 +1,51 @@
+@import "../variables";
+
+.navigation {
+
+    &__list {
+        list-style: none;
+        display: flex;
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    &__item {
+        display: inline-flex;
+        padding: 5px 8px;
+        border-radius: 8px;
+        text-align: center;
+        vertical-align: middle;
+        white-space: nowrap;
+        cursor: pointer;
+        font-size: 13px;
+        line-height: 18px;
+        font-weight: 400;
+        .main-font;
+        color: @color-text-primary;
+
+        &:hover {
+            background: @custom-color-project-dark-bg-hover;
+        }
+    }
+
+    ._first {
+        font-weight: 700;
+    }
+
+    ._last {
+        svg {
+            margin-left: 8px;
+            margin-top: 2px;
+            width: 14px;
+            height: 14px;
+        }
+    }
+}
+
+@media (max-width: 1189px) {
+    .navigation__item {
+        font-size: 10px;
+    }
+}

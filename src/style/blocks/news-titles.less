@@ -1,0 +1,46 @@
+@import "../variables";
+
+.news-titles {
+    padding-top: 12px;
+    border-bottom: 1px solid @color-separator-primary;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    &__item {
+        font-size: 15px;
+        line-height: 20px;
+        font-weight: 400;
+        .main-font;
+        position: relative;
+        display: inline-flex;
+        padding: 0 8px;
+        height: 27px;
+        color: @color-text-primary;
+        cursor: pointer;
+
+        &:first-child {
+            padding-left: 0;
+        }
+
+        &:hover {
+            border-bottom: 2px solid @color-separator-primary;
+            margin-bottom: -2px;
+        }
+    }
+
+    ._active {
+        font-weight: 700;
+        color: @color-text-link;
+
+        &::after {
+            position: absolute;
+            right: 10px;
+            left: 0;
+            bottom: -1px;
+            color: @color-text-link;
+            border-bottom: 2px solid @color-text-link;
+            content: "";
+        }
+    }
+}

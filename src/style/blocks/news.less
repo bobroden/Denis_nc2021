@@ -1,0 +1,30 @@
+@import "../variables";
+
+.news {
+    width: 71%;
+
+    &__item {
+        display: block;
+        white-space: nowrap;
+        overflow: hidden;
+        border-radius: 1px;
+        padding: 4px 0 4px 0;
+        color: @color-text-link;
+        text-decoration: none;
+        cursor: pointer;
+
+        span:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &__item-title {
+        font-weight: 700;
+        font-size: 11px;
+        letter-spacing: .8px;
+        text-transform: uppercase;
+        line-height: 16px;
+        color: @color-text-primary;
+        cursor: pointer;
+    }
+}

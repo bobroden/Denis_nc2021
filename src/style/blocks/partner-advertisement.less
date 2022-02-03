@@ -1,0 +1,23 @@
+@import "../variables";
+
+.partner-advertisement {
+    visibility: visible;
+    height: 122px;
+    margin-left: 20px;
+    margin-top: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    background: @color-main-block;
+    box-shadow: 0 4px 12px @color-separator-primary;
+    border-radius: 8px;
+    border: 0;
+    transition: box-shadow .5s;
+
+    &:hover {
+        box-shadow: 0 4px 20px 0 @color-separator-primary;
+    }
+
+    &__image {
+        width: 100%;
+    }
+}
