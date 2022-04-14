@@ -1,0 +1,69 @@
+.quotes {
+    margin-top: 8px;
+    overflow: hidden;
+    padding: 8px 16px;
+    background: #fff;
+    border-radius: 16px;
+
+    &__title {
+        padding-top: 6px;
+        margin-right: 11px;
+        color: #000;
+        transition: color .15s ease-out;
+        cursor: pointer;
+
+        &:hover {
+            color: #c00;
+        }
+    }
+
+    &__wrapper {
+        padding-top: 22px;
+    }
+
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 19px;
+        align-items: center;
+        cursor: pointer;
+        transition: color .15s ease-out;
+
+        &:hover {
+            color: #c00;
+        }
+    }
+
+    &__name {
+        font-size: 14px;
+        word-spacing: -2px;
+        font-weight: 500;
+    }
+
+    &__date {
+        color: rgba(0, 0, 0, .35);
+        font-size: 14px;
+        padding-top: 3px;
+    }
+
+    &__graf {
+        width: 82px;
+        height: 24px;
+        padding: 5px
+    }
+
+    &__price {
+        text-align: right;
+    }
+
+    &__present-price {
+        font-weight: 500;
+        font-size: 14px;
+    }
+
+    &__difference-price {
+        font-size: 14px;
+        padding-top: 3px;
+        color: rgba(0,0,0,.35);
+    }
+}

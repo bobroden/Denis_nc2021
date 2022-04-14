@@ -1,0 +1,37 @@
+.search {
+    display: flex;
+    width: 941px;
+    margin: 0 auto;
+    padding-top: 3px;
+
+    &__logo {
+
+        font-weight: 700;
+        font-size: 35px;
+        margin-left: -129px;
+        margin-right: 16px;
+        cursor: pointer;
+
+        &::first-letter {
+            color: red;
+        }
+    }
+
+    &__button {
+        padding: 12px 21px;
+        color: #000;
+        font-weight: 500;
+        border-radius: 0 0.6875em 0.6875em 0;
+        background: #fc0;
+        outline: none;
+        border: 0;
+        font-size: 18px;
+        margin-left: -2px;
+        transition: background .1s linear;
+        cursor: pointer;
+
+        &:hover {
+            background: #f5c400;
+        }
+    }
+}
