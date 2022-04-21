@@ -1,0 +1,108 @@
+.blog {
+    min-height: 536px;
+    width: 100%;
+    background: #fff;
+    box-shadow: none;
+    border-radius: 18px;
+    overflow: hidden;
+    font-size: 16px;
+    margin-top: 12px;
+
+    &__header {
+        padding: 4px 10px 2px 16px;
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+
+    &__icon {
+        display: inline-block;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        background-image: url(../../images/block-1.jpg);
+        background-color: #f0f1f5;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50%;
+        border: none;
+        vertical-align: top;
+        padding-top: 1px;
+    }
+
+    &__author-block {
+        display: inline-block;
+        padding-left: 4px;
+        padding-top: 2px;
+    }
+
+    &__author-name {
+        color: #000;
+        font-family: medium-ysans,sans-serif;
+        font-size: 15px;
+        line-height: 20px;
+
+        &:hover {
+            opacity: .68;
+        }
+    }
+
+    &__subscribe {
+        font-size: 16px;
+        line-height: 20px;
+        color: #07f;
+
+        &:hover {
+            opacity: .68;
+        }
+    }
+
+    &__author-subscribers {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        color: rgba(0,0,0,.45);
+        font-size: 13px;
+        line-height: 16px;
+        font-weight: 400;
+    }
+
+    &__menu {
+        width: 15px;
+        height: 24px;
+        padding-right: 4px;
+        padding-top: 12px;
+    }
+
+    &__video {
+        width: 100%;
+        height: 360px;
+        border-radius: 8px;
+    }
+
+    &__desc {
+        color: #000;
+        font-size: 15px;
+        line-height: 20px;
+        font-weight: 700;
+        padding-top: 14px;
+        padding: 14px 16px 2px;
+        cursor: pointer;
+    }
+
+    &__about-video {
+        font-size: 13px;
+        padding: 2px 16px 0;
+        color: rgba(0,0,0,.45);
+        line-height: 18px;
+        font-weight: 400;
+        cursor: pointer;
+    }
+
+    &__footer {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 12px;
+        padding: 12px 16px 0;
+    }
+}

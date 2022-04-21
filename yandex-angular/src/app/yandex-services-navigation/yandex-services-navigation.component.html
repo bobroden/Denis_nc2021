@@ -1,40 +1,8 @@
 <nav class="yandex-services-navigation">
     <ul class="yandex-services-navigation__items-list">
-        <li class="yandex-services-navigation__item _first">
-            <img src="../../assets/icons/services.svg">
-            <div>Маркет</div>
-        </li>
-        <li class="yandex-services-navigation__item">
-            <img src="../../assets/icons/video.svg">
-            <div>Видео</div>
-        </li>
-        <li class="yandex-services-navigation__item">
-            <img src="../../assets/icons/images.svg">
-            <div>Картинки</div>
-        </li>
-        <li class="yandex-services-navigation__item">
-            <img src="../../assets/icons/news.svg">
-            <div>Новости</div>
-        </li>
-        <li class="yandex-services-navigation__item">
-            <img src="../../assets/icons/autoru.svg">
-            <div>Карты</div>
-        </li>
-        <li class="yandex-services-navigation__item">
-            <img src="../../assets/icons/translate.svg">
-            <div>Переводчик</div>
-        </li>
-        <li class="yandex-services-navigation__item">
-            <img src="../../assets/icons/music.svg">
-            <div>Музыка</div>
-        </li>
-        <li class="yandex-services-navigation__item">
-            <img src="../../assets/icons/tv.svg">
-            <div>Программа</div>
-        </li>
-        <li class="yandex-services-navigation__item">
-            <img src="../../assets/icons/autoru.svg">
-            <div>Авто.ру</div>
+        <li class="yandex-services-navigation__item" *ngFor="let item of navigationItems" [ngClass]="{'_first': item === navigationItems[0]}">
+            <img [src]="item.imageSrc">
+            <div>{{item.name}}</div>
         </li>
         <li class="yandex-services-navigation__item _last">
             <div class="yandex-services-navigation__container">

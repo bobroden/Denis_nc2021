@@ -1,0 +1,76 @@
+.about-user {
+    width: 220px;
+    padding: 14px 14px;
+    margin-right: 6px;
+    border-radius: 8px;
+    box-shadow: 0 0 32px rgb(0 0 0 / 8%);
+    box-sizing: border-box;
+    background: #fff;
+    font-size: 96%;
+
+    &__email-block {
+        display: flex;
+        justify-content: space-between;
+        width: 200px;
+    }
+
+    &__email-name {
+
+        font-weight: 700;
+        display: inline-block;
+        overflow: hidden;
+        max-width: 114px;
+        vertical-align: top;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        cursor: pointer;
+        transition: color .15s ease-out;
+
+        ._first-letter {
+            color: red;
+            transition: color .15s ease-out;
+        }
+
+        &:hover {
+            color: #c00;
+
+            ._first-letter {
+                color: #c00;
+            }
+        }
+
+    }
+
+    &__email-avatar {
+        margin-top: -5px;
+        margin-right: 5px;
+        width: 34px;
+        height: 34px;
+        cursor: pointer;
+    }
+
+    &__counter-block {
+        margin-top: 7px;
+        cursor: pointer;
+        transition: color .15s ease-out;
+
+        &:hover {
+            color: #c00;
+        }
+    }
+
+    &__counter-count {
+        font-weight: 700;
+        margin-left: 2px;
+    }
+
+    &__disk {
+        margin-top: 7px;
+        cursor: pointer;
+        transition: color .15s ease-out;
+
+        &:hover {
+            color: #c00;
+        }
+    }
+}
